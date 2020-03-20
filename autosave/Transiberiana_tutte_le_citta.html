@@ -1,0 +1,1640 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></head>
+<body><header class="adminHeader needHidden hidden" contenteditable="false">
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('undo')" title="Отменить">
+      <img src="/static/header/undo-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('redo')" title="Повторить">
+      <img src="/static/header/redo-solid.svg" alt="" width="12" height="12">
+    </button>
+  </div>
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('bold')" title="Жирный">
+      <img src="/static/header/bold-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('italic')" title="Курсив">
+      <img src="/static/header/italic-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('underline')" title="Подчеркнутый">
+      <img src="/static/header/underline-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('strikeThrough')" title="Зачеркнутый">
+      <img src="/static/header/strikethrough-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('superscript')" title="Надстрочный индекс">
+      <img src="/static/header/superscript-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('subscript')" title="Подстрочный индекс">
+      <img src="/static/header/subscript-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('removeFormat')" title="Убрать форматирование">
+      <img src="/static/header/remove-format-solid.svg" alt="" width="12" height="12">
+    </button>
+  </div>
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('justifyLeft')" title="Выравнивание по левому краю">
+      <img src="/static/header/align-left-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('justifyCenter')" title="Выравнивание по центру">
+      <img src="/static/header/align-center-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('justifyRight')" title="Выравнивание по правому краю">
+      <img src="/static/header/align-right-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('justifyFull')" title="Выравнивание по ширине">
+      <img src="/static/header/align-justify-solid.svg" alt="" width="12" height="12">
+    </button>
+  </div>
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('createLink', false, prompt('Вставьте ссылку'))" title="Вставить ссылку">
+      <img src="/static/header/link-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('unlink')" title="Удалить ссылку">
+      <img src="/static/header/unlink-solid.svg" alt="" width="12" height="12">
+    </button>
+  </div>
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('insertOrderedList')" title="Нумерованный список">
+      <img src="/static/header/list-ol-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('insertUnorderedList')" title="Маркерованный список">
+      <img src="/static/header/list-ul-solid.svg" alt="" width="12" height="12">
+    </button>
+    <button type="button" class="btn btn-light btn-sm" onclick="document.execCommand('insertHorizontalRule')" title="Вставить горизонтальную линию">
+      <img src="/static/header/line-solid.svg" alt="" width="12" height="12">
+    </button>
+  </div>
+  <div class="input-group-prepend mr-1">
+    <button type="button" class="btn btn-light btn-sm" title="Установить цвет шрифта" onclick="document.execCommand('foreColor', false, this.nextElementSibling.children[0].value)">
+      <img src="/static/header/palette-solid.svg" alt="" width="12" height="12">
+    </button>
+    <label type="button" class="btn btn-light btn-sm dropdown-toggle dropdown-toggle-split" title="Выбрать цвет текста">
+      <input type="color" onchange="document.execCommand('foreColor', false, this.value);" style="display: none;">
+    </label>
+  </div>
+  <div class="input-group-prepend mr-2">
+    <button type="button" class="btn btn-light btn-sm" title="Установить цвет фона" onclick="document.execCommand('backColor', false, this.nextElementSibling.children[0].value)">
+      <img src="/static/header/fill-drip-solid.svg" alt="" width="12" height="12">
+    </button>
+    <label type="button" class="btn btn-light btn-sm dropdown-toggle dropdown-toggle-split" title="Выбрать цвет фона">
+      <input type="color" onchange="document.execCommand('backColor', false, this.value);" style="display: none;">
+    </label>
+  </div>
+  <div class="input-group-prepend mr-1">
+    <button type="button" class="btn btn-light btn-sm" title="Установить шрифт" onclick="document.execCommand('fontName', false, this.nextElementSibling.children[0].value)">
+      <img src="/static/header/font-solid.svg" alt="" width="12" height="12">
+    </button>
+    <label type="button" class="btn btn-light" title="Выбрать шрифт">
+      <select onchange="document.execCommand('fontName', false, this.value);" style="width: 160px;">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Arial">Arial</option>
+        <option value="Tahoma">Tahoma</option>
+      </select>
+    </label>
+  </div>
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-light btn-sm" title="Установить размер шрифта" onclick="document.execCommand('fontSize', false, this.nextElementSibling.children[0].value)">
+      <img src="/static/header/font-size-solid.svg" alt="" width="12" height="12">
+    </button>
+    <label type="button" class="btn btn-light" title="Выбрать размер шрифта">
+      <select onchange="document.execCommand('fontSize', false, this.value);">
+        <option value="1">10px</option>
+        <option value="2">13px</option>
+        <option value="3">16px</option>
+        <option value="4">18px</option>
+        <option value="5">24px</option>
+        <option value="6">32px</option>
+        <option value="7">48px</option>
+      </select>
+    </label>
+  </div>
+  <div style="margin-left: auto;">
+    <a href="/news">Важно!!!</a>
+  </div>
+</header>
+
+            <div class="adminPanel needHidden hidden" contenteditable="false">
+              <div class="adminPanel-result">
+            <div class="message"><p style="color: #1e7e34">Файл сохранен</p></div>
+            <div id="fountainTextG" style="display: none;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(11px, 38px, 0px);">
+              <button class="addNewDay dropdown-item">Добавить день</button>
+              <button class="dropdown-item">
+                    <label style="margin: 0;">
+                      Картинка на главную страницу
+                      <input type="file" class="setBgImageFirstPage" style="display: none;">
+                    </label>
+                  </button>
+              <button class="saveAsHtml dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml dropdown-item">Сохранить как</button>
+              <button class="saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Скрыть ненужные блоки">
+              Элементы 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="first-page">
+                  <label class="custom-control-label" for="first-page">Главная</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="second-page">
+                  <label class="custom-control-label" for="second-page">Контакты</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks" checked="">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a href="/" class="dropdown-item" title="Перейти на главную страницу" target="_blank">Главная</a>
+              <a href="/all" class="dropdown-item" title="Перейти ко всем программам" target="_blank">Все программы</a>
+              <a href="/news" class="dropdown-item" title="Перейти к новостям" target="_blank">Новости</a>
+              <a href="/profile" class="dropdown-item" target="_blank">Профиль</a>
+              <a href="/logout.php" class="dropdown-item" target="_blank">Выйти</a>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Шаблоны
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(-208px, 182px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <button class="saveAsFr dropdown-item">Сохранить как франзуский шаблон</button>
+              <button class="saveAsIt dropdown-item">Сохранить как итальянский шаблон</button>
+              <button class="saveAsDe dropdown-item">Сохранить как немецкий шаблон</button>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<div class="editable">
+
+  <div class="content">
+    <div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/23-transsib-min.jpg&quot;);">
+      <div class="first-page-title">&nbsp; &nbsp; &nbsp; &nbsp; RUSSIA DIVERSAMENTE&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-name height">
+        <div class="program-name-title">
+          <span style="color: rgb(174, 0, 0);" class="dec-color"><span style="font-size: 30px" class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Programma su misura personalizzato per</span></span></span>&nbsp;</div><div class="program-name-title"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">???????</span></b>&nbsp;</div>
+        <div class="program-name-text" contenteditable="true"><br></div>
+      </div>
+
+      <div class="program-data height">
+        <div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></div><div class="program-data-title"><span style="color: rgb(255, 255, 255);">Vostra richiesta:</span><br></div>
+        <div class="program-data-text" contenteditable="true">
+          <div class="program-data-text-city">
+            <b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Transiberiana Mosca - ???</span></b></div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><b class="decoration" style="color: rgb(202, 0, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color">Numero di persone:</span></b><br></span>
+              <span><span style="color: #c60000" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Data di viaggio:</span></b></span></span>
+              <span><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Durata di viaggio:</span></b></span></div><div class="program-data-text-desc-item"><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color">&nbsp;? adulti + ? bambini</span></b><br></span>
+              <span><span style="color: #e64a00" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">maggio - giugno 2020</span></b></span></span>
+              <span><span style="color: #e64a00" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">8 giorni e 7 notti</span></b></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <div><span style="color: #ffffff" class="dec-color"><br></span></div><div><span style="color: #ffffff" class="dec-color"><br></span></div><div>
+          <span style="color: #ffffff" class="dec-color">Описание тура</span>
+        </div>
+        <div></div>
+        <div>
+          <span style="color: #ffffff" class="dec-color">Описание тура</span>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden" contenteditable="false">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="second-page"><div class="manager-contacts height">
+          <div class="change-data-user">
+        <a href="/updateDataUser.php">Изменить</a>
+      </div>
+      <div class="manager-contacts-photo">
+        <img src="http://78.47.40.9/uploads//SqSb8mnzl2Q-1-.jpg" alt="">
+      </div>
+      <div class="manager-contacts-desc">
+        <div class="manager-contacts-desc-name">
+          Svetlana Glebova        </div>
+        <div class="manager-contacts-desc-company">
+          Russia Diversamente        </div>
+        <div class="manager-contacts-desc-items">
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              Adresse:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo            </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              Téléphone:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              +78125654670             </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              E-mail:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              svetlana.glebova@russiadiversamente.com            </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              Site web:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              <a href="https://"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div></div>
+    <div class="program-days">
+
+    <div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 1
+                </div>
+                <div class="program-days-item-header-data">01.01.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Arrivo a Mosca&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Crociera_MSC-SPb/4a209f29198438c4881399a158802706.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;">Benvenuti in Russia!<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;"><o:p>&nbsp;</o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Arrivo a Mosca.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Transfer
+fino al vostro alloggio.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+
+
+</p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Tempo
+libero.<o:p></o:p></span></p><p class="MsoNormal"><i><span lang="EN-US" style="font-size:12.0pt;line-height:107%;font-family:&quot;Segoe UI&quot;,sans-serif;
+mso-ansi-language:EN-US"><o:p></o:p></span></i></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><span style="font-size: 12pt; letter-spacing: -0.01em;">&nbsp;</span><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><i><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU"><br></span></i></p><p></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 2
+                </div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name"><b><span lang="EN-US" style="font-size:11.0pt;
+line-height:107%;font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><span style="color: rgb(0, 0, 0); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 500;">Mosca</span>&nbsp;</span></b></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Crociera_MSC-SPb/circuit-transsiberien-de-moscou-a-vladivostok-guide-1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal; line-height: normal;"></p><p style="margin: 0cm 0cm 13.5pt; line-height: 17.25pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:
+EN-US">Giro panoramico a piedi (durata 4 ore) che vi permetterà di vedere tutti
+i monumenti più famosi del centro storico della capitale: la cattedrale di San
+Basilio il Benedetto, la celebre Piazza Rossa con il mausoleo di Lenin, il
+Cremlino, la galleria commerciale GUM, la piazza del Maneggio e il giardino di
+Alessandro, il teatro Bolshoi e l’albergo Metropol, uno dei gioielli di Mosca
+dell’epoca Art Nouveau.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">
+
+</p><p style="margin: 0cm 0cm 13.5pt; line-height: 17.25pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B">Tempo libero
+nel pomeriggio.<o:p></o:p></span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 3&nbsp;&nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name"><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><b><span style="font-size:
+12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4B4B4B;mso-fareast-language:RU">Mosca<br></span></b></p></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-libre-900-9.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;"><br></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Tempo libero.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer serale alla stazione.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Partenza per Kazan.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 4</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><p class="MsoNormal"><b><span lang="EN-US" style="font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Kazan<br></span></b></p></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/2-900-kazan.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Arrivo a Kazan, la capitale di Tatarstan.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer all’albergo (per lasciare i bagagli).</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Visita del Cremlino di Kazan, la moschea Qolsharif e la cattedrale dell’Annunciazione. La storia di questa città è legata al nome dello zar Ivan il Terribile.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 5&nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><b><span style="font-size:
+12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4B4B4B;mso-fareast-language:RU">Kazan<o:p></o:p></span></b></p></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/sviyazhsk.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Visita dell’isola di Svijazhsk (45 km da Kazan) sul fiume Volga. Una fortezza importante nel passato, l’isola vive ancora nel passato e conserva diversi gioielli architettonici - chiese, monasteri.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer serale alla stazione.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Partenza per Ekaterinburg</p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 6&nbsp; &nbsp;&nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><font color="#4b4b4b" face="Segoe UI, sans-serif"><b>Ekaterinburg</b></font></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/ekaterinburg-6.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Arrivo a Ekaterinburg.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer fino al vostro alloggio.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Giro città a piedi che vi porterà alla cattedrale Sul Sangue Versato, dedicata allo zar Nicola II e alla sua famiglia.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Notte nell’albergo.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 7&nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><b><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4B4B4B;mso-ansi-language:RU;mso-fareast-language:RU;mso-bidi-language:
+AR-SA">Ekaterinburg</span></b></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/ganina-yama.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Visita del luogo chiamato “Ganina Yama”, dove dopo il massacro del 1918 furono lasciati i corpi dei membri della famiglia imperiale. Oggi un bel monastero di legno indica questo luogo tragico.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Visita al confine tra Europa e Asia, che vi darà l'opportunità di farsi fotografare con un piede in un continente e uno nell'altro! Le bollicine per festeggiare questo evento!</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Ritorno a Ekaterinburg.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Partenza per Novosibirsk.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">GIORNO 8&nbsp;&nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><b><span lang="EN-US" style="font-size:12.0pt;
+line-height:107%;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU;mso-bidi-language:AR-SA">Novosibirsk</span></b></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Arrivo a Novosibirsk&nbsp;<span style="font-family: Arial, sans-serif; font-size: 12pt; letter-spacing: -0.1pt; text-align: justify; color: rgb(33, 37, 41);">la capitale della Siberia e la terza città più
+grande della Russia (oltre 1,5 milioni di abitanti).</span></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer fino al vostro alloggio.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#212529;letter-spacing:-.1pt;mso-ansi-language:EN-US;mso-fareast-language:
+RU;mso-bidi-language:AR-SA">Visita guidata della città&nbsp;<span style="letter-spacing: -0.133333px;">in macchina&nbsp;</span>(circa 4 ore) vi
+permette di vedere la stazione ferroviaria pricipale della città, la più grande
+di tutta la Transiberiana; una delle vie più lunghe del mondo (7 km) il corso
+Krasny; la piazza di Lenin con il Teatro Statale di Opera e Balletto; la parte
+più antica della città con le case in legno della via di Gorky; la Capella di
+San Nicola; le rive del fiume Ob; il mercato artigianale dei prodotti della
+Siberia.&nbsp;</span><br></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#212529;letter-spacing:-.1pt;mso-ansi-language:EN-US;mso-fareast-language:
+RU;mso-bidi-language:AR-SA">Notte nell'albergo.</span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 10&nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><span style="font-weight: bolder;"><span lang="EN-US" style="font-size: 12pt; line-height: 17.12px; font-family: &quot;Segoe UI&quot;, sans-serif; color: rgb(75, 75, 75);">Novosibirsk</span></span></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/Novosibirsk.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;">Visita guidata in macchina (circa 4 ore) al centro di scienze "Akademgorodok",</span><span lang="EN-US"> </span><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;">la Silicon Valley della Siberia, che si trova a 30 km
+da Novosibirsk.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;">Transfer alla stazione.</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;">Partenza per Krasnojarsk.</span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 10
+                </div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">
+                  Krasnojarsk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/Krasnoyarsk.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><span style="font-family: Arial, sans-serif; letter-spacing: -0.133333px;"><br></span></p><p><span style="font-family: Arial, sans-serif; letter-spacing: -0.133333px;"><span style="font-size: 12pt; letter-spacing: -0.1pt;">Giro città</span>&nbsp;guidata in macchina (circa 3 ore)</span><br></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 11
+                </div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">
+                  Krasnojarsk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/stolby.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><br></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US">L’escursione guidata nella famosa Riserva Naturale "Stolby"
+("i Pilastri") che ha più di 370 milioni di anni.<o:p></o:p></span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 12
+                </div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">
+                  Irkutsk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/irkutsk-7.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Benvenuti a Irkutsk!</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer fino al vostro alloggio.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Giro città a piedi che vi permetterà di vedere i siti di interesse della capitale della Siberia, fondata circa 350 anni fa dai cosacchi.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Visita del museo dei Decabristi, dedicato agli esiliati politici della prima metà del XIX secolo, che hanno trascorso i lunghi anni lontano dalla parte europea del paese.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 13
+                </div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">Irkutsk - Listvyanka (Lago Baikal) - Irkutsk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/irkutsk-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Partenza per Listvjanka</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Museo architettonico-etnografico di Taltsy che custodisce una bella collezione di case e altre costruzioni di legno.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Arrivo al lago Bajkal, visita del museo di Listvyanka, dedicato al lago e agli suoi abitanti.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Pranzo in un ristorante tipico.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Tempo libero sul mercato di pesce e souvenir.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Ritorno a Irkutsk.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Notte nell’albergo.</p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Giorno ??</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Transiberiana</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images" contenteditable="true">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/trans-siberian-moscow-beijing-self-guided-600-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; letter-spacing: normal; text-align: start;"><br></span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; letter-spacing: normal; text-align: start;">Questi giorni saranno dedicati al viaggio sulla famosa ferrovia - la Transiberiana. Avrete l’occasione di conoscere gli altri passeggeri, e forse potrete imparare alcune parole russe, comunicando con gli abitanti del paese, che saranno, sicuramente, curiosi di trovare gli stranieri sul treno. Il treno percorrerà diverse centinaia di chilometri, attraversando il paesaggio nordico e silenzioso della Siberia.</span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno ??&nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name"><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Ulan - Udè</span><o:p></o:p></p></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/Ulan-Ude.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US">Tour guidato in macchina del centro storico della città di&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US">Ulan-Udè e
+una visita del tempio buddista Rinpoche Bagsha Datsan.</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-family: Arial, sans-serif; letter-spacing: -0.01em;">Circa 3-4 ore</span></p><p><br><br></p>
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno ??&nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">
+                  Khabarovsk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/HABAROVSK-LETOM.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US">Tour guidato in macchina della città di Khabarovsk durante la quale si
+può vedere:<o:p></o:p></span></p><p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;margin-bottom:.0001pt;
+mso-add-space:auto;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Arial;
+mso-ansi-language:EN-US">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:EN-US">la via Muravyova-Amurskovo con I suoi raffinati
+edifici a mattoni del 19esimo secolo<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-bottom:0cm;margin-bottom:
+.0001pt;mso-add-space:auto;text-indent:-18.0pt;line-height:normal;mso-list:
+l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:EN-US">la piazza Komsomolskaya con l’imponente cattedrale
+Uspenya Bozhey Matery (Divina Madre di Dio)<o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-bottom:0cm;margin-bottom:
+.0001pt;mso-add-space:auto;text-indent:-18.0pt;line-height:normal;mso-list:
+l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:EN-US">la Chiesa della Trasfigurazione la più grande chiesa
+ortodossa dell’Oriente russo <o:p></o:p></span></p><p class="MsoListParagraphCxSpMiddle" style="margin-bottom:0cm;margin-bottom:
+.0001pt;mso-add-space:auto;text-indent:-18.0pt;line-height:normal;mso-list:
+l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:EN-US">il monumento a Erofei Khabarov<o:p></o:p></span></p><p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;margin-bottom:.0001pt;
+mso-add-space:auto;text-indent:-18.0pt;line-height:normal;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Arial;
+mso-ansi-language:EN-US">-<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:EN-US">il ponte sul maestoso fiume Amur, ecc.<o:p></o:p></span></p><p>
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US">Circa 4 ore.<o:p></o:p></span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno ??&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020</div>
+                <div class="program-days-item-header-name">
+                  Vladivostok</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/16-transsib-min.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;"><br></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Benvenuti a Vladivostok!<br></p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Transfer fino al vostro alloggio.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); letter-spacing: normal; text-align: start;">Giro città con la visita di due musei che raccontano la storia della città, chiamata “Dominatrice dell’Oriente”.<br></p>
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno ??&nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name">Transiberiana e Trasmongolica&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/18.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; letter-spacing: normal; text-align: start;"><br></span></p><p contenteditable="true"><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; letter-spacing: normal; text-align: start;">Durante la notte il treno passa accanto al lago Bajkal, per arrivare, la mattina presto, a Ulan Ude. E ora inizia il viaggio sull’altra mitica ferrovia - la Trasmongolica. Il treno arriva a Nauchki, una città al confine tra la Russia e la Mongolia. Dopo le formalità necessarie potrete scendere dal treno. Possibilità di fare la doccia alla stazione. Poco dopo, a Sukh Bator, il secondo controllo - dalla parte mongola. La notte il treno attraversa la steppa di Mongolia.<br></span></p>
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Giorno ??</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Arrivo a Ulan-Bator</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-libre-900-4.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Benvenuti a
+Ulan-Bator!</span><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+RU"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt; font-family: Arial, sans-serif; letter-spacing: -0.1pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Transfer fino al vostro alloggio.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Giro città con la visita del monastero Gandantegchilen (il più grande
+tempio buddista della capitale), visita della fabbrica di cashmere
+(l’artigianato importantissimo per il paese).<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Pranzo tipico mongolo (con un supplemento).<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Visita del museo della Storia Nazionale.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Spettacolo folkloristico mongolo* (canti, balli ecc) al Tumen Ekh (durante
+la bassa stagione lo spettacolo può essere cancellato).<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">Notte in un albergo.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><i><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU">*Spettacolo disponipile solo durante la staggione.</span></i><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4B4B4B;mso-ansi-language:EN-US;mso-fareast-language:
+RU"><o:p></o:p></span></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:
+EN-US"><o:p>&nbsp;</o:p></span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Giorno ??</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name"><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><font color="#4b4b4b" face="Arial, sans-serif"><b>Ulan-Bator - Parco Nazionale di Terelj</b></font></p></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-guide-660-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><br></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Dopo colazione partenza
+per il parco Nazionale di Terelj (1600 metri di altitudine). Un bellissimo
+panorama sulla steppa, montagne, campi, la famosa roccia della Tartaruga.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">La
+vita in una yurta - sarete invitati a partecipare nella vita quotidiana degli
+abitanti del piccolo paesino nomade.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Notte
+in una yurta (con il riscaldamento).<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Giorno ??</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name"><span style="color: rgb(75, 75, 75); font-family: Arial, sans-serif; font-weight: 700;">Parco Nazionale di Terelj -&nbsp;</span><span style="font-weight: bolder; color: rgb(75, 75, 75); font-family: Arial, sans-serif;">Ulan-Bator&nbsp;</span></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-guide-900-213.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><br></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Colazione tradizionale servita nella yurta.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Giro
+a cavallo di due ore accanto al fiume Tuul, in mezzo alla natura.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Partenza
+per Ulan Bator.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Mercato
+di Naran Tuul.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Tempo
+libero.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Notte
+in un albergo.<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno ??</div>
+                <div class="program-days-item-header-data">??.??.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Ulan-Bator (Partenza per Pechino)</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/Ulan-Bator-4-.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Transfer alla stazione.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Partenza
+per Pechino (treno cinese K24).<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Arrivo
+a Zamyn-Uud, la città mongola alla frontiera con Cina.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">A
+Erlian (prima città cinese) il treno rimane per 3 ore, ma non per le formalità
+e i controlli, ma perché lo scartamento non è lo stesso in Mongolia e in Cina,
+deve dunque essere realizzato il cambio dei carrelli.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Notte
+sul treno (territorio cinese).<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">GIORNO ??</div>
+                <div class="program-days-item-header-data">??.??.2020&nbsp;</div>
+                <div class="program-days-item-header-name">
+                  Arrivo a Pechino</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-guide-660-3.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Benvenuti a Pechino!<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Transfer
+all’albergo.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Giro
+città con la guida in italiano: la piazza più grande al mondo Tian’anmen, la
+leggendaria Città Proibita, la via Wangfujinget, Chang’an. Vedrete i monumenti
+dell’architettura moderna, costruiti per le Olimpiadi del 2008: “Il nido”, “Il
+cubo d’acqua".<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B">Notte in un albergo.<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">GIORNO ??</div>
+                <div class="program-days-item-header-data">??.??.2020&nbsp;</div>
+                <div class="program-days-item-header-name">
+                  Pechino</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/transsiberien-moscou-pekin-guide-900-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Partenza per la Grande Muraglia cinese, il più famoso
+monumento al mondo.<o:p></o:p></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US">Passeggiata
+sulla Muraglia (sezione Badaling) per raggiungere il suo punto più alto (1015
+metri sul livello del mare) da dove si apre un panorama grandioso.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B">Pranzo tipico cinese.<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden" contenteditable="false">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">GIORNO ??</div>
+                <div class="program-days-item-header-data">??.??.2020&nbsp;</div>
+                <div class="program-days-item-header-name">
+                  Partenza</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/Transiberiana_tutte_le_citta/trans-siberian-moscow-beijing-self-guided-600-3.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US">Tempo libero.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"><span lang="EN-US" style="font-family:&quot;Arial&quot;,sans-serif;color:#4B4B4B;
+mso-ansi-language:EN-US"><br></span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B">Transfer all’aeroporto.<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B"><br></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B">Buon viaggio! Alla prossima!</span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline; text-align: start;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:#4B4B4B"><br></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;" contenteditable="false">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fine del vostro viaggio&nbsp;</div><div class="program-end-text"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal;">Il programma potrebbe essere leggermente modificato in base ai giorni di chiusura dei siti e dei musei. In tal caso si farebbe tutto il possibile per offrirvi servizi di sostituzione di qualità&nbsp;</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal;">equivalente.</span><br></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden" contenteditable="false">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden" contenteditable="false">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-center-row mr-1 btn btn-success dropdown-item">Строку по центру</button>
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+      <div class="program-price-title title">
+        Dettagli e tariffe&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prezzo totale per 2 persone</span>
+          <span>Prezzo per una persona nel gruppo di 2 persone&nbsp;</span><span>L'offerta e' valida durante 7 giorni</span>
+        </div>
+        <div class="program-price-desc-item">
+          <span>?? €</span>
+          <span>?? €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden" contenteditable="false">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">Il prezzo include</div>
+        <div class="program-contain-item-text">
+          <span><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Un voucher per il visto d'entrata in Russia
+(invito)</span></p></span><span><ul class="galochka" style="list-style: none; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><li style="margin-bottom: 5px;">
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA" contenteditable="true">Sistemazione nel scompartimento con 2 posti 1 classe</span></span></p></li></ul></span>
+          <span></span>
+          <span><ul class="galochka" style="list-style: none; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><li style="margin-bottom: 5px;"><span lang="EN-US" style="font-size:12.0pt;line-height:
+107%;font-family:&quot;Segoe UI&quot;,sans-serif;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Sistemazione in hotel 4* in una stanza matrimoniale.<br>Colazione inclusa<br></span></li></ul></span>
+          <span><ul class="galochka" style="list-style: none; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><li style="margin-bottom: 5px;">Tutti i transfer inclusi nel programma in trasporto privato (passare alla lista delle visite)</li></ul></span>
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US"></span></p><p class="MsoNormal"><span lang="EN-US" style="font-size: 12pt; line-height: 107%;">Guida parlante italiano durante escursioni e le visite secondo il programma<o:p></o:p></span></p></span><p></p><span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">Ingressi ai musei e ai siti previsti nel programma</span><br></span></p></span>
+          </div></div><div class="program-contain-item"><div class="program-contain-item-title">Il prezzo non include</div>
+        <div class="program-contain-item-text">
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Volo aereo</span></p></span>
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Spese per il visto<o:p></o:p></span></p></span>
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Assicurazione</span></p></span>
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Trasferimento
+dall'aeroporto alla nave/ dalla nave all'aeroporto nei giorni di arrivo e
+partenza</span></p></span>
+          <span><p class="MsoNormal"><span lang="EN-US" style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Segoe UI&quot;,sans-serif;mso-ansi-language:EN-US">Spese personali</span></p><p class="MsoNormal"><span style="font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 12pt;">Escursioni
+aggiuntive e divertimenti nel tempo libero o a bordo della nave.</span></p></span>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item"><h2 class="no-padding-top" style="margin-bottom: 10px; vertical-align: baseline; font-weight: 700; font-size: 20px; line-height: 23px; color: rgb(199, 55, 40); text-transform: uppercase; font-family: Lato, sans-serif; background-color: rgb(255, 255, 255);" contenteditable="true">Note</h2></div>
+      <div class="program-remarque-item"><p class="MsoNormal" style="margin-left: 0cm; text-indent: -18pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;"></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">Le stanze dell'hotel sono disponibili dalle 14h00. Le stanze devono essere liberate il giorno della partenza prima delle 12h00.<br></p></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden" contenteditable="false">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height hidden">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden" contenteditable="false">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Termini di prenotazione,&nbsp; &nbsp; &nbsp; cancellazione e pagamento&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-rule-text">
+        <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; text-align: justify;">Il versamento dell'acconto di 20 % deve essere effettutato al momento della prenotazione del viaggio attraverso la piattaforma di pagamento sicuro con carta di credito o con un bonifico bancario.</span></p>
+        <h3><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; text-align: justify;">Il saldo deve essere pagato entro 90 gg prima d’arrivo tramite bonifico bancario o carta di credito di cui le commissioni bancarie sono a carico dei viaggiatori</span></h3><h3>Condizioni dell'annulamento</h3>
+        <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; text-align: justify;">Per annullare il viaggio il viaggiatore deve inviare email alla nostra agenzia. Le norme di cancellazione dipendono dalla data quando la cancellazione è stata effettuata :</span></p>
+        <ul>
+          <li>sino a 60 giorni prima della partenza: 10% della quota di partecipazione</li>
+          <li>da 59 a 30 giorni prima della partenza: 25% della quota di partecipazione</li>
+          <li>da 29 a 21 giorni prima della partenza: 50% della quota di partecipazione;</li>
+          <li>tra i 20 ed i 7 giorni prima della partenza: 75% della quota di partecipazione</li>
+          <li>da 6 giorni prima della partenza o dopo la stessa: 100% della quota di partecipazione</li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden" contenteditable="false">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Benvenuti in Russia!
+      </div>
+      <div class="program-footer-text">
+        La squadra RussiaDiversamente</div>
+    </div>
+  </div>
+</div>
+
+</body></html>

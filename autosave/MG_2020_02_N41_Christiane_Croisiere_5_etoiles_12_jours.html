@@ -1,0 +1,823 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+            <p style="line-height: 18px">
+              <a href="/news">Можно менять цвет текста и делать все еще красивее!</a>
+            </p>
+          </header>
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+            <div class="message" style="display: block;"><p style="color: #1e7e34">Файл сохранен</p></div>
+            <div id="fountainTextG" style="display: none;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(11px, 38px, 0px);">
+              <button class="addNewDay btn-success dropdown-item">Добавить день</button>
+              <button class="setMainPage btn-success dropdown-item">Добавить главную страницу</button>
+              <button class="saveAsHtml btn-success dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml btn-success dropdown-item">Сохранить как</button>
+<!--<button class="btn-success addKolontitul dropdown-item">Добавить колонтитулы</button>-->
+<!--<button class="btn-success deleteKolontitul dropdown-item">Удалить колонтитулы</button>-->
+              <button class="btn-success saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Текст
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(17px, 86px, 0px);">
+              <button class="setTextBold btn-success dropdown-item" title="ctrl + b">Жирный</button>
+              <button class="setTextItalic btn-success dropdown-item" title="ctrl + i">Курсив</button>
+              <button class="setTextUnderline btn-success dropdown-item" title="ctrl + u">Подчеркнутый</button>
+              <div style="display: flex; align-items: center;">
+                <button class="setTextColor btn-success dropdown-item">Установить цвет</button>
+                <input type="color" name="textColor">
+              </div>
+              <button class="setTextLink btn-success dropdown-item">Сделать ссылку</button>
+              <button class="fontSizeUp btn-success dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+              <button class="fontSizeDown btn-success dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Элементы
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="first-page">
+                <label class="custom-control-label" for="first-page">Гавная</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="second-page">
+                <label class="custom-control-label" for="second-page">Контакты</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <button class="btn-success dropdown-item" title="Перейти на главную страницу"><a href="/">Главная</a></button>
+              <button class="btn-success dropdown-item" onclick="window.open('/all')" title="Перейти ко всем программам">Все программы</button>
+              <button class="btn-success dropdown-item" onclick="window.open('/news')" title="Перейти к новостям">Новости</button>
+              <button class="btn-success dropdown-item" onclick="window.open('/profile')">Профиль</button>
+              <button class="btn-success dropdown-item" onclick="window.open('/logout.php')">Выйти</button>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+
+            
+
+            
+<div class="editable">
+
+  <div class="content">
+    <div class="first-page">
+      <div class="first-page-title" data-text="
+        RUSSIE AUTREMENT
+      ">
+        RUSSIE AUTREMENT
+      </div>
+      <div class="program-name height">
+        <div class="program-name-title" data-text="
+          Programme sur mesure spécialement étudié en faveur de
+        ">
+          Programme sur mesure spécialement étudié en faveur de
+        </div>
+        <div class="program-name-text" data-text="
+          Christiane Milazzo
+        ">
+          Christiane Milazzo
+        </div>
+      </div>
+
+      <div class="program-data height">
+        <div class="program-data-title" data-text="
+          Votre demande:
+        ">
+          Votre demande:
+        </div>
+        <div class="program-data-text">
+          <div class="program-data-text-city" data-text="
+            Moscou - Saint-Pétersbourg
+          ">
+            Moscou - Saint-Pétersbourg
+          </div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span data-text="Nombre de personnes:">Nombre de personnes:</span>
+              <span data-text="Date de sejour:">Date de sejour:</span>
+              <span data-text="Durée du séjour:">Durée du séjour:</span>
+            </div>
+            <div class="program-data-text-desc-item">
+              <span data-text="4 adultes">4 adultes</span>
+              <span data-text="du 05 au 16 mai 2020">du 05 au 16 mai 2020</span>
+              <span data-text="12 jours et 11 nuits">12 jours et 11 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <div data-text=""></div>
+        <div data-text="" contenteditable="true"><br></div>
+        <div data-text=""><br></div>
+      </div>
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="second-page"><div class="manager-contacts height">
+    <div class="change-data-user">
+      <a href="/updateDataUser.php">Изменить</a>
+    </div>
+    <div class="manager-contacts-photo">
+      <img src="http://78.47.40.9/uploads//IMG_3512-kopiya.jpg" alt="">
+    </div>
+    <div class="manager-contacts-desc">
+      <div class="manager-contacts-desc-name">
+        Margarita      </div>
+      <div class="manager-contacts-desc-company">
+        Russie Autrement      </div>
+      <div class="manager-contacts-desc-items">
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Adresse:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            67-69, quai de la Moika, bureau 1          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Téléphone:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            +33 (0) 1 84 88 33 57          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            E-mail:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            margarita.goldfarb@russieautrement.com          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Site web:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            <a href="https://https://russieautrement.com/">https://russieautrement.com/</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <div class="program-days">
+
+    <div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 1
+                </div>
+                <div class="program-days-item-header-data">
+                  05.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Bienvenue en Russie !</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/Moscow-by-night.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Vous arrivez à Moscou.</div><div><br></div><div>Le chauffeur vous attend à l'aéroport pour effectuer le transfert privé au port fluvial.</div><div><br></div><div>Cocktail d’accueil avec du champagne et du caviar russe.</div><div><br></div><div>Dîner dans un restaurant à bord du bateau.</div><div><br></div><div>Nuit à bord.</div><div><br></div><div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 2
+                </div>
+                <div class="program-days-item-header-data">
+                  06.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Moscou
+                </div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/shutterstock_506662225.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/shutterstock_1226059669.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/shutterstock_138096113.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Découvrez la capitale de la Russie splendide et ses incontournables : le Kremlin et ses deux cathédrales les plus importantes dans l'histoire de la Russie des tsars, les grosses cloches Tsar Pouchka et Tsar Kolokol, la Place Rouge, une place principale de la ville.</div><div><br></div><div>Vous pouvez admirer les bulbes colorés de la cathédrale Saint-Basile-le-Bienheureux et visiter cette cathédrale à l'intérieur pendant votre temps libre. Vous pouvez visitez également le centre commercial GOUM et le parc magnifique Zaryadye connu pour ses paysages pittoresques et une vue époustouflante sur le centre historique.</div><div><br></div><div>Déjeuner à bord d'un bateau pendant une belle croisière sur la Moskova.</div><div><br></div><div>Après le déjeuner vous pouvez vous promenez dans la rue la plus ancienne et très animée, la Vieille Arbat. C'est une rue piétonne la plus touristique de la capitale où vous y trouvez de nombreux commerces, restaurants, boutiques de souvenirs, ainsi que des divertissements.</div><div><br></div><div>Visite du métro. Le chef-d’oeuvre sous-terrain, il est réputé pour ses mosaïques, des statues et ses stucs dorés.&nbsp;</div><div><br></div><div>Dîner dans un restaurant de la ville.</div><div><br></div><div>Le soir un spectacle folklorique vous attend.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div><div><br></div><div><br></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 3
+                </div>
+                <div class="program-days-item-header-data">
+                  07.05.2020
+                </div>
+                <div class="program-days-item-header-name">Moscou</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/ac-211117486.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/pagelogo_17595_desc1000.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Petit déjeuner à bord.</div><div><br></div><div>Aujourd'hui vous avez deux visites insolites.</div><div><br></div><div>Vous montez avec votre guide dans un gratte-ciel pour profiter d’une vue à couper le souffle et déguster la glace et le chocolat local.</div><div><br></div><div>Après vous descendez au bunker de Staline construit en 1951. Situé à plus de 60 mètres sous terre, le Bunker 42 du quartier Taganskaïa de Moscou est un ancien poste de communication militaire transformé en musée de la Guerre Froide. Dans ces quatre "blocs" reliés par des souterrains, plus de 2 000 personnes travaillaient pendant l'époque soviétique.</div><div><br></div><div>Dans l'après-midi départ pour Ouglich.</div><div><br><div><span style="letter-spacing: -0.16px;">(Pdj+Déj+Dîn)</span><br></div></div><div><br></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 4
+                </div>
+                <div class="program-days-item-header-data">
+                  08.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Ouglitch</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/98555159524a71792a814b5ff01ac389.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Arrivée à Ouglitch, ancienne cité de l’Anneau d’Or, qui possède de superbes ensembles architecturaux.</div><div><br></div><div>Visite du centre-ville à pied : le Kremlin d’Ouglitch et son église Saint-Dimitri-sur-le-Sang-Versé constuite dans un endroit où le fils du tsar Ivan le Terrible mourrut.</div><div><br></div><div>Profitez du concert de la chorale Kovcheg.</div><div><br></div><div>Passez le reste de l'après-midi dans une maison d'une famille locale pour découvrir leur mode de vie et déguster des spécialités typiques.</div><div><br></div><div>Retour à bord et suite de la croisière vers Plyos.</div><div><br></div><div>Nuit à bord.<div><br></div><div><span style="letter-spacing: -0.16px;">(Pdj+Déj+Dîn)</span><br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 5
+                </div>
+                <div class="program-days-item-header-data">
+                  09.05.2020
+                </div>
+                <div class="program-days-item-header-name">Plyos</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/Plyos.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Découverte de la ville pittoresque de Plyos qui inspire des artistes et des peintres.</div><div><br></div><div>Visite du musée du peintre russe Isaak Levitan pour découvrir l'art russe et la vie quotidienne de l'aristocratie provinciale.</div><div><br></div><div>Une soirée dans une maison de campagne à Plyos et un dîner dans le restaurant national «Chugunok», dégustation de caviar et spécialités russes.</div><div><br></div><div>La soirée musicale "Des rencontres avec des vedettes de la musique russe".</div><div><br></div><div>Nuit à bord.<div><br><div><span style="letter-spacing: -0.16px;">(Pdj+Déj+Dîn)</span><br></div></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 6
+                </div>
+                <div class="program-days-item-header-data">10.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Iaroslavl
+                </div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/YAroslavl.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/yaroslavl.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Arrivée à Iaroslavl et découverte de cette ville qui a célébré ses 1000 ans. C'est la plus grande ville de l’Anneau d’Or, classée au patrimoine mondial de l'Unesco !</div><div><br></div><div>Vous visitez l’ancienne maison du Gouverneur, aujourd’hui transformée en galerie d’art.&nbsp;</div><div><br></div><div>Vous appréciez une exposition « L’Anneau d’or de la Russie en miniature »&nbsp;</div><div><br></div><div>Vous visitez le Musée d'art émaillé qui abrite une riche collection d'œuvres créées par des artistes russes. N’hésitez pas à participer à l’atelier local et créer votre souvenir personnel.</div><div><br></div><div>Retour au bateau et reprise de la croisière à destination de Goritsy.&nbsp;</div><div><br></div><div>Nuit à bord.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 7
+                </div>
+                <div class="program-days-item-header-data">11.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Goritsy</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/3291aa017a7667d68f7f6f71e838aa34.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Arrivée à Goritsy.</div><div><br></div><div>Découverte du village de Goritsy et de l'ancien monastère de Feropontov qui figure dans la liste du patrimoine de l’UNESCO.</div><div><br></div><div>Appréciez son architecture splendide et ses paysages pittoresques.</div><div><br></div><div>Visitez la cathédrale de la Nativité de la Vierge et découvrez des fresques du grand peintre médiéval Dionisius.</div><div><br></div><div>Appareillage pour Kizhi.</div><div><br></div><div>Nuit à bord.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 8
+                </div>
+                <div class="program-days-item-header-data">12.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Kiji</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/Kizhi.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Escale à Kiji, la « Perle de la Carélie ».</div><div><br></div><div>Découverte de Kiji avec le musée de l'architecture en bois&nbsp; à ciel ouvert et son église construite en bois sans un seul clou.</div><div><br></div><div>Concert « Musique du Village de Nord ».</div><div contenteditable="true"><br></div><div>Retour à bord et navigation vers Saint-Pétersbourg.<div contenteditable="true"><br><div>(Pdj+Déj+Dîn)<br></div><div><br></div></div></div><div contenteditable="true"><br></div><div><br></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 9
+                </div>
+                <div class="program-days-item-header-data">13.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Journée libre à bord du bateau de croisière</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/mustai-karim-description-main.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Journée à bord du bateau. On passe à travers les deux plus grands lacs d’Europe, Onega et Ladoga.</div><div><br></div><div>Fête de la cuisine russe pour en savoir plus sur les mets traditionnels.</div><div><br></div><div>Nuit à bord.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 10
+                </div>
+                <div class="program-days-item-header-data">14.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  La Venise du Nord</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/1-Nuits-Blanches-de-5-jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div contenteditable="true">Arrivée à Saint-Pétersbourg. Visite guidée de la ville et un tour en bateau pour admirer des jolies canaux et rivières de la Venise du Nord.</div><div><span style="letter-spacing: -0.01em;">Après un déjeuner, une visite du Palais de Youssopov qui est connu pour son riche décor. Le palais où Grigori Raspoutine fut assassiné, il a des histoires à raconter.</span><br></div><div><br></div><div>La soirée au Palais de Catherine, une visite de la salle d’Ambre, la soirée sera accompagnée de musique et champagne.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 11
+                </div>
+                <div class="program-days-item-header-data">15.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/1-Vouyage-org-Spb-7-jours.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/besuch-der-eremitage-3.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/peterhof-1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><div>Visite du musée de l’Hermitage pour découvrir l’horloge de paon, une merveille crée au XVIII sciècle, ainsi que des tableaux de Da Vinci, Raphaël, Rembrandt, Rubens… C’est un des trois plus grands musées du monde avec le British Museum à Londres et le Louvre à Paris. Le musée est constitué par 5 édifices : le Palais d’Hiver, le Petit Ermitage, le Vieil Ermitage, le Nouvel Ermitage et le Théâtre de l’Ermitage.</div><div><br></div><div>Après un déjeuner, départ en hydroglisseur vers la résidence impériale de Peterhof pour admirer ses fontaines magnifiques qui marchent sans électricité, par gravité uniquement. Le nombre total de jets d’eau sur le territoire de 114 hectares fait 150.&nbsp;</div><div><br></div><div>Vous visitez aussi le Palais splendide construit en 1715. Ce château vous donnera un très bon exemple de l’architecture baroque flamboyant. Son escalier de gala et ses nombreuses salles d'apparats ne manqueront pas de vous émerveiller par la finesse des décorations et par la grande quantité d’éléments dorés.</div><div><br></div><div>Nuit à bord.<div><br></div><div>(Pdj+Déj+Dîn)<br></div></div></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height">
+              <div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 12
+                </div>
+                <div class="program-days-item-header-data">16.05.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg-Départ</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_02_N41_Christiane_Croisiere_5_etoiles_12_jours/1-Spb-Cercle-Polaire-ete-9jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Votre voyage s'achève aujourd’hui. Après le petit-déjeuner vous avez le transfert à l'aéroport pour le retour chez vous.&nbsp;</p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        N.B. Le programme de croisière proposé est susceptible de connaître de légères modifications en fonction des horaires de navigation ou d’impératifs techniques. Le programme définitif sera déterminé à bord par le Commandant du navire. Pour des raisons liées à la météorologie, il peut arriver qu’une escale soit supprimée ou remplacée par une autre ; cette décision est du ressort du seul Commandant qui s’efforcera toujours de trouver une solution favorable aux passagers et Russie Autrement ne saurait en être tenu pour responsable.&nbsp;
+      </div><div class="program-end-text" contenteditable="true"><br></div><div class="program-end-text"><b class="decoration"><span style="font-size: 18px" class="decoration">Cette croisière est proposée avec les dates de départ fixes à bord du MS Mustai Karim de 5*</span></b><br></div><div class="close-block needHidden hidden"><button class="btn close" type="button" aria-label="Close"><span aria-hidden="true" class="close-btn"><br></span></button><button class="btn close" type="button" aria-label="Close"><span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+      <div class="program-price-title title">
+        Détails et tarifs (2 cabines deluxe pont des canots)</div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 4 personnes</span>
+          <span>Prix par personne dans le groupe de 4 personnes</span>
+        </div>
+        <div class="program-price-desc-item">
+          <span>11 844 €</span>
+          <span>2 961 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -2px, 0px);">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span>Le support visa (les vouchers et lettre d'invitation)</span>
+          <span><div>Hébergement à bord, dans la catégorie de cabine deluxe (20m²) au pont des canots (2 cabines pour 4 personnes)</div></span>
+          <span><div>Pension complète du dîner du 1er jour au petit déjeuner du jour 12 (y compris eau potable/thé/café pendant les repas et un verre de vin aux dîners)</div></span>
+          <span>Cocktail et Dîner du Commandant</span>
+          <span>Programme d’animations à bord (ateliers d’initiation, projections de films, soirées spéciales)</span>
+          <span>Les transferts privés aéroport - bateau de croisière, bateau de croisière - aéroport</span>
+          <span contenteditable="true">Toutes les excursions figurant au programme avec un guide francophone diplomé, billets d’entrée, transports selon le programme&nbsp;</span>
+        <span></span></div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Les frais consulaires pour le visa</span>
+          <span>Les vols internationaux</span>
+          <span>Les assurances</span>
+          <span></span>
+          <span>Tous frais et dépenses d'ordre personnel</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height hidden">
+      <div class="program-remarque-item">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé. Le prépaiement n'est pas remboursable en cas d'annulation.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 75 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 75 jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p>Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où intervient l’annulation :</p>
+        <ul>
+          <li>&nbsp;plus de 73 jours avant le départ, une retenue de 20% sera opérée.</li>
+          <li>entre 72 et 61 jours avant le départ, une retenue de 25% sera opérée.</li>
+          <li>entre 60 et 51 jours avant le départ, une retenue de 50% sera opérée.</li>
+          <li>entre 50 et 33 jours avant le départ, une retenue de 75% sera opérée.</li>
+          <li>dans les 32 jours précédents le départ, une retenue de 100% sera opérée.</li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+</body></html>

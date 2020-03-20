@@ -1,0 +1,13 @@
+#<IfModule mod_headers.c>
+#   Header append Cache-Control "no-store, no-cache, must-revalidate"
+#</IfModule>
+
+#<IfModule mod_expires.c>
+#   ExpiresActive On 
+#   ExpiresDefault "now"
+#</IfModule>
+
+#require valid-user
+#Authname "Protected"
+#Authtype Basic
+#AuthUserFile "/var/www/html/.htpasswd"

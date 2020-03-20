@@ -1,0 +1,464 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+              <p style="line-height: 18px">
+                <a href="/news">Появился новый функционал</a>
+              </p>
+            </header>
+
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+                <div class="message"><p style="color: #1e7e34">Файл сохранен</p></div>
+                <div id="fountainTextG" style="display: none;">
+                  <div id="fountainTextG_1" class="fountainTextG">З</div>
+                  <div id="fountainTextG_2" class="fountainTextG">а</div>
+                  <div id="fountainTextG_3" class="fountainTextG">г</div>
+                  <div id="fountainTextG_4" class="fountainTextG">р</div>
+                  <div id="fountainTextG_5" class="fountainTextG">у</div>
+                  <div id="fountainTextG_6" class="fountainTextG">з</div>
+                  <div id="fountainTextG_7" class="fountainTextG">к</div>
+                  <div id="fountainTextG_8" class="fountainTextG">а</div>
+                </div>
+              </div>
+              <button class="addNewDay btn-success btn">Добавить день</button>
+              <button class="saveAsHtml btn-success btn">Сохранить файл</button>
+              <button class="saveAsOtherHtml btn-success btn">Сохранить как</button>
+              <button class="btn-success btn addKolontitul">Добавить колонтитулы</button>
+              <button class="btn-success btn deleteKolontitul">Удалить Колонтитулы</button>
+              <button class="btn-success btn saveAsPdf">Сохранить как pdf</button>
+<!--              <button class="goToNewDesign btn">Тестовая кнопка</button>-->
+              <div style="margin-top: 15px;font-size: 12px;">
+                
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+<div class="editable">
+  <div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span><span style="font-family: Calibri, sans-serif; font-size: 14.6667px;">+78125654670&nbsp;</span></span>
+        <a href="mailto:contact@russieautrement.com" class="email"></a><a href="mailto:svetlana.glebova@russiadiversamente.com" style="background-color: rgb(255, 255, 255); text-align: justify;"><span lang="EN-US">svetlana.glebova@russiadiversamente.com</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">
+      Mosca - Suzdal -&nbsp; Serghiev Posad&nbsp;- San Pietroburgo</div>
+    <div class="programm-data-text">
+      <p>
+        Programma personalizzato per Luciano Prati</p>
+      <span contenteditable="" style="margin-left: 59px;">Vostra richiesta:</span>
+      <div class="programm-data-list">
+        <div class="eee">
+          <span contenteditable="">Numero di persone:</span>
+          <span contenteditable="">Data di viaggio:</span>
+          <span contenteditable="">Durata di viaggio:</span>
+        </div>
+        <div class="www">
+          <span>2 adulti</span>
+          <span>Dal 29 giugno 2020 al 07 luglio 2020</span>
+          <span>9 giorni e 8 notti</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  <div class="day-block height" id="1" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">Giorno 1</div>
+                  <div class="day-town-and-date">
+                    <span>29 giugno 2020</span> - Arrivo a Mosca</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/circuit-transsiberien-de-moscou-a-vladivostok-guide-1.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Benvenuti in Russia!<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;" contenteditable="true">All’aeroporto vi aspetta transfer che vi porta
+direttamente <b>all’hotel Starosadsky</b></span><b style="font-size: 12pt;">&nbsp;3*</b><span style="font-size: 12pt;">
+situato nel centro città (o uno similare della stessa categoria)</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;" contenteditable="true"><span lang="EN-US" style="font-size: 12pt;">Check in alle 14:00<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;" contenteditable="true"><span lang="EN-US" style="font-size: 12pt;">Tempo per sistemarvi<o:p></o:p></span></p><p class="MsoNormal">
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Potete sfruttare la serata libera facendo un giro
+nelle vicinanze a piedi<o:p></o:p></span></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="2" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    giorno 2</div>
+                  <div class="day-town-and-date">30 giugno 2020 - Mosca</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/transsiberien-moscou-pekin-libre-900-9.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal" contenteditable="true"><span lang="EN-US">Visita guidata a piedi all’attrazione
+principale di Mosca e la residenza ufficiale del presidente russo - <b>il Cremlino</b>. Visiterete anche <b>Il Palazzo dell’armeria,</b></span><span lang="EN-US">&nbsp;un museo-tesoreria che fa parte del complesso del Palazzo del Cremlino, e&nbsp;</span><span style="font-size: 1rem; font-weight: bolder;"><span lang="EN-US">la Cattedrale di San Basilio Benedetto</span></span><span lang="EN-US" style="font-size: 1rem;">&nbsp;con le sue 11 cupole multicolori</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal" contenteditable="true"><span lang="EN-US" style="font-size: 1rem;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal" contenteditable="true"><span style="font-size: 1rem;">Accanto al Cremlino vedrete:</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US"><span style="font-weight: bolder; font-size: 1rem;">-</span>&nbsp;la famosa <b>Piazza Rossa</b> con <b>il mausoleo di Lenin</b>, <o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal">
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US">- il Gum</span></b><span lang="EN-US">, il negozio di Stato Universale
+"Russo-Bizantino" costruito alla fine del XIX secolo, che ospita un
+centro commerciale a tre piani e non solo<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal" contenteditable="true"><span lang="EN-US">La durata&nbsp;</span><span lang="EN-US">è</span><span lang="EN-US">&nbsp;circa 4-5 ore</span><br></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="3" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 3</div>
+                  <div class="day-town-and-date">01 luglio 2020 - Mosca&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/141324_or.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span lang="EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span lang="EN-US">La gita guidata alla&nbsp;<span style="font-weight: bolder;">Galleria Tretiakov</span>&nbsp;la quale collezione contiene&nbsp;</span><span style="font-size: 1rem;">i capolavori dell’arte russa dei secoli XI — inizio XX.&nbsp;</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span lang="EN-US">L'escursione a piedi.&nbsp;</span><span lang="EN-US" style="font-size: 1rem;">La durata&nbsp;</span><span lang="EN-US" style="font-size: 1rem;">è</span><span lang="EN-US" style="font-size: 1rem;">&nbsp;circa 3 ore</span></p><div><span lang="EN-US" style="font-size: 1rem;"><br></span></div><p></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;"></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span lang="EN-US">Dopo di che fate una breve passeggiata nel&nbsp;<span style="font-weight: bolder;">Zamoskvorecie</span>&nbsp;uno dei quartieri pi</span><span lang="EN-US">ù antichi di Mosca</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><br></p><p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="9" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">giorno 4</div>
+                  <div class="day-town-and-date">02 luglio 2020 - Suzdal'<br></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/d6a03d3dfd1af057748a14eecbf3232b.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;">Transfer alla stazione.&nbsp;</span><span style="font-size: 1rem;">Partenza per Vladimir alle 11:00(2ore circa)</span></p><p><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;">Alla stazione di Vladimir vi aspetta il transfer privato per arriavare a <b>Suzdal'</b>(mezz'ora circa)</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span style="font-size: 12pt;">La visita guidata a&nbsp;</span><span style="font-weight: bolder; font-size: 12pt;">Suzdal’</span><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span lang="EN-US"></span></p><p contenteditable="true"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;"><span style="font-size: 12pt;">La durata</span><span lang="EN-US" style="font-size: 12pt; line-height: 17.12px; font-family: &quot;Segoe UI&quot;, sans-serif;">&nbsp;è&nbsp;</span><span style="font-size: 12pt;">circa 4 ore</span>&nbsp;</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;">Il pernottamento<span style="font-size: 1rem;">&nbsp;all'hotel&nbsp;</span><span style="font-weight: 700; font-size: 1rem;">"Svetly Terem"&nbsp;</span>(o uno similare della stessa categoria)&nbsp;<span style="font-size: 1rem;" contenteditable="true">Check in 14:00. Check out 12:00</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;">Per cortesia mi fate sapere se siete allergici ai gatti perch<span style="font-size: 1rem;">è alla reception abita un bel gatto</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><br></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="text-pictures">
+            <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/svetlyj-terem-standart.jpg) no-repeat center /cover;" class="bgImg 0"></div></div></div>
+                </div>
+              </div>
+            <div class="day-block height" id="5" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">Giorno 5
+                  </div>
+                  <div class="day-town-and-date" contenteditable="true">03 luglio 2020 - <span style="font-size: 1rem;">Serghiev Posad&nbsp; &nbsp;&nbsp;</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/sergiev-posad-1.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"></p><p><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;">Il transfer privato mattutino per&nbsp;<span style="font-weight: bolder;">Serghiev Posad </span>dove vi aspetta l'escursione a</span><span style="font-size: 1rem;">l&nbsp;</span><span style="font-size: 1rem;">monastero</span><span style="font-size: 1rem; font-weight: bolder;"> della Trinità di San Sergio&nbsp;</span><span style="font-size: 1rem;">&nbsp;con una guida italofona locale&nbsp;</span></p><p><span style="font-size: 1rem;">La durata è circa 1 ora</span></p><p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span style="font-size: 1rem;">Il transfer privato per la stazione ferroviaria di Mosca</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span style="font-size: 1rem;">Pomeriggio la partenza in</span><span style="font-size: 1rem; font-weight: bolder;">&nbsp;treno diurno per San Pietroburgo </span><span style="font-size: 1rem;">(4 ore circa)</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span style="font-size: 1rem;">&nbsp;</span><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span lang="EN-US">Transfer all'Hotel 3*&nbsp;<span style="font-weight: bolder;">Herzen House&nbsp;</span></span><span style="font-size: 1rem;">(o uno similare della stessa categoria)</span><span lang="EN-US" style="font-size: 1rem;">&nbsp;che si trova 5 minuti a piedi dalla piazza del Palazzo. Check in alle 14.00</span><span style="font-size: 1rem;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;" contenteditable="true"><br></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><br><br><br></p>
+            <div class="text-pictures">
+            </div></div>
+                </div>
+              </div><div class="day-block height" id="6" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 6
+                  </div>
+                  <div class="day-town-and-date">04 luglio 2020 -Peterhof</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/1-Voyage-liberte-Spb-5.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><br></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><br></p><p><span lang="EN-US" style="font-size: 1rem;">Visita guidata del palazzo e del giardino di&nbsp;<span style="font-weight: bolder;">Peterhof</span>, un immenso parco con 150 fontane.&nbsp;</span><span style="font-size: 1rem;">Oggi dovete scoprire perchè&nbsp;Peterhof spesso chiamano&nbsp;“Versaille russo”</span><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span lang="EN-US">La durata&nbsp;è&nbsp;circa 5 ore</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span lang="EN-US"><o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span lang="EN-US">Arrivate a Peterhof con l'aliscafo. A seconda del tempo inclemente il transporto potrebbe essere cambiato</span></p><p class="MsoNormal" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><br></p></div>
+                </div>
+              </div><div class="day-block height" id="9" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    giorno 7</div>
+                  <div class="day-town-and-date">05 luglio 2020 -&nbsp; Pushkin+Pavlovsk</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/besuch-von-zarskoje-selo-und-pawlowsk-1.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="font-size: 12pt;"><br></span></p><p><span style="font-size: 12pt;">Dopo aver
+visitato </span><b style="font-size: 12pt;">il Palazzo di Caterina</b><span style="font-size: 12pt;">, un
+bellissimo esempio di barocco fiammeggiante, avrete l'opportunità di
+passeggiare nei dintorni del Parco di Caterina</span><br></p><p><span style="font-size: 12pt;">Pausa pranzo non incluso nel programma</span></p><p>
+
+</p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Visista del<b> palazzo di Pavlovsk,</b></span><span lang="EN-US" style="font-size: 12pt;">&nbsp;modesto all’esterno, ma
+estremamente ricco all'interno, e del parco dalla forma collinare, che precedentemente
+serviva come terreno di caccia</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">La durata&nbsp;</span><span style="font-size: 1rem;">è circa 7-8 ore&nbsp;</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><span lang="EN-US"><o:p></o:p></span></p><p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: normal;"><br></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="10" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    giorno 8</div>
+                  <div class="day-town-and-date">06 luglio 2020 -&nbsp;<span style="font-size: 1rem;">San Pietroburgo</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/besuch-des-russischen-museums-1.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="font-size: 1rem;">Di mattina vi aspetta una visita guidata a piedi&nbsp;</span><span style="font-size: 1rem; font-weight: 700;">del Museo Russo</span><span style="font-size: 1rem;"> e di</span><span style="font-size: 1rem; font-weight: bolder;">&nbsp;</span><span lang="EN-US" style="font-size: 1rem;">due meravigliosi cattedrali&nbsp;</span><span style="font-size: 1rem;">di San Pietroburgo:&nbsp;</span><span style="font-size: 1rem; font-weight: 700;">la</span><span style="font-size: 1rem; font-weight: bolder;">&nbsp;cattedrale di San Salvatore sul Sangue Versato</span><span style="font-size: 1rem;">&nbsp;</span><span style="font-size: 1rem;">e&nbsp;</span><span style="font-size: 1rem; font-weight: bolder;">la cattedrale di Sant Isacco</span><br></p><div><span style="font-size: 1rem;">La durata&nbsp;è&nbsp;circa 5 ore</span></div><p></p><p>Nel pomeriggio fate da soli&nbsp;<span style="font-weight: bolder;">un giro in battello </span>sui canali nel centro storico ammirando la bellezza di San Pietroburgo dall’acqua. I bigletti e il sistema audio-guide wireless individuale è già incluso nel prezzo<br></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="text-pictures">
+            <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/canal-hiver-660-5.jpg) no-repeat center /cover;" class="bgImg 0"></div></div></div>
+                </div>
+              </div>
+            
+            
+            <div class="day-block height" id="9" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">Giorno 9
+                  </div>
+                  <div class="day-town-and-date">
+                    <span contenteditable="true">07 luglio 2020</span> - Partenza per Italia</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N9MoscaSPb/1-Spb-Cercle-Polaire-ete-9jours.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><br></p><p contenteditable="true"><span style="font-size: 1rem;"><br></span></p><p contenteditable="true"><span style="font-size: 1rem;">Transfer all'aeroporto</span><br></p><p><span style="font-size: 1rem;">Buon viaggio! Alla prossima!</span></p><p contenteditable="true"><span style="font-size: 1rem;"><br></span></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+  <div class="fin height">
+    <p class="center-red" contenteditable="true">Fine del programma</p>
+    <p></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US">Tutti i nostri pacchetti sono fatti su
+misura e siete liberi di cambiare il programma , scegliendo qualcosa nella
+nostra lista delle visite.&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US">Il prezzo del programma in questo caso sarà
+modificato.&nbsp;</span><span style="font-size: 1rem;" contenteditable="true">Le escursioni potrebbero
+essere spostate in base ai giorni di chiusura dei siti e dei musei.</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal" contenteditable="true"><br></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p></p>
+  </div>
+
+  <div class="programm-tarifs height"><button style="position: absolute; right: 0;" class="addColPrice needHidden mr-5 btn btn-success hidden">Столбик</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+    <div class="programm-tarifs-head">
+      DETTAGLI E TARIFFE
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size: 15pt; font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Prezzo per persona in gruppo
+di 2 personi:<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size: 15pt; font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size: 15pt; font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Prezzo totale per 2 personi:<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size: 15pt; font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size: 15pt; font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">L'offerta è valida durante 7
+giorni<o:p></o:p></span></b></p></span>
+      </div>
+      <div class="ttt">
+        <span>2017 €</span>
+        <span>4034 €</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-tarifs-text-after height"></div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left"><button style="position: absolute; right: 20px;" class="needHidden btn addIncList hidden">Добавить пункты</button>
+      <span>PREZZO INCLUDE: </span><span><br></span>
+      <ul class="galochka">
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Invito per ottenere il visto per la Russia</span></li><li>Pernottamento in un albergo 3* a San Pietroburgo, a Suzdal' e a Mosca colazione inclusa. Check in 14:00. Check out 12:00</li><li>Tutti i transfer inclusi nel programma in macchina privata (passare alla lista delle visite)</li><li>Servizi della guida privata in italiano per tutte le visite</li><li><span style="text-align: justify;">Il sistema audio-guide wireless individuale</span><br></li><li><span style="text-align: justify;">Assistenza e cosigli in italiano della nostra squadra<br></span></li><li>Biglietti di treno Mosca -Vladimir e Mosca - San Pietroburgo<div contenteditable="true">&nbsp;2 classe</div></li>
+      </ul>
+    </div>
+    <div class="programm-include-right">
+      <span contenteditable="">PREZZO ESCLUDE:</span><span contenteditable=""><br></span>
+      <ul class="krestik">
+        <li style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 33px; vertical-align: baseline; list-style: none; background: url(&quot;/bitrix/templates/russieautrement/images/b8.png&quot;) 0px 7px no-repeat; position: relative;">Voli internazionali</li><li style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 33px; vertical-align: baseline; list-style: none; background: url(&quot;/bitrix/templates/russieautrement/images/b8.png&quot;) 0px 7px no-repeat; position: relative;">Visto<span style="font-size: 1rem;"><br></span></li><li style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 33px; vertical-align: baseline; list-style: none; background: url(&quot;/bitrix/templates/russieautrement/images/b8.png&quot;) 0px 7px no-repeat; position: relative;">Pasti</li><li style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 33px; vertical-align: baseline; list-style: none; background: url(&quot;/bitrix/templates/russieautrement/images/b8.png&quot;) 0px 7px no-repeat; position: relative;">Assicurazione</li><li style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px 0px 0px 33px; vertical-align: baseline; list-style: none; background: url(&quot;/bitrix/templates/russieautrement/images/b8.png&quot;) 0px 7px no-repeat; position: relative;">Spese personali</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block">
+      TERMINI DI PRENOTAZIONE, CANCELLAZIONE E PAGAMENTO
+    </div>
+    <div>
+      <p class="zvezda">Il versamento dell'acconto di 20 % deve essere effettutato al momento della prenotazione del viaggio attraverso la piattaforma di pagamento sicuro con
+        carta
+        di credito o con un bonifico bancario.
+      </p>
+
+      <p class="zvezda">Il saldo deve essere pagato entro 60gg prima d’arrivo tramite bonifico bancario o carta di credito di cui le commissioni bancarie sono a carico dei
+        viaggiatori
+      </p>
+
+      <p class="zvezda">Per annullare il viaggio il viaggiatore deve inviare email alla nostra agenzia. Le norme di cancellazione dipendono dalla data quando la cancellazione è
+        stata effettuata :
+      </p>
+      <ul class="polii">
+        <li>sino a 60 giorni prima della partenza: 5% della quota di partecipazione;</li>
+        <li>da 59 a 30 giorni prima della partenza: 25% della quota di partecipazione;</li>
+        <li>da 29 a 21 giorni prima della partenza: 50% della quota di partecipazione;</li>
+        <li>tra i 20 ed i 7 giorni prima della partenza: 75% della quota di partecipazione;</li>
+        <li>da 6 a 0 giorni prima della partenza o dopo la stessa: 100% della quota di partecipazione.</li></ul></div>
+  </div>
+</div>
+<div class="height"></div>
+
+</body></html>

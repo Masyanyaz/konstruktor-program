@@ -1,0 +1,740 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+            <p style="line-height: 18px">
+              <a href="/news">Новости</a> При закрытии и обновлении стрницы дополнительно справшивает уверены ли вы, что хотите закрыть окно, в будущем улучшу, но пока предотвратит случайные закрытия страницы)
+            </p>
+          </header>
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+            <div class="message" style="display: none;"><p style="color: #1e7e34">Ура ура, пдф готов <a href="/pdf/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk.pdf" target="_blank">Вот ссылка</a></p></div>
+            <div id="fountainTextG" style="display: block;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(11px, 38px, 0px);">
+              <button class="addNewDay dropdown-item">Добавить день</button>
+              <button class="dropdown-item">
+                  <label style="margin: 0;">
+                    Картинка на главную страницу
+                    <input type="file" class="setBgImageFirstPage" style="display: none;">
+                  </label>
+                </button>
+                <div style="display: flex; align-items: center;">
+                  <button class="setTextColorMainPage dropdown-item">Цвет текста на главной странице</button>
+                  <input type="color" name="textColor">
+                </div>
+              <button class="saveAsHtml dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml dropdown-item">Сохранить как</button>
+<!--<button class="btn-success addKolontitul dropdown-item">Добавить колонтитулы</button>-->
+<!--<button class="btn-success deleteKolontitul dropdown-item">Удалить колонтитулы</button>-->
+              <button class="saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Текст
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <button class="setTextBold dropdown-item" title="ctrl + b">Жирный</button>
+              <button class="setTextItalic dropdown-item" title="ctrl + i">Курсив</button>
+              <button class="setTextUnderline dropdown-item" title="ctrl + u">Подчеркнутый</button>
+              <div style="display: flex; align-items: center;">
+                <button class="setTextColor dropdown-item">Установить цвет</button>
+                <input type="color" name="textColor">
+              </div>
+              <button class="setTextLink dropdown-item">Сделать ссылку</button>
+              <button class="fontSizeUp dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+              <button class="fontSizeDown dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Скрыть ненужные блоки">
+              Элементы 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="first-page">
+                  <label class="custom-control-label" for="first-page">Главная</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="second-page">
+                  <label class="custom-control-label" for="second-page">Контакты</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a href="/" class="dropdown-item" title="Перейти на главную страницу" target="_blank">Главная</a>
+              <a href="/all" class="dropdown-item" title="Перейти ко всем программам" target="_blank">Все программы</a>
+              <a href="/news" class="dropdown-item" title="Перейти к новостям" target="_blank">Новости</a>
+              <a href="/profile" class="dropdown-item" target="_blank">Профиль</a>
+              <a href="/logout.php" class="dropdown-item" target="_blank">Выйти</a>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+            
+            
+
+            
+
+            
+
+            
+
+            
+<div class="editable">
+  
+  
+  <div class="content"><div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-3-jours-en-hiver-900-1.jpg&quot;);">
+                          <div class="first-page-title" data-text="
+                            RUSSIE AUTREMENT
+                          ">
+                            RUSSIE AUTREMENT
+                          </div>
+                          <div class="program-name height">
+                            <div class="program-name-title" data-text="
+                              Programme sur mesure spécialement étudié en faveur de
+                            ">
+                              Programme sur mesure spécialement étudié en faveur de
+                            </div>
+                            <div class="program-name-text" data-text="Vianney LAURENT&nbsp;">Vianney LAURENT&nbsp;</div>
+                          </div>
+                    
+                          <div class="program-data height">
+                            <div class="program-data-title" data-text="
+                              Votre demande:
+                            ">
+                              Votre demande:
+                            </div>
+                            <div class="program-data-text">
+                              <div class="program-data-text-city" data-text="Saint-Pétersbourg - Mourmansk&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;">Saint-Pétersbourg - Mourmansk&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                              <div class="program-data-text-desc">
+                                <div class="program-data-text-desc-item">
+                                  <span data-text="Nombre de personnes:">Nombre de personnes:</span>
+                                  <span data-text="Date de sejour:">Date de sejour:</span>
+                                  <span data-text="Durée du séjour:">Durée du séjour:</span>
+                                </div>
+                                <div class="program-data-text-desc-item">
+                                  <span data-text="1 adulte">1 adulte</span>
+                                  <span data-text="Décembre 2020">Décembre 2020</span>
+                                  <span data-text="9 jours et 8 nuits">9 jours et 8 nuits</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="first-page-desc">
+                            <div data-text="Ce circuit combiné vous emmènera à la découverte de Saint-Pétersbourg, la ville des tsars russes avec ses nombreux canaux, son architecture classique célèbre, ses fameux musées ainsi que ses résidences impériales baroques.Vous rejoindrez ensuite le Grand Nord de Russie en train de nuit, pour explorer la ville de Mourmansk, la capitale polaire, et ses alentours comme le village des Sâmes ou Teriberka perdue au bout du monde. La chasse des aurores boréales, une expérience exceptionnelle et unique à vivre au moins une fois dans sa vie, complétera parfaitement votre découverte du Grand Nord russe."><div><b class="decoration">Ce circuit combiné vous emmènera à la découverte de Saint-Pétersbourg, la ville des tsars russes avec ses nombreux canaux, son architecture classique célèbre, ses fameux musées ainsi que ses résidences impériales baroques.</b></div><div><b class="decoration">Vous rejoindrez ensuite le Grand Nord de Russie en train de nuit, pour explorer la ville de Mourmansk, la capitale polaire, et ses alentours comme le village des Sâmes ou Teriberka perdue au bout du monde. La chasse des aurores boréales, une expérience exceptionnelle et unique à vivre au moins une fois dans sa vie, complétera parfaitement votre découverte du Grand Nord russe</b>.<br></div></div>
+                            <div data-text=""></div>
+                            </div>
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+                        <div class="second-page"><div class="manager-contacts height">
+    <div class="change-data-user">
+      <a href="/updateDataUser.php">Изменить</a>
+    </div>
+    <div class="manager-contacts-photo">
+      <img src="http://78.47.40.9/uploads/updateDataUser.php/LRM_EXPORT_126685592534849_20191020_213334078.jpg" alt="">
+    </div>
+    <div class="manager-contacts-desc">
+      <div class="manager-contacts-desc-name">
+        Oksana      </div>
+      <div class="manager-contacts-desc-company">
+        Russie Autrement      </div>
+      <div class="manager-contacts-desc-items">
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Adresse:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            Bureau 1 Quai de la Moika, 67-69 Saint-Pétersbourg, Russie 191186          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Téléphone:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            +33 (0) 1 84 88 33 57          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            E-mail:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            oksana.romanova@russieautrement.com          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Site web:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            <a href="https://russieautrement.com">russieautrement.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    
+    
+    <div class="program-days">
+
+    <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 1
+                </div>
+                <div class="program-days-item-header-data">Lundi</div>
+                <div class="program-days-item-header-name">
+                  Saint-Péterebsourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/c34d1aaff4e6154af08ec160a33b10b1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div>Arrivée à Saint-Petersbourg.</div><div>Transfert&nbsp; de l‘aeroport&nbsp; à l’hotel 3*<a href="https://herzen-hotel.com/en/rooms/" target="_blank">Herzen House</a> en chambre single standard.&nbsp;</div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 2
+                </div>
+                <div class="program-days-item-header-data">
+                  Mardi</div>
+                <div class="program-days-item-header-name">
+                  Saint-Péteresbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/Spb_winter_11.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><b class="decoration">Petit-déjeuner à l'hôtel.</b></div><div><div><b class="decoration"><br></b></div><b class="decoration">Tour de ville guidé en français.</b> La promenade comprend: La perspective Nevski, l'église du Saint Sauveur sur le Sang Versé, la Cathédrale de Notre Dame de Kazan, la Place du Palais d'Hiver (l'Ermitage) et l'Amirauté.&nbsp;</div><div><br></div><div>Vous visiterez également l<b class="decoration">a Forteresse Pierre et Paul </b>avec sa cathédrale où se trouvent les tombeaux de la famille Romanov. <b class="decoration">Excursion véhiculée de 4-5 heures</b>.&nbsp;</div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 3
+                </div>
+                <div class="program-days-item-header-data">
+                  Mercredi</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/Ermitage_winter_02.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><b class="decoration">Petit-déjeuner à l’hotel.</b></div><div><b class="decoration" contenteditable="true"><br></b></div><div><b class="decoration" contenteditable="true">La rencontre avec le guide devant la colonne d’Alexandre a la palce de palais.</b></div><div>Visite guidée en français <b class="decoration">du musée de l’Ermitage</b>. La visite inclut le tour du musée et le droit d'entrée sans joindre la file d'attente. C’est un des trois plus grands musées du monde avec le British Museum à Londres et le Louvre à Paris. Le musée est constitué par 5 édifices: le Palais d’Hiver, le Petit Ermitage, le Vieil Ermitage, le Nouvel Ermitage et le Théâtre de l’Ermitage. Vous commencerez par les salles d’apparat, les anciennes chambres privées et puis procéderez aux sections de beaux-arts qui comptent autour de 3 millions d’objets d’art.&nbsp; <b class="decoration">Excursion guidée à pied de 3h.</b></div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 4
+                </div>
+                <div class="program-days-item-header-data">
+                  Jeudi</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/Palais-de-Catherine.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><div><b class="decoration">Petit-déjeuner à l'hotel.</b><br></div>Visite guidée en français de la ville de <b class="decoration">Pouchkine,</b> la résidence Impériale russe. La visite inclut une promenade dans le jardin et la visite du Palais Catherine, un château splendide du XVIIIème siècle en pur style baroque. Il est très connu particulièrement pour sa salle de bal et le très fameux salon d'ambre.&nbsp;</div><div>Les jardins de 300 ha sont tous aussi beaux, partagés entre la mode française et anglaise et peuplés de nombreux petits pavillons. <b class="decoration">Excursion guidée véhiculée de 4-5 heures.</b></div><div>N.B. Veuillez ne pas planifier la soirée car cette visite peut être organisée au soir.&nbsp;</div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 5</div>
+                <div class="program-days-item-header-data">
+                  Vendredi</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/Spb_winter_14.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Transfert à l'aéroport.</p><div>Embarquement dans le train en direction de Mourmansk <b class="decoration">(départ à 09h50, heure locale, en 2ème classe</b>).</div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 6</div>
+                <div class="program-days-item-header-data">
+                  Samedi</div>
+                <div class="program-days-item-header-name">
+                  Mourmansk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-3-jours-en-hiver-900-1.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-3-jours-en-hiver-660-3.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Arrivée à Mourmansk à 11h24.</p><div>Transfert de la gare à l'hotel 4* <a href="https://en.azimuthotels.com/Russia/azimut-hotel-murmansk/" target="_blank">Azimout</a> en&nbsp; chambre single standard.<div><div><br></div><div><b class="decoration">Tour de ville guidé en français.</b>&nbsp;<div>La promenade comprend:</div></div><div><br></div><div>La place des Cinq Angles</div><div>Le monument aux défenseurs de l’Arctique soviétique pendant la Grande Guerre patriotique («Alyocha»)</div><div>Le monument commémoratif dédié aux soldats et marins morts en temps de paix</div><div></div><div><br></div><div>Vous visiterez égalementle brise-glace Lénine, le premier brise-glace nucléaire du monde.<div><br></div><div><b class="decoration">Excursion véhiculée et à pied de 4h.</b></div></div></div><div><br></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 7</div>
+                <div class="program-days-item-header-data">Dimanche</div>
+                <div class="program-days-item-header-name">
+                  Mourmansk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/4-Spb-Cercle-Polaire-ete-9jours-min.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-4-jours-en-hiver-660-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><b class="decoration">Petit-déjeuenr à l'hôtel.</b></p><div><span class="decoration"><b><div style=""></div><div style="" contenteditable="true"><br></div><div style=""></div><div style=""></div><div style=""></div><div style=""></div><div style=""></div><div style=""><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); font-weight: 400; letter-spacing: normal; text-align: start;">Visite du village de&nbsp; Loparskaya du peuple Samis,&nbsp; perdu au milieu de la toundra et des forêts de sapins.</p><div contenteditable="true">Vous ferez connaissance avec l'histoire et les traditions&nbsp; du peuple de Samis et&nbsp; vous aurez la possiiblité de faire une promenade en traîneaux à rennes.<br></div><div><br></div><p></p><ul class="newul" style="margin-top: -18px; margin-bottom: 18px; padding-left: 10px; vertical-align: baseline; list-style: none; color: rgb(75, 75, 75); font-family: lato; font-weight: 400; letter-spacing: normal; text-align: start;"><li style="padding-left: 33px; vertical-align: baseline; list-style: none; background: url(&quot;/upload/medialibrary/bba/b8.png&quot;) 0px 7px no-repeat; position: relative; margin-bottom: 5px !important;"></li><li style="padding-left: 33px; vertical-align: baseline; list-style: none; background: url(&quot;/upload/medialibrary/bba/b8.png&quot;) 0px 7px no-repeat; position: relative; margin-bottom: 5px !important;"></li><li style="padding-left: 33px; vertical-align: baseline; list-style: none; background: url(&quot;/upload/medialibrary/bba/b8.png&quot;) 0px 7px no-repeat; position: relative; margin-bottom: 5px !important;"></li><li style="padding-left: 33px; vertical-align: baseline; list-style: none; background: url(&quot;/upload/medialibrary/bba/b8.png&quot;) 0px 7px no-repeat; position: relative; margin-bottom: 5px !important;"></li></ul><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); font-weight: 400; letter-spacing: normal; text-align: start;">Retour à Mourmansk.</p><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); font-weight: 400; letter-spacing: normal; text-align: start;"><span style="font-weight: 700;">En option</span>:</p><ul class="newul" style="margin-top: -18px; margin-bottom: 18px; padding-left: 10px; vertical-align: baseline; list-style: none; color: rgb(75, 75, 75); font-family: lato; font-weight: 400; letter-spacing: normal; text-align: start;"><li style="padding-left: 33px; vertical-align: baseline; list-style: none; background: url(&quot;/upload/medialibrary/bba/b8.png&quot;) 0px 7px no-repeat; position: relative; margin-bottom: 5px !important;">À la nuit possibilité de partir à la chasse des aurores boréales en compagnie d’un guide local, une expérience exceptionnelle et unique à vivre au moins une fois dans sa vie<sup>1</sup>.</li></ul><p style="margin-bottom: 18px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); font-weight: 400; letter-spacing: normal; text-align: start;"><sup>1</sup><span style="font-weight: 700;">Attention</span>, en fonction des prévisions météorologiques, le jour de la chasse aux aurores boréales peut être modifié ou annulé.</p></div><div style=""></div><div style="" contenteditable="true"><br></div><div style=""></div><div style=""></div></b></span></div><div><b class="decoration"><br></b></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 8
+                </div>
+                <div class="program-days-item-header-data">
+                  Lundi</div>
+                <div class="program-days-item-header-name">
+                  Mourmansk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/Teriberka-plyazh-kamenistyj-zima.JPG) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-4-jours-en-hiver-900-3.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><b class="decoration">Petit-déjeuner à l'hôtel.</b></div><div><br></div><div>Journée entière consacrée à<b class="decoration"> la visite du village Teriberka</b> situé à 150 km au nord de la région de Mourmansk:</div><div><br></div><div>Situé sur la côte de<b class="decoration"> la mer de Barents</b>, le village de Teriberka est devenu célèbre grâce au film « Léviathan » d’Andreï Zviaguintsev.</div><div>Perdu au bout du monde et désormais laissé à l’abandon, Teriberka est au cœur <b class="decoration">d’une nature exceptionnelle</b>. Vous découvrirez la toundra arctique ainsi que l’une des côtes les plus pittoresques du littoral arctique, populairement appelée « œufs de Dragon ».</div><div>À 3 km à pied vous pourrez découvrir une belle cascade gélée</div><div>Vous visiterez également l'ancien cimetière de bateaux et la « vieille Teriberka », peuplée des Russes Pomores (ethnie russe minoritaire vivant dans la région depuis la nuit des temps), avec ses maisons rustiques et hantées.</div><div>Pique-nique au thé et aux sandwiches (sur place).</div><div><br></div><div>Retour à Mourmansk.</div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 9</div>
+                <div class="program-days-item-header-data">
+                  Mardi</div>
+                <div class="program-days-item-header-name">
+                  Mourmansk</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N24_Laurent__Saint-Petersbourg_-_Mourmansk/cercle-polaire-3-jours-en-ete-660-1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Transfert à l'aéroport</p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements de jours et heures d'ouverture des sites. Si tel était le
+        cas, tout serait mis en oeuvre pour limiter cela à des modifications dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de
+        qualité équivalente.
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+    
+    
+    
+    
+      <div class="program-price-title title">
+        Détails et tarifs&nbsp; &nbsp; &nbsp; &nbsp; valables 7 jours</div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 1 personnes</span>
+          <span>Prix par personne dans le groupe de 1 personne</span>
+        </div>
+        <div class="program-price-desc-item">
+          <span>2 711€</span>
+          <span>2711 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span>Le support visa (les vouchers et lettre d'invitation)</span>
+          <span>L'hébergement à l'hôtel 3* avec les petits-déjeuners&nbsp; à Saint-Péteresbourg, l'hôtel&nbsp; de 4* avec les petits-déjeuners à&nbsp; Mourmansk</span>
+          <span></span>
+          <span>Le transport terrestre et tous les transferts en véhicule privatif selon le programme</span>
+          <span>Les services d'un guide francophone particulier diplômé pour toutes les excursions mentionnées</span>
+          <span>Les droits d'entrée dans les musées et les sites selon le programme</span>
+          <span></span>
+        <span>Les billets de train&nbsp; Saint-Pétersbourg - Mourmansk en 2ème classe</span></div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Les frais consulaires pour le visa</span>
+          <span>Les vols internationaux</span>
+          <span>Les assurances</span>
+          <span>Les repas</span>
+          <span>Tous frais et dépenses d'ordre personnel</span>
+        <span></span></div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 60 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 60 jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p>Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où intervient l’annulation :</p>
+        <ul>
+          <li>à plus de 60 jours du départ : 5% du prix du voyage</li>
+          <li>entre 59 et 30 jours du départ : 25% du prix du voyage</li>
+          <li>entre 29 et 21 jours du départ : 50% du prix du voyage</li>
+          <li>entre 20 et 7 jours du départ : 75% du prix du voyage</li>
+          <li>à moins de 6 jours du départ et après la date de départ : 100% du prix du voyage</li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+</body></html>

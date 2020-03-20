@@ -1,0 +1,345 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body style="">
+<header style="position: fixed; z-index: 999999; display: flex; justify-content: space-between; width: 1050px;
+  border-bottom: 2px solid; height: 50px; background-color: rgba(0,0,0, .2);" class="py-2 px-5 needHidden hidden">
+  <div>
+    <button class="addDay btn-success">Добавить день</button>
+    <button class="savePdf btn-success">Созранить как pdf</button>
+    <button class="saveAsHtml btn-success">Сохранить файл</button>
+    <button class="saveAsOtherHtml btn-success">Сохранить как другой файл</button>
+  </div>
+  <div class="message" style="display: none;"><p style="color: #1e7e34">Ура ура, пдф готов <a href="/pdf/DUBOIS.pdf">Вот ссылка</a></p></div>
+  <div id="fountainTextG" style="display: block;">
+    <div id="fountainTextG_1" class="fountainTextG">З</div>
+    <div id="fountainTextG_2" class="fountainTextG">а</div>
+    <div id="fountainTextG_3" class="fountainTextG">г</div>
+    <div id="fountainTextG_4" class="fountainTextG">р</div>
+    <div id="fountainTextG_5" class="fountainTextG">у</div>
+    <div id="fountainTextG_6" class="fountainTextG">з</div>
+    <div id="fountainTextG_7" class="fountainTextG">к</div>
+    <div id="fountainTextG_8" class="fountainTextG">а</div>
+  </div>
+</header>
+<div class="editable">
+  <div class="programm-header height">
+    <div class="programm-header-left">
+      <span>russieautrement</span>
+      <a href="#">www.russieautrement.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span>Adresse:</span>
+        <span>Tél.:</span>
+        <span>E-mail:</span>
+      </div>
+      <div class="www">
+        <span>67-69, quai de la Moika, Bureau 1, Saint-Pétersbourg</span>
+        <span>+33 (0) 1 84 88 33 57</span>
+        <a href="mailto:contact@russieautrement.com" class="email">contact@russieautrement.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">
+      Âme russe</div>
+    <div class="programm-data-text">
+      <p>
+        Programme sur mesure spécialement étudié en faveur de <span>DUBOIS Philippe</span>
+      </p>
+      <span>Votre demande:</span>
+      <div class="programm-data-list">
+        <div class="eee">
+          <span>Nombre de personnes:</span>
+          <span>Date de sejour:</span>
+          <span>Durée du séjour:</span>
+        </div>
+        <div class="www">
+          <span>4 adultes</span>
+          <span>Du 10 au 20 novembre 2019</span>
+          <span>11 jours et 10 nuits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  <div class="day-block height" id="1" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="1">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="1">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+                  <div class="day-town-and-date">
+                    <span>1 janvier 2020</span> - <span>St. Pétersbourg</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/DUBOIS/2525.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><div><br></div>Arrivée à St. Pétersbourg<span style="font-size: 1rem;"></span><div>Transfert de l'aéroport</div><div>Installation dans l'hôtel</div></p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="2" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="2">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="2">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+                  <div class="day-town-and-date">
+                    <span>2 janvier 2020</span> - <span>St. Pétersbourg</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/DUBOIS/depositphotos_40390615-stock-photo-beautiful-sunrise-on-the-river.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><div><br></div><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><b><span lang="FR-CA">Tour de ville guidé</span></b><span lang="FR-CA"> en français</span><span lang="FR-CA"> </span><span lang="FR-CH">qui comprend les plus grandes curiosités de Saint-Pétersbourg. Des
+arrêts près des sites seront prévus pour prendre des photos et admirer les
+lieux. En fonction du temps disponible et de la circulation vous verrez de
+l'extérieur des curiosités suivantes: Amirauté, Place Saint-Isaac, Eglise Notre
+Dame de Kazan, Eglise Saint Sauveur sur le Sang versé, Sphinx et Académie des
+Beaux-Arts, Pointe de l’île Vassilievski, Ancien couvent Smolny, Perspective
+Nevski, Place des Arts, Place du Palais.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR-CH">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR">Vous visiterez également <b>la Forteresse Pierre et Paul</b> avec sa
+cathédrale qui sert aujourd’hui à la sépulture des monarques russes à partir de
+Pierre le Grand jusqu’au dernier empereur Nicolas II. Lors de cette visite,
+vous bénéficierez d’une vue panoramique sur la Neva ainsi que sur l’Ermitage.&nbsp;</span><b style="font-size: 1rem;"><span lang="FR-CH">Excursion
+véhiculée de 4-5 heures.&nbsp;</span></b></p></p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="3" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="3">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="3">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 3</div>
+                  <div class="day-town-and-date">
+                    <span>3 janvier 2020</span> - <span>St. Pétersbourg</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/DUBOIS/194586_cover.jpg.1050x700_q95_crop_upscale.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text" contenteditable="true"><p class="MsoNormal"><span lang="FR" style="font-size: 1rem;"><br></span></p><p class="MsoNormal"><span lang="FR" style="font-size: 1rem;">Visite guidée en français du <b>musée
+de</b> <b>l’Ermitage</b>. La visite inclut
+le tour du musée et </span><span class="a0" style="font-size: 1rem;"><span lang="FR-CH">le droit d'entrée
+sans joindre la file d'attente.</span></span><br></p><p class="MsoNormal" contenteditable="true">
+
+<span lang="FR" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;color:#404040;mso-themecolor:text1;mso-themetint:
+191;mso-ansi-language:FR;mso-fareast-language:EN-US;mso-bidi-language:AR-SA" contenteditable="true">C’est
+un des trois plus grands musées du monde avec le British Museum à Londres et le
+Louvre à Paris. Le musée est constitué par 5 édifices: le Palais d’Hiver, le
+Petit Ermitage, le Vieil Ermitage, le Nouvel Ermitage et le Théâtre de
+l’Ermitage. Vous commencerez par les salles d’apparat, les anciennes chambres
+privées et puis procéderez aux sections de beaux-arts qui comptent autour de 3
+millions d’objets d’art. </span><span class="a0"><span lang="FR-CH" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA">Excursion à pied de 3h.</span></span><br></p></div>
+                </div>
+              </div>
+            <div class="day-block height" id="4" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="4">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="4">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 4&nbsp;</div>
+                  <div class="day-town-and-date">
+                    <span contenteditable="true">4 janvier 2020</span> - St. Pétersbourg</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/DUBOIS/SPB_6471.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><div><br></div><p class="MsoNormal"><span lang="FR">Visite guidée en
+français de la ville de </span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:text1;mso-themetint:217">Pouchkine</span></span><span lang="FR">, la résidence Impériale russe. La visite inclut une
+promenade dans le jardin et la visite du Palais Catherine, un château splendide
+du XVIIIème siècle en pur style baroque. Il est très connu particulièrement
+pour sa salle de bal et le </span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:text1;mso-themetint:217">très fameux salon
+d'ambre</span></span><span lang="FR">. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="FR">Les jardins de 300
+ha sont tous aussi beaux, partagés entre la mode française et anglaise et
+peuplés de nombreux petits pavillons.</span><span lang="FR"> </span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:
+text1;mso-themetint:217">Excursion guidée véhiculée de </span></span><span class="a0"><span lang="FR-CA" style="color:#262626;mso-themecolor:text1;mso-themetint:
+217;mso-ansi-language:FR-CA">4-</span></span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:text1;mso-themetint:217">5 heures</span></span><b><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;color:#262626;mso-themecolor:text1;
+mso-themetint:217;mso-ansi-language:FR">.</span></b><b><span lang="FR-CA"><o:p></o:p></span></b></p>
+
+<b><span lang="FR-CA" style="font-size:11.0pt;
+font-family:&quot;Calibri&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+color:#262626;mso-themecolor:text1;mso-themetint:217;mso-ansi-language:FR-CA;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA">N.B. Veuillez ne pas
+planifier la soirée car une visite peut être organisée au soir.&nbsp;</span></b><br></p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="5" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="5">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="5">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                  <div class="day-town-and-date">5 janvier 2020 - St. Pétersbourg</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/DUBOIS/1514723742117112249.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><br></p><p>Transfert à l'aéroport selon vos heures de départ</p><p>Départ de St. Pétersbourg</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <div class="fin height">
+    <p class="center-red">Fin de nos services<br></p>
+    <p>Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements
+      de jours et heures d'ouverture des sites. Si tel était le cas, tout serait mis en oeuvre pour limiter cela à des
+      modifications
+      dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de qualité
+      équivalente.
+    </p>
+  </div>
+
+  <div class="programm-tarifs height">
+    <div class="programm-tarifs-head">
+      Détails et tarifs
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span>Prix total pour 4 personnes :</span>
+        <span>Prix par personne dans le groupe de 4 personnes :</span>
+      </div>
+      <div class="ttt">
+        <span>4 980 €</span>
+        <span>1 245 €</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left">
+      <span>Ces prix comprennent : </span>
+      <ul class="galochka">
+        <li>Le support visa (les vouchers et lettre d'invitation)</li>
+        <li>2 chambres doubles dans un hôtel à Mourmansk
+          avec les petits déjeuners inclus
+        </li>
+        <li>Le transport terrestre et tous les transferts en
+          véhicule privatif selon le programme
+        </li>
+        <li>Les services d'un guide francophone particulier
+          diplômé pour toutes les excursions mentionnées
+        </li>
+        <li>Les droits d'entrée dans les musées et les sites
+          selon le programme
+        </li>
+        <li>Les billets de train selon le programme</li>
+        <li>Le vol interne</li>
+      </ul>
+    </div>
+    <div class="programm-include-right">
+      <span>Ces prix ne comprennent pas : </span>
+      <ul class="krestik">
+        <li>Les visa</li>
+        <li>Les vols internationaux</li>
+        <li>Les assurances</li>
+        <li>Les repas non mentionnés dans le programme</li>
+        <li>Tous frais et dépenses d'ordre personnel</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="programm-remarques height">
+    <h3>Remarques</h3>
+    <span contenteditable="true">Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.</span><span contenteditable="true"><br></span>
+    <div class="red-block">
+      Voyagez en toute sécurité en souscrivant à une assurance voyage !
+    </div>
+    <div class="programm-remarques-content">
+      <img src="https://russieautrement.com/upload/medialibrary/a9f/a9fa57c2dff604db53b12f64ced4c4c0.jpg">
+      <div class="programm-remarques-text">
+        <p><br></p><p>Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous
+          proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+          tranquille et en toute sécurité :
+        </p>
+        <ul class="zvezdochka">
+          <li>Cap Assistance 24/24. Un problème pendant votre séjour ? Faîtes-nous
+            confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr
+            d’obtenir une aide efficace avec cette assurance mise à votre disposition.
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+          <li>Cap Annulation. L'assurance Cap Annulation, dite assurance annulation
+            toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour
+            retenus par l'organisateur du voyage (agence, transporteur, loueur) pour "toutes
+            causes justifiées".
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block">
+      MODALITÉS DE RÉSERVATION, D'ANNULATION ET DE PAIEMENT
+    </div>
+    <p class="zvezda">Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien
+      sécurisé. Le prépaiement n'est pas remboursable en cas d'annulation.
+    </p>
+
+    <p class="zvezda">Le solde du voyage doit être réglé :</p>
+    <ul class="polii">
+      <li>par carte bancaire au plus tard 75 jours avant votre arrivée</li>
+      <li>par virement bancaire au plus tard 75 jours avant votre arrivée (les frais sont à votre charge)</li>
+    </ul>
+    <p class="zvezda">Toute annulation doit faire l’objet d’un mail adressé à notre agence Russie Autrement. Le montant
+      des frais d’annulation varie en fonction du moment où intervient l’annulation :
+    </p>
+    <p></p>
+    <ul class="polii">
+      <li>à plus de 7 jours du départ : 20% du prix du voyage</li>
+      <li>entre 72 et 61 jours du départ : 25% du prix du voyage</li>
+      <li>entre 60 et 51 jours du départ : 50% du prix du voyage</li>
+      <li>entre 50 et 33 jours du départ : 75% du prix du voyage</li>
+      <li>à moins de 32 jours du départ et après la date de départ : 100% du prix du voyage</li>
+    </ul>
+  </div>
+</div>
+<div class="height"></div>
+
+
+</body></html>

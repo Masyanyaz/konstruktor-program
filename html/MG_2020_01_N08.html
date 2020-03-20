@@ -1,0 +1,708 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+              <p style="line-height: 18px">
+                <a href="/news">Появился новый функционал</a>
+              </p>
+            </header>
+
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+                <div class="message" style="display: none;"><p style="color: #1e7e34">Ура ура, пдф готов <a href="/pdf/MG_2020_01_N08.pdf" target="_blank">Вот ссылка</a></p></div>
+                <div id="fountainTextG" style="display: block;">
+                  <div id="fountainTextG_1" class="fountainTextG">З</div>
+                  <div id="fountainTextG_2" class="fountainTextG">а</div>
+                  <div id="fountainTextG_3" class="fountainTextG">г</div>
+                  <div id="fountainTextG_4" class="fountainTextG">р</div>
+                  <div id="fountainTextG_5" class="fountainTextG">у</div>
+                  <div id="fountainTextG_6" class="fountainTextG">з</div>
+                  <div id="fountainTextG_7" class="fountainTextG">к</div>
+                  <div id="fountainTextG_8" class="fountainTextG">а</div>
+                </div>
+              </div>
+              <div class="">
+                <button class="btn btn-success dropdown-toggle" title="ctrl + 4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Меню
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(11px, 38px, 0px);">
+                  <button class="addNewDay btn-success btn dropdown-item">Добавить день</button>
+                  <button class="saveAsHtml btn-success btn dropdown-item" title="ctrl + s">Сохранить файл</button>
+                  <button class="saveAsOtherHtml btn-success btn dropdown-item">Сохранить как</button>
+                  <button class="btn-success btn addKolontitul dropdown-item">Добавить колонтитулы</button>
+                  <button class="btn-success btn deleteKolontitul dropdown-item">Удалить Колонтитулы</button>
+                  <button class="btn-success btn saveAsPdf dropdown-item">Сохранить как pdf</button>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Текст
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <button class="setTextBold btn-success btn dropdown-item" title="ctrl + b">Жирный</button>
+                  <button class="setTextItalic btn-success btn dropdown-item" title="ctrl + i">Курсив</button>
+                  <button class="setTextUnderline btn-success btn dropdown-item" title="ctrl + u">Подчеркнутый</button>
+                  <button class="fontSizeUp btn-success btn dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+                  <button class="fontSizeDown btn-success btn dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Другое
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/')" title="Перейти на главную страницу">Главная</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/all')" title="Перейти ко всем программам">Все программы</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/news')" title="Перейти к новостям">Новости</button>
+                </div>
+              </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+                
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            
+<div class="editable">
+  <div class="header height deleteHeader">
+    <div class="header-logo">
+      <div class="header-logo-title">RUSSIE AUTREMENT</div>
+      <div class="header-logo-text">agence de voyage specialisee sur la russie</div>
+    </div>
+    <div class="header-contacts">
+      <div class="header-contacts-item">
+        <div class="email">
+          contact@russieautrement.com
+        </div>
+        <div class="site">
+          russieautrement.com
+        </div>
+      </div>
+      <div class="header-contacts-item">
+        <div class="adress">
+          67-69, quai de la Moika, Bureau 1, Saint-Pétersbourg
+        </div>
+        <div class="phone">
+          +33 (0) 1 84 88 33 57
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="red-title height">
+    Découverte de la russie</div>
+  <div class="content">
+    <div class="program-name height">
+      <div class="program-name-title">
+        Programme sur mesure spécialement étudié en faveur de
+      </div>
+      <div class="program-name-text">Véronique Riva</div>
+    </div>
+    <div class="program-data height">
+      <div class="program-data-title">
+        Votre demande:
+      </div>
+      <div class="program-data-text">
+        <div class="program-data-text-city">
+          Moscou-Saint-Pétersbourg
+        </div>
+        <div class="program-data-text-desc">
+          <div class="program-data-text-desc-item">
+            <span>Nombre de personnes:</span>
+            <span>Date de sejour:</span>
+            <span>Durée du séjour:</span>
+          </div>
+          <div class="program-data-text-desc-item">
+            <span>2 adultes</span>
+            <span contenteditable="true">du 24 juillet au 31 juillet 2020</span>
+            <span>8 jours et 7 nuits</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="program-days">
+
+    <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 1
+                </div>
+                <div class="program-days-item-header-data">24.07.20</div>
+                <div class="program-days-item-header-name">
+                  Moscou</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/01.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 6pt;"><span lang="FR">Vous arrivez à Moscou.
+La voiture privée avec le chauffeur russophone vous amènera à votre hôtel,
+situé en centre-ville.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><b><span lang="FR">Installation à l'hôtel de 4* «&nbsp;</span></b><b><span lang="FR-CA">Villa Kadashi</span></b><b><span lang="FR">»</span></b><span lang="FR"> ou similaire en chambre
+double supérieure, les petits-déjeuners inclus.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span lang="FR"><br></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 2
+                </div>
+                <div class="program-days-item-header-data">25.07.20</div>
+                <div class="program-days-item-header-name">Moscou&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/shutterstock_307926614.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/Moskva_1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal"><span style="letter-spacing: -0.16px;">Petit déjeuner à l’hôtel.</span><b><span lang="FR-CH"><br></span></b></p><p class="MsoNormal"><b><span lang="FR-CH">Promenade</span></b><b><span lang="FR"> en centre ville avec la visite du territoire du Kremlin.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span lang="FR">Ce matin vous avez le rendez-vous avec votre guide
+francophone pour visiter le centre de Moscou. Lors de cette excursion vous
+visitez de l’exterieur telles curiosités que la fameuse Place Rouge avec le
+mausolée de Lénine, les Galeries Marchandes Goum,&nbsp; autrement dit Magasin universel d'Etat , le
+parc Zariadié, le jardin Alexandrovsky, le théâtre Bolshoi et d’autres endroits
+incontournables qui sont concentrés autour de la Place Rouge.<br>Lors de cette excursion vous visiterez aussi le territoire du Kremlin de Moscou qui est un symbole de l’état russe, l’un des plus grands ensembles architecturaux au monde. Vous découvrirez à l’intérieur quelques de ses catédrales.&nbsp;<br><b style="letter-spacing: -0.01em;"><i><span lang="FR"><br>Excursion à pied et en métro de 4 heures.</span></i></b></span></p><p class="MsoNormal"><b><i><span lang="FR-CH"><o:p></o:p></span></i></b></p><br><p></p><p class="MsoNormal"><span lang="FR"><br></span></p>
+
+<p class="MsoNormal"><b><i><span lang="FR"></span><span lang="FR-CH"><o:p></o:p></span></i></b></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 3
+                </div>
+                <div class="program-days-item-header-data">26.07.20</div>
+                <div class="program-days-item-header-name">
+                  Moscou</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/05b18187bab4e5f40f2d73623d57a4b8.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal"><span lang="FR">Petit déjeuner à l’hôtel.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span lang="FR">Visite guidée du métro de
+Moscou et de la rue Arbat.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span lang="FR">Partez à la découverte d’un des chefs-d'œuvre de l’époque soviétique créés
+dans le style du réalisme socialiste, les stations de métro les plus
+sensationnelles de Moscou. Puis faites une promenade sur la rue Arbat, l’une
+des plus anciennes rues de la capitale russe. <o:p></o:p></span></p><p class="MsoNormal"><span lang="FR"><span style="font-weight: bolder; letter-spacing: -0.01em;"><i><span lang="FR">Excursion à pied et en métro de 4 heures.</span></i></span></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 4
+                </div>
+                <div class="program-days-item-header-data">27.07.20</div>
+                <div class="program-days-item-header-name">Moscou/Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/1-Nuits-Blanches-de-5-jours.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/2-voyage-org-Spb-3-jours.jpg.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><span lang="FR-CH">Petit-déjeuner à l’hôtel.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><span lang="FR-CH">Transfert de l’hôtel à
+la gare.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><b><span lang="FR-CH">Train rapide «&nbsp;Sapsan&nbsp;» en direction de Saint-Pétersbourg.
+Départ vers 09h</span></b><b><span lang="FR">4</span><span lang="FR-CH">0.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><b><span lang="FR-CH">Arrivée à Saint-Pétersbourg à 1</span></b><b><span lang="FR">3</span><span lang="FR-CH">h30.</span></b><span lang="FR-CH"> <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><span lang="FR-CH">Transfert de la gare à
+l’hôtel en centre-ville.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><span lang="FR-CH">Installation en chambre supérieure à l’hôtel de 4*
+«&nbsp;Golden Triangle » ou similaire, les petits déjeuners inclus.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><span lang="FR-CH">Après l’installation
+dans votre chambre vous avez <b>l’excursion
+première découverte à pied de 2 heures</b>. Le premier aperçu est le plus
+important dit-on, c’est pourquoi cette visite est idéale pour découvrir la ville et le quartier dans lequel vous allez séjourner. Vous
+pourrez aussi découvrir les monuments près de chez vous et recevoir des
+conseils pratiques de la part de votre guide pour pouvoir vous repérer dans
+cette grande ville.&nbsp;&nbsp;</span></p><p class="MsoNormal" style="margin: 0cm 0cm 6pt 8.1pt;"><b style="letter-spacing: -0.01em;"><i>Excursion à pied de 2 heures.</i></b></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 5
+                </div>
+                <div class="program-days-item-header-data">
+                  28.07.20</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/1-Voyage-liberte-Spb-5.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/2-Nuits-Blanches-de-7-jours-.jpg.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal"><span lang="FR">Petit-déjeuner à l’hôtel<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span lang="FR">Visite
+guidée du jardin avec des fontaines de Peterhof.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
+color:#404040;mso-ansi-language:FR;mso-fareast-language:RU" contenteditable="true">Vous avez le
+rendez-vous avec votre guide afin de voir l’un des joyaux de la Russie.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
+color:#404040;mso-ansi-language:FR;mso-fareast-language:RU">Vous prendrez le trajet de 1h en voiture pour visiter le
+magnifique jardin, avec ses fontaines qui fonctionnent encore avec le système
+de l’époque. Ce jardin se trouve au bord de la Baltique dans le Golfe de
+Finlande, vous pourrez ainsi vous promener sur les terrasses qui bordent la
+mer. Temps libre.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;" contenteditable="true"><b><i><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
+color:#404040;mso-ansi-language:FR;mso-fareast-language:RU" contenteditable="true">Excursion véhiculée et à pied de 4-5
+heures.</span></i></b></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><b><i><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
+color:#404040;mso-ansi-language:FR;mso-fareast-language:RU"><br></span></i></b></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="color: rgb(64, 64, 64); letter-spacing: -0.16px;">Temps libre.</span><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="color: rgb(64, 64, 64); letter-spacing: -0.16px;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
+color:#404040;mso-ansi-language:FR;mso-fareast-language:RU">A 00h00 <b>tour de
+ville nocturne véhiculé de 2 heures.</b> Votre guide viendra vous chercher à votre
+hébergement. Vous commencerez cette visite par un aperçu des monuments
+symboliques de Saint-Pétersbourg. Des arrêts photos y sont prévus. Nous vous
+proposons en plus lors de cette excursion de voir la célèbre ouverture des
+ponts, un véritable symbole de la ville de Saint-Pétersbourg. Le premier pont
+se lève à 1h25. Retour à votre hébergement à 2h00.</span><span lang="FR" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:windowtext;mso-ansi-language:FR;mso-fareast-language:
+RU"><o:p></o:p></span></p><p class="MsoNormal"><i style="font-weight: bolder; letter-spacing: -0.16px;"><span lang="FR" style="color: rgb(64, 64, 64);">Excursion véhiculée de 2 heures.</span></i></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="color: rgb(64, 64, 64); letter-spacing: -0.16px;"><br></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 6
+                </div>
+                <div class="program-days-item-header-data">29.07.20</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/besuch-der-eremitage-und-des-generalstabs-1.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/besuch-der-eremitage-3.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/1095.png) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/cours-de-cuisine-dans-un-restaurant-5.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal"><span lang="FR">Petit-déjeuner à l’hôtel.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span lang="FR">Visite giuidée du musée de
+l’Ermitage.<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span lang="FR">Aujourd’hui vous avez le rendez-vous avec votre guide à côté de la colonne
+d’Alexandre pour visiter le musée de l’Ermitage.</span><span lang="FR"> </span><span lang="FR">C’est un des trois plus grands musées du
+monde avec le British Museum à Londres et le Louvre à Paris. Le musée est
+constitué par 5 édifices: le Palais d’Hiver, le Petit Ermitage, le Vieil
+Ermitage, le Nouvel Ermitage et le Théâtre de l’Ermitage. La collection du
+musée compte plus de 3 millions d’objets d’art. Lors de cette visite vous allez
+voir les salles d’apparat, l’horloge Paon, le secteur de la peinture italienne
+(Léonard de Vinci, Raphael, Michel Ange, Caravage) ainsi que le secteur de la
+peinture hollandaise (Rembrandt). Après l’excursion votre guide vous laissera à
+l’Ermitage et vous pourrez profiter d'une visite en autonomie jusqu’à la
+fermeture du musée.</span><b><span lang="FR" style="color:black;mso-themecolor:text1;mso-ansi-language:FR"> </span></b><span lang="FR" style="color:black;mso-themecolor:text1;mso-ansi-language:FR"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><i><span lang="FR-CH">Excursion à pied
+de 3 heures.<o:p></o:p></span></i></b></p>
+
+<p class="MsoNormalCxSpMiddle" style="margin-bottom: 8pt;"><b><span lang="FR">Promenade en bateau sur les canaux et la Néva <u>avec
+audioguide (visite sans guide).<o:p></o:p></u></span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 6pt;"><span lang="FR">Cette promenade
+en bateau vous permettra de découvrir la ville sous un autre angle. On la
+surnomme la Venise du Nord, une balade en bateau est donc incontournable! En
+naviguant sur les canaux, vous aurez réellement l’impression de vous retrouver
+dans une ville européenne, vous montrant ainsi l’admiration de Pierre Le Grand
+pour l’Europe. Sur le fleuve de la Néva, profitez d’une vue incroyable sur la forteresse
+Pierre et Paul et sur le Palais d’Hiver.<b><i>Durée
+1 heure.</i></b></span></p><div><span lang="FR"><b><i><br></i></b></span></div><div><span lang="FR"><p class="MsoNormal"><span class="a0"><span lang="FR"><b class="decoration">Soirée chez l'habitant pétersbourgeois.</b><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><span class="a0"><span lang="FR">Ce soir nous vous proposons de partir dans une famille
+russe qui va partager avec vous un repas fait maison. Vous ferez connaissance
+avec des habitants très accueillants. Vous
+savourerez des plats typiques comme nulle part ailleurs, échangerez vos impressions de voyage avec les hôtes et
+parlerez de la vie quotidienne des Russes de nos jours.L’accueuil chalereux est
+garanti.</span></span><span class="a0"><span lang="FR"><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><span class="a0"><i><span lang="FR"><b>Soirée de 3-4 heures.</b><o:p></o:p></span></i></span></p></span></div><p></p><p class="MsoNormal" style="margin-bottom: 6pt;"><span lang="FR"><b><i><br></i></b></span></p><p class="MsoNormal" style="margin-bottom: 6pt;" contenteditable="true"><span lang="FR"><b><i><br></i></b></span></p><p class="MsoNormal" style="margin-bottom: 6pt;"><br></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 7
+                </div>
+                <div class="program-days-item-header-data">30.07.20</div>
+                <div class="program-days-item-header-name">Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/excursion-saint-saveur-3.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/saint-isaac-5.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri;color:#595959;mso-themecolor:text1;mso-themetint:
+166;mso-ansi-language:FR;mso-fareast-language:RU">Visite guidée </span></b><b><span lang="FR-CH" style="mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:#595959;
+mso-themecolor:text1;mso-themetint:166">de l'église Saint Sauveur sur le
+Sang Versé et&nbsp;</span></b><b><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:#595959;
+mso-themecolor:text1;mso-themetint:166;mso-ansi-language:FR;mso-fareast-language:
+RU">de </span></b><b><span lang="FR-CH" style="mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:
+Calibri;color:#595959;mso-themecolor:text1;mso-themetint:166">la Cathédrale
+Saint Isaac.</span></b><span lang="FR" style="color:#595959;
+mso-themecolor:text1;mso-themetint:166;mso-ansi-language:FR;mso-bidi-font-weight:
+bold"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 8pt;"><span lang="FR" style="mso-ascii-font-family:Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:#404040;
+mso-ansi-language:FR;mso-fareast-language:RU">Suivez votre guide pour voir un
+des exemples de l’architecture du style néo-russe <b>: l'église Saint Sauveur sur le Sang Versé</b>.&nbsp; Vous pourrez admirer ses coupoles
+multicolores de l’exterieur et les 7 000 m2 de mosaïques en verre coloré à
+l’intérieur de cette église magnifique.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri;color:#404040;mso-ansi-language:FR;mso-fareast-language:
+RU">Vous verrez également à l’intérieur la plus grande cathédrale de
+Saint-Pétersbourg : <b>la Cathédrale Saint
+Isaac</b>, qui a été construite d’après le projet de l’architecte français
+Auguste de Montferrand. Cet édifice reste un monument classique avec une touche
+du baroque. Ce mélange s’aperçoit dans le décor sculpté du temple qui compte
+presque 400 statues et reliefs de bronze.<o:p></o:p></span></p><div><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri;color:#404040;mso-ansi-language:FR;mso-fareast-language:
+RU"><br></span></div><div><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri;color:#404040;mso-ansi-language:FR;mso-fareast-language:
+RU"><span style="font-weight: bolder; color: rgb(33, 37, 41); letter-spacing: -0.16px;"><i><span lang="FR-CH">Excursion à pied de 3 heures.</span></i></span><br></span></div><p></p><p class="MsoNormal"><span lang="FR" style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri;color:#404040;mso-ansi-language:FR;mso-fareast-language:
+RU"><br></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore mr-1 btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter mr-1 btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+            </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 8
+                </div>
+                <div class="program-days-item-header-data">31.07.20</div>
+                <div class="program-days-item-header-name">
+                  Saint-Pétersbourg</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/MG_2020_01_N08/1-Spb-Cercle-Polaire-ete-9jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal"><span lang="FR">Transfert à l’aéroport selon l’heure de votre départ.</span></p><p class="MsoNormal">Votre voyage s’achève aujourd’hui. Votre chauffeur vient vous chercher à l’hôtel pour vous ramener à l’aéroport, d’où vous retourner chez vous mais pleines de souvenirs magnifiques et de photos superbes.</p><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements de jours et heures d'ouverture des sites. Si tel était le
+        cas, tout serait mis en oeuvre pour limiter cela à des modifications dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de
+        qualité équivalente.
+      </div>
+    </div>
+    <div class="program-price height">
+    <div class="price-btn needHidden hidden">
+      <button class="add-price-row mr-1 btn btn-success">Строка</button>
+      <button class="add-price-col btn btn-success">Столбец</button>
+    </div>
+    
+    
+    
+    
+      <div class="program-price-title title">
+        Détails et tarifs
+      </div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 2 personnes</span>
+          <span>Prix par personne dans le groupe de 2 personnes</span>
+        </div>
+        <div class="program-price-desc-item">
+          <span contenteditable="true">3 762 €</span>
+          <span>1 881 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height">
+      <div class="program-contain-item" contenteditable="true">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span contenteditable="true">Le support visa (les vouchers et lettre d'invitation)</span>
+          <span>3 nuits à l'hôtel de 4* avec le petit déjeuner en centre de Moscou</span>
+          <span contenteditable="true">4 nuits à l'hôtel de 4* avec le petit déjeuner en centre de Saint-Pétersbourg</span>
+          <span>Le transport terrestre et tous les transferts en véhicule privatif selon le programme</span>
+          <span>Les services d'un guide francophone particulier diplômé pour toutes les excursions mentionnées</span>
+          <span contenteditable="true">Les droits d'entrée dans les musées et les sites selon le programme</span>
+          <span>Les billets de train rapide de jour "Sapsan" pour le voyage entre Moscou et Saint-Pétersbourg&nbsp;</span>
+          <div class="add-contain-item needHidden hidden">Добавить пункт</div>
+        </div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Les frais consulaires pour le visa</span>
+          <span>Les vols internationaux</span>
+          <span>Les assurances</span>
+          <span>Les repas</span>
+          <span>Tous frais et dépenses d'ordre personnel</span>
+          <div class="add-contain-item needHidden hidden">Добавить пункт</div>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+    </div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn">
+            Obtenir l’assurance ›››
+          </div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn">
+            Obtenir l’assurance ›››
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 60 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 60 jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p>Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où intervient l’annulation :</p>
+        <ul>
+          <li>à plus de 60 jours du départ : 5% du prix du voyage</li>
+          <li>entre 59 et 30 jours du départ : 25% du prix du voyage</li>
+          <li>entre 29 et 21 jours du départ : 50% du prix du voyage</li>
+          <li>entre 20 et 7 jours du départ : 75% du prix du voyage</li>
+          <li>à moins de 6 jours du départ et après la date de départ : 100% du prix du voyage</li>
+        </ul>
+      </div>
+    </div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+</body></html>

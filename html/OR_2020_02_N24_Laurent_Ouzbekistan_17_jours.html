@@ -1,0 +1,1039 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+            <p style="line-height: 18px">
+              <a href="/news">Можно менять цвет текста и делать все еще красивее!</a>
+            </p>
+          </header>
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+            <div class="message" style="display: none;"><p style="color: #1e7e34">Ура ура, пдф готов <a href="/pdf/OR_2020_02_N24_Laurent_Ouzbekistan_17_jours.pdf" target="_blank">Вот ссылка</a></p></div>
+            <div id="fountainTextG" style="display: block;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(11px, 38px, 0px);">
+              <button class="addNewDay dropdown-item">Добавить день</button>
+              <button class="dropdown-item">
+                  <label style="margin: 0;">
+                    Картинка на главную страницу
+                    <input type="file" class="setBgImageFirstPage" style="display: none;">
+                  </label>
+                </button>
+                <div style="display: flex; align-items: center;">
+                  <button class="setTextColorMainPage dropdown-item">Цвет текста на главной странице</button>
+                  <input type="color" name="textColor">
+                </div>
+              <button class="saveAsHtml dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml dropdown-item">Сохранить как</button>
+<!--<button class="btn-success addKolontitul dropdown-item">Добавить колонтитулы</button>-->
+<!--<button class="btn-success deleteKolontitul dropdown-item">Удалить колонтитулы</button>-->
+              <button class="saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Текст
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <button class="setTextBold dropdown-item" title="ctrl + b">Жирный</button>
+              <button class="setTextItalic dropdown-item" title="ctrl + i">Курсив</button>
+              <button class="setTextUnderline dropdown-item" title="ctrl + u">Подчеркнутый</button>
+              <div style="display: flex; align-items: center;">
+                <button class="setTextColor dropdown-item">Установить цвет</button>
+                <input type="color" name="textColor">
+              </div>
+              <button class="setTextLink dropdown-item">Сделать ссылку</button>
+              <button class="fontSizeUp dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+              <button class="fontSizeDown dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Элементы
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="first-page">
+                  <label class="custom-control-label" for="first-page">Гавная</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="second-page">
+                  <label class="custom-control-label" for="second-page">Контакты</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a href="/" class="dropdown-item" title="Перейти на главную страницу" target="_blank">Главная</a>
+              <a href="/all" class="dropdown-item" title="Перейти ко всем программам" target="_blank">Все программы</a>
+              <a href="/news" class="dropdown-item" title="Перейти к новостям" target="_blank">Новости</a>
+              <a href="/profile" class="dropdown-item" target="_blank">Профиль</a>
+              <a href="/logout.php" class="dropdown-item" target="_blank">Выйти</a>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+            
+
+            
+
+            
+
+            
+<div class="editable">
+
+  <div class="content">
+    <div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/1-route-de-soie-11jours.jpg&quot;);">
+      <div class="first-page-title" data-text="
+        RUSSIE AUTREMENT
+      ">
+        RUSSIE AUTREMENT
+      </div>
+      <div class="program-name height">
+        <div class="program-name-title" data-text="
+          Programme sur mesure spécialement étudié en faveur de
+        ">
+          Programme sur mesure spécialement étudié en faveur de
+        </div>
+        <div class="program-name-text" data-text="
+          &nbsp;Vianney LAURENT&nbsp;">
+          &nbsp;Vianney LAURENT&nbsp;</div>
+      </div>
+
+      <div class="program-data height">
+        <div class="program-data-title" data-text="
+          Votre demande:
+        ">
+          Votre demande:
+        </div>
+        <div class="program-data-text">
+          <div class="program-data-text-city" data-text="
+            Ouzbekistan" contenteditable="true">
+            <b class="decoration">Ouzbekistan</b></div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span data-text="Nombre de personnes:"><span style="color: #000000" class="dec-color" data-text="Nombre de personnes:">Nombre de personnes:</span></span>
+              <span data-text="Date de sejour:">Date de sejour:</span>
+              <span data-text="Durée du séjour:">Durée du séjour:</span>
+            </div>
+            <div class="program-data-text-desc-item">
+              <span data-text="2 adultes">2 adultes</span>
+              <span data-text="Septembre 2020">Septembre 2020</span>
+              <span data-text="17 jours et 16 nuits">17 jours et 16 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <div data-text="Emerveillez-vous devant les trésors architecturaux et culturels de ce magnifique pays qu'est l'Ouzbekistan. Découvrez les villes incontournables comme Khiva, uen ravissante ville-musée, Boukhara la poétique et Samarcande la majestieuse avec ses merveilles timourides.&nbsp;"><div data-text="Emerveillez-vous devant les trésors architecturaux et culturels de ce magnifique pays qu'est l'Ouzbekistan. Découvrez les villes incontournables comme Khiva, uen ravissante ville-musée, Boukhara la poétique et Samarcande la majestieuse avec ses merveilles timourides."><b class="decoration">Emerveillez-vous devant les trésors architecturaux et culturels de ce magnifique pays qu'est l'Ouzbekistan. Découvrez les villes incontournables comme Khiva, uen ravissante ville-musée, Boukhara la poétique et Samarcande la majestieuse avec ses merveilles timourides.</b></div><div data-text="&nbsp;">&nbsp;</div></div>
+        <div data-text="&nbsp;"><div data-text=""><br></div><div data-text="&nbsp;">&nbsp;</div></div>
+        <div data-text=""><br></div>
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="second-page"><div class="manager-contacts height">
+    <div class="change-data-user">
+      <a href="/updateDataUser.php">Изменить</a>
+    </div>
+    <div class="manager-contacts-photo">
+      <img src="http://78.47.40.9/uploads/updateDataUser.php/LRM_EXPORT_126685592534849_20191020_213334078.jpg" alt="">
+    </div>
+    <div class="manager-contacts-desc">
+      <div class="manager-contacts-desc-name">
+        Oksana      </div>
+      <div class="manager-contacts-desc-company">
+        Russie Autrement      </div>
+      <div class="manager-contacts-desc-items">
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Adresse:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            Bureau 1 Quai de la Moika, 67-69 Saint-Pétersbourg, Russie 191186          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Téléphone:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            +33 (0) 1 84 88 33 57          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            E-mail:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            oksana.romanova@russieautrement.com          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Site web:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            <a href="https://russieautrement.com">russieautrement.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <div class="program-days">
+
+    <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 1
+                </div>
+                <div class="program-days-item-header-data">
+                  01.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Paris - Tachkent</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/2-10jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Vol Paris - Tachkent.</p><div>Dîner et nuit à bord.</div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 2
+                </div>
+                <div class="program-days-item-header-data">
+                  02.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Tachkent</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/079d2bd08e079d3f9950a521fc18d47d.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/81f3a56c5b9b8d86f4c969f72688334e.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Arrivée à 07h00 à Tachkent, la capitale d'Ouzbekistan.</p><div>Accueil par le guide francophone, transfert et installation à l'hôtel.<div><b class="decoration">L'installation dès votre arrivée est garantie.</b></div><div><b class="decoration">Petit-déjeuner à l'hôtel.</b><div><br><div>Première découverte dela capitale ouzbèque:&nbsp;<br><div><span style="letter-spacing: -0.01em;"><b class="decoration">L’ensemble architectural Khazrat-i-Imam</b> qui comprend le mausolée al-Kaffal Shashi, tombe d’un docteur de l’Islam, philosophe et poète qui a&nbsp; &nbsp;au IXème s ;<b class="decoration"> la madrasa Barak Khan</b>, fondée au XVIème s. par un descendant de Tamerlan ; <b class="decoration">la mosquée du Vendredi</b>, flanquée de deux minarets de 54m et <b class="decoration">la madrasa Moyie Mubarak</b> avec le Coran du VIIème s. réputé comme étant le plus ancien au monde.</span><br></div><div><div>&nbsp;<b class="decoration">La madrasa Koukeldach</b> construite à la fin du XVIème siècle qui est en activité depuis toujours.</div><div>Une agréable promenade dans <b class="decoration">le bazar Tchorsou</b>, le plus célèbre marché d’alimentation de Tachkent.&nbsp;</div><div><b class="decoration">L’après-midi, continuation des visites guidées avec :</b></div><div><b class="decoration">Le musée des Arts Appliqués</b>, l’ancien palais du diplomate russe Alexandre Polovtsev, qui abrite de riches collections de l’artisanat ouzbek traditionnel (objets de métal ciselé, tissus, bois peints, broderies, céramiques, bijoux d’argent, etc).<div><br></div><div><b class="decoration">Dîner typique et logement à l'hôtel.</b></div></div></div><div><br></div></div></div></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 3
+                </div>
+                <div class="program-days-item-header-data">
+                  03.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Tachkent – Kokand – Richtan Ferghana&nbsp;&nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/3-route-de-soie-12jours-min.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><b class="decoration">A 07h00, </b>transfert à la gare, embarquement à bord du train&nbsp;</div><div>exress&nbsp; et départ à destination de<b class="decoration"> Kokand</b> (dép.: 08h05 ; arr.:&nbsp;</div><div>11h47). Arrivée à Kokand et visites guidées de la ville avec :&nbsp;</div><div>- <b class="decoration">Le palais de Khoudoyar Khan</b>, dernier gouverneur du khanat de Korand (fin du XIXème siècle).</div><div>- <b class="decoration">La mosquée du Vendredi</b>, ou Jami, avec ses 98 piliers de bois sculpté.&nbsp;&nbsp;<div><br></div><div>Déjeuner en route dans un restaurant traditionnel local.<div><br></div></div></div><div><div>Route pour<b class="decoration"> Ferghana,</b> arrivée et&nbsp; installation à l'hôtel.</div><div></div><div>Une agréable balade dans <b class="decoration">des quartiers coloniaux de la ville russe de Ferghana.</b></div><div><b class="decoration">Dîner typique et logement à l'hôtel.</b><br></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 4
+                </div>
+                <div class="program-days-item-header-data">
+                  04.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Ferghana - Marguilan - Richtan - Ferghana (70 km au total)</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/5-route-de-soie-11jours-min.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/5-route-de-soie-15jours-min.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div>Le matin, départ en direction de <b class="decoration">Marguilan</b>, ancienne ville importante de la Route de la Soie, située à une dizaine de kilomètres au nord de Fergana.&nbsp;</div><div>Excursion dans <b class="decoration">la fabrique de soie « Yodgorlik »</b>, où vous découvrirez la production de soie entièrement manuelle, depuis le tri des cocons jusqu’au tissage final.&nbsp;<div>Popursuite de route pour <b class="decoration">Richtan, grand centre de poterie de l'Ouzbekistan.</b> Les céramiques traditionnelles de Richtan de couleur cobalte et de tusquoise sont toujours très connues dans la région.<div><b class="decoration">V</b><b class="decoration">isite de l'atelier de céramique du maître Rustam Usmanov</b>, ses céramiques ont la réputation&nbsp; d'être le splus belles céramiques de couleurs bleues, vertes et turquoises du pays.</div></div></div><div><div><br></div><b class="decoration">Déjeuner typique dans un restaurant local.</b><br><div><br></div><div><b class="decoration">Retour à Ferghana.</b><div><b class="decoration">Dîner typique et logement à l'hôtel</b>.</div></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 5
+                </div>
+                <div class="program-days-item-header-data">
+                  05.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Ferghana - Tashkent - Ourgentch - Khiva</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/ourghentch.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><b class="decoration">Petit-déjeuner à l'hôtel.</b></p><div><br></div><div>Retour&nbsp; à Tashkent par le même col.<div><span style="letter-spacing: -0.01em;"><br></span></div><div><span style="letter-spacing: -0.01em;"><b class="decoration">Déjeuner en route dans la tchaikhana traditionnelle.</b></span><div><div><div><br><div>Arrivée à Tashkent au début de l'après-midi.</div><div>Transfert à l'aéroprot.<div><b class="decoration">Le vol pour Ourgentch à 19h00.</b><div>Arrivée à Ourgentch à 20h25.<div><b class="decoration">Transfert à Khiva </b>(20-30 minutes en route).</div><div>Dîner à l'hôtel.</div><div><br></div></div></div></div></div><div><br></div></div></div></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 6
+                </div>
+                <div class="program-days-item-header-data">
+                  06.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Khiva&nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-11-900-10.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/e4bb78e8a09d8e765058246f51054b83.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><div><b class="decoration">Petit-déjeuner à l'hôtel.</b></div><div><br></div>Journée entière consacrée aux découvertes de la vieille ville de Khiva, ou Itchan-Kala, avec votre guide local francophone :&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La madrasa Mouhammad Amin Khan,</b> l’une des plus grandes madrasas d’Asie centrale et <b class="decoration">le minaret Kalta</b>, ou le «minaret inachevé » ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La forteresse Koukhna Ark</b> qui regroupe la mosquée Juma, la Salle du Trône et&nbsp; la Chancellerie et de divers locaux de services ,</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le palais Tach Khaouli</b>, ou le&nbsp; « Palais de Pierre » avec son Harem, la madrasa et le caravan-sérail Allakouli Khan ;<div><br></div><div>L’après-midi, poursuite des visites guidées avec:<div><br><div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La madrasa Islam Khodja</b> et son plus haut minaret de la ville ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le mausolée Pakhlavon Makhmoud</b>, le monument architectural le plus remarquable ;</div></div><div><span style="letter-spacing: -0.16px;"><b class="decoration">La mosquée du Vendredi</b> avec ses 218 colonnes en bois sculpté.</span><div><br><div><span style="letter-spacing: -0.16px;">Dîner dans un restaurant local.</span></div></div></div></div></div><div><br></div></div><div></div><div></div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 7
+                </div>
+                <div class="program-days-item-header-data">
+                  07.09.2020
+                </div>
+                <div class="program-days-item-header-name">&nbsp;Khiva - Toprak Khola - Ayaz Kala- Khiva (250 km de route aller-retour</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/5-route-de-soie-12jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNoSpacingCxSpFirst" style="margin: 0cm 0cm 2pt; text-indent: 0cm; line-height: 112%;"><span class="a"><span lang="EN-US" style="color:windowtext;mso-ansi-language:EN-US;mso-bidi-font-weight:
+bold"><b class="decoration">Petit déjeuner à l’hôtel</b></span></span><span class="a"><span lang="EN-US">. </span></span><span lang="FR"><o:p></o:p></span></p>
+
+<p class="MsoNoSpacing" style="margin: 0cm 0cm 2pt; text-indent: 0cm; line-height: 112%;"><span class="a"><span lang="FR">J</span></span><span lang="FR" style="border:none windowtext 1.0pt;mso-border-alt:none windowtext 0cm;
+padding:0cm;mso-ansi-language:FR;mso-fareast-language:RU">ournée consacrée aux
+découvertes des anciennes forteresses de l’ancien Khorezm. </span><span lang="FR">Départ en direction de la </span><span lang="FR" style="mso-bidi-font-family:
+Calibri;color:#595959;mso-ansi-language:FR;mso-bidi-font-weight:bold">région d’</span><b><span lang="FR" style="mso-bidi-font-family:
+Calibri;color:windowtext;mso-ansi-language:FR">Ellik Kala</span></b><span lang="FR"> </span><span lang="FR">(250 km – env. 4h aller-retour).</span></p><p class="MsoNoSpacing" style="margin: 0cm 0cm 2pt; text-indent: 0cm; line-height: 112%;"><span lang="FR" style="letter-spacing: -0.01em; font-family: Symbol; color: windowtext;"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;</span></span><span lang="FR" style="letter-spacing: -0.01em;">La </span><b style="letter-spacing: -0.01em;"><span lang="FR" style="mso-bidi-font-family:Calibri;color:windowtext;mso-ansi-language:
+FR">forteresse de Toprak Kala</span></b><span lang="FR" style="letter-spacing: -0.01em;"> (I<sup>er</sup> s.), la plus impressionnante et
+la plus systématiquement explorée de la région.</span></p><p class="MsoNoSpacingCxSpLast" style="margin-bottom: 2pt; line-height: 112%;"><span lang="FR" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:windowtext;mso-ansi-language:FR"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"></span></span><!--[endif]--><span lang="FR">Après env.
+une heure de route, découverte d’</span><b><span lang="FR" style="mso-bidi-font-family:
+Calibri;color:windowtext;mso-ansi-language:FR">Ayaz Kala</span></b><span lang="FR">, trois
+forteresses en ruine (IV-III<sup>ème</sup> s. avant J.-C.), où douze statuettes
+d’or ont été découvertes.<o:p></o:p></span></p><div><span lang="FR"><br></span></div><div><span lang="FR">Déjeuner en route.</span><div><span lang="FR"><br></span></div><div><span lang="FR">Retour à Khiva.</span></div><div><span lang="FR"><br></span></div><div><span lang="FR">Repos et dîner à l'hôtel.</span></div><div><span lang="FR"><br></span></div></div><div><span lang="FR"><br></span></div><p></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 8
+                </div>
+                <div class="program-days-item-header-data">
+                  08.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Khiva - Boukhara (450 km, 809 heures de route)</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/2-route-de-soie-15jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><b class="decoration">Petit-déjeuner à l'hôtel.</b></p><div><br></div><div>Tôt matin<b class="decoration"> route en direction de Boukhara </b>en passant les sables rouges <b class="decoration">du désert Kizil-Koum</b>. Sur la route traversée de la steppe aride avec <b class="decoration">ses troupeaux de mouton d'astrakan,</b> puis découverte du <b class="decoration">fleuve de l'Amou-Daria</b>, véritable serpant bleu dans le désert.<div><br><div><b class="decoration">Déjeuner en route dans une tchaikhana traditionnelle.</b></div><div><br><div>Arrivée à Boukhara dans l'après midie.</div><div>Soirée libre.</div><div><br></div><div><br></div></div><div><br></div></div><div><br></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 9
+                </div>
+                <div class="program-days-item-header-data">
+                  09.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Boukhara (visite à pied)</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-11-900-6.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Petit-déjeuner à l'hôtel.</p><div><div>Journée consacrée à la visite à pied de <b class="decoration">la vieille ville de Boukhara </b>avec votre guide-accompagnateur francophone:</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">L’ensemble Po-i-Kalyan</b> qui regroupe <b class="decoration">la madrasa Mir-i-Arab, la mosquée et le minaret Kalon du XIème s</b>. ;</div><div>&nbsp;<span style="white-space:pre">	</span>Les coupoles des changeurs et des chapeliers ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La madrasa Ouloug Beg (XVème s.) et Abdoulaziz Khan : (XVIIème s.) ;</b></div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le Tok-i-Zargaron,</b> ou les coupoles des bijoutiers, et le marché couvert du XVIème siècle ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La mosquée Magok-i-Attari</b>, ancien temple zoroastrien ;&nbsp;</div><div></div><div>L’après-midi, poursuite des visites guidées avec :</div><div>&nbsp; &nbsp; &nbsp;&nbsp;<span style="letter-spacing: -0.16px;"><b class="decoration">La place Liabi-Khaouz</b> (« au bord du bassin »), qui comprend la madrasa Kukeldash (1568), le caravansérail Nodir-Devon Begui (1622) et le khanagha, ancienne&nbsp; &nbsp; résidence des derviches ;</span><br></div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le mausolée de la Source de Job,</b> ou Tchachma Ayyub, construit au-dessus d’une sources miraculeuse (XII-XVIème s.) ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La mosquée Bolo-Khaouz</b> avec ses vingt piliers ornés de stalactites peintes et la citadelle d’Ark qui servait de résidence aux émirs de Boukhara jusqu’en 1920.&nbsp;<div><br></div></div><div>Nuit à l’hôtel.&nbsp;</div></div><div><br></div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 10
+                </div>
+                <div class="program-days-item-header-data">
+                  10.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Boukhara</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-12-900-5.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p><b class="decoration">Petit-déjeuner à l'hôtel.</b></p><div><div>Poursuite des visites guidées des monuments situés à l’extérieur de Boukhara :&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La madrasa Tchor Minor,</b> ou des « quatre minarets », cachée dans les ruelles des anciens quartiers de la ville ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le mausolée de Bakhaouddin Naqshbandi</b>, soufi et fondateur de l’ordre Naqshbandiya. Ce site est considéré comme l'un des lieux de pèlerinage les plus sacrés ;&nbsp;</div><div>&nbsp;<b class="decoration">Le palais d’été du dernier émir de Boukhara</b>, ou Sitorai-Mokhï-Khossa, dont l’ensemble d’habitations et de salons officiels furent construits par les Russes en 1911.<div><br></div><div>Excursion dans <b class="decoration">la maison - musée de Faizoulla Khodjaev</b>, un riche marchand de XIXs, qui offre une riche collection des habits traditionnelles des boukhariotes de la fin du XIX du début di XXss.</div></div><div>&nbsp;<span style="white-space:pre">	</span><div>Déjeuner dans un restaurant local.<div><br></div><div>Après-midi libre dédiée à vos découvertes personnelles de al ville.</div></div><div><br></div></div><div><br></div></div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 11
+                </div>
+                <div class="program-days-item-header-data">
+                  11.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Boukhara - Guijdouvan - Nourata - Aydarkoul - Campement de yourtes</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/unnamed.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/whatsapp-image-2018-05-18-at-01-03-48.jpeg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/aydarkul3.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Petit-déjeuner à l'hôtel.</p><div><br></div><div>Départ en direction de <b class="decoration">Nourata,</b> sur le chemin arrêt à <b class="decoration">Guijdouvan</b> pour visiter <b class="decoration">l'atelier </b><b class="decoration">de maître céramiste</b> <b class="decoration">Abdullo</b> <b class="decoration">Nurullaeff</b>.&nbsp;<div><b class="decoration">Excursion dans le musée de la Céramique et l'atelier de poterie</b>, puis découverte de la&nbsp; broderie traditionnelle en fil de soi pratiquée par les femmes de la famille.<div><br></div><div>Continuation de route.<div><br></div></div><div>Un nouvel arrêt pour la visite des vestiges de <b class="decoration">l'ancien caravansérail Rabat-i-Malik</b> et <b class="decoration">du reservoir d'eau Sardoba</b>.</div><div><br><div><b class="decoration">Déjeuner traditionnelle dans une maison d'hôtes à Nourata.</b><div><div><br></div><div>Visite de Nourata&nbsp; avec :&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">L’ensemble architectural Tchachma </b>et sa source sacrée, puis découverte des ruines d’une antique citadelle d’Alexandre le Grand.&nbsp;<div><br></div><div>Départ vers <b class="decoration">Yangui Gazgan</b>, à l'arrivée un court trajet en minivan vers le campeman de yourtes.<div>L'installation en yourte.<div><br></div></div><div><div>Court transfert (env. 30 min) jusqu’<b class="decoration">au lac Aydarkoul </b>qui fut créé à la suite d’un déversement d’un réservoir d’eau au Kazakhstan dans les années 1970.</div><div>&nbsp;<span style="white-space:pre">	</span>La baignaide et découverte de la flore et de la faune de la région.&nbsp;</div><div><br><div>Au coucher du soleil, <b class="decoration">la ballade à dos de chameaux de Bactriane </b>sur les dunes de sable aux alentours du campement.</div></div></div></div></div><div><br></div></div><div><div><b class="decoration">Dîner festif (boissons incluses) </b>autour d'un feu de camp avec musiques et chants traditionnels d’un troubadour kazakh.</div><div>Nuit sous la yourte.&nbsp;</div><div><br></div></div></div></div></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 12
+                </div>
+                <div class="program-days-item-header-data">
+                  12.09.2020
+                </div>
+                <div class="program-days-item-header-name" contenteditable="true">
+                  Campement de yourtes - village Asraf</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/Nurata_trek_47.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Petit-déjeuner.</p><div><br><div><div>Départ en direction <b class="decoration">du village d’Achraf</b>, ou Asraf, situé à l’est de Nourata dans <b class="decoration">la réserve naturelle des noyers de montagne des Monts Nouratines</b> (180 km – env. 2h de route).&nbsp;&nbsp;</div><div>Arrivée dans le village,&nbsp; accueil chaleureux par la famille ouzbèke et <b class="decoration">installation chez l’habitant</b>.&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span>Une agréable balade aux alentours du village pour faire connaissance des populations locales et leur mode de vie.</div></div><div><br></div><div>Dîner et hébergement chez l’habitant.<br></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 13
+                </div>
+                <div class="program-days-item-header-data">
+                  13.09.2020
+                </div>
+                <div class="program-days-item-header-name">Asraf - Samarkand ()</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/nuratau-mountains1.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p>Petit-déjeuner.</p><div><br></div><div>Début du <b class="decoration">trek dans la résère d'Etat </b>située dans les monts Nouratines. En route vous verrez 5 petits villages.<div>Dans la résèrbe vous explorerez la flore et la faune de la région, dont la plupart est menacée de disparition.&nbsp;<div>Retour à Asraf.</div><div><br><div>Dans l'après-midi route à Samarkand.<div>Arrivéa à Samarkand.</div><div>Installation à l'hôtel.<div><br></div><div>Dîner dans un restaurant local.</div><div><br></div><div><br></div></div></div></div></div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 14
+                </div>
+                <div class="program-days-item-header-data">
+                  14.09.2020
+                </div>
+                <div class="program-days-item-header-name">Samarkand</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-11-900-3.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/paper-factory-10.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div>Petit-déjeuner à l'hôtel.</div><div><br></div><div>Journée consacrée aux visites de<b class="decoration"> Samarkand</b> avec votre guide-accompagnateur francophone :&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La fameuse place Reghistan </b>entourée de trois madrasas : Ouloug Beg (XVème s.), la madrasa recouverte de délicats carreaux de faïence émaillés, celle de Sher-Dor (XVIIème s.) et celle de Tillia Kori avec sa mosquée d’or (XVIIème s.).&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le mausolée Gour-i-Emir,</b> doté d’un superbe dôme nervuré et à l’intérieur décoré de papier-mâché.&nbsp;</div><div>L’après-midi, continuation des visites guidées :</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Les vestiges de l’observatoire d’Ouloug Beg</b>, premier observatoire en Orient où un énorme sextant permettait de contempler les astres et les étoiles.&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le musée Afrosiab</b> dont le pièce maîtresse est une fresque du VIIe s., l’une des rares de la période préislamique de la région.<div><br></div><div>Puis, la visite dans<b class="decoration"> l'atelier de fabrication du papier</b> <b class="decoration">de soi </b>oè vous aurez la possibilité participer à une initiation à la production du papier de mûrier ou encore du "papier de marbre".</div></div><div><br></div><div>Dîner dans un restaurant local.</div><div><br></div><div>Nuit à l’hôtel.</div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 15
+                </div>
+                <div class="program-days-item-header-data">
+                  15.09.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Samarkand - Chakhrizabs - Samarkand</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/5b724dc89011784a911ffcbe95d43afe.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div><br></div><div>Petit-déjeuner à l'hôtel.</div><div><br></div>En matinée, route pour<b class="decoration"> Chakhrisabz</b>, ville natale de Tamerlan, située à une centaine de kilomètres au sud de Samarkand (180 km – env. 3h de route aller-retour). Vous passerez par l<b class="decoration">e col Takhta Karatcha</b> (1 700 m d’altitude) qui offre un magnifique panorama sur les monts Zarafchan.&nbsp;<div><br><div>Déjeuner libre.</div><div contenteditable="true"><br></div><div><div>Arrivée et visites guidées de la ville avec :&nbsp;&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Les ruines majestueuses du « Palais Blanc », ou Ak Saraï.</b>&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">L’ensemble Dorus-Tilovat et sa mosquée Kok Goumbaz</b>, autrement la « Coupole Bleue ».&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">Le complexe architectural Dorus-Siadat</b> qui regroupe la crypte de Tamerlan, le tombeau du fils aîné et favori de Timour et la mosquée Khazrat-i-Imam.&nbsp;</div><div><br></div></div></div><div>Retour à Samarkand.<div>Dîner typique dans restaurant local.</div><div>Nuit à l'hôtel.</div></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 16
+                </div>
+                <div class="program-days-item-header-data">
+                  16.09.2020                </div>
+                <div class="program-days-item-header-name">
+                  Samarkand - Tashkent</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-12-900-9.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/938d5926d3a42d30dc466418bf83e8c5.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div>Petit déjeuner à l’hôtel.&nbsp;</div><div><b class="decoration">Continuation des découvertes de Samarkand </b>avec votre guide accompagnateur francophone :&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La mosquée Bibi Khanoum</b>, qui fut à l’époque la plus grande mosquée de toute l’Asie centrale ;</div><div>&nbsp;<span style="white-space:pre">	</span><b class="decoration">La nécropole Shakh-i-Zinda</b>, perle de l’architecture de Samarcande du XIVe-XVe. C’est un ensemble unique, où l’on retrouve tous les procédés artistiques de décoration des édifices islamiques ;</div><div>&nbsp;<span style="white-space:pre">	</span>Puis la flânerie dans <b class="decoration">le pittoresque bazar Siab</b>, un endroit des plus animés et colorés. Votre accompagnateur francophone vous guidera dans le bazar en vous expliquant l’organisation d’un marché oriental (épices, pâtisseries locales, fruits secs, souvenirs etc.).&nbsp;</div><div>&nbsp;<span style="white-space:pre">	</span>Le quartier libre pour faire les dernières courses.&nbsp;<div><br></div></div><div>A 16h30, transfert à la gare et embarquement à bord du TGV ouzbek et départ en direction de Tachkent (dép.: 17h30 / arr.: 19h40).<div>&nbsp;Arrivée à Tachkent, transfert et installation à l’hôtel.</div></div><div>Nuit à l’hôtel.</div><div><br></div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">
+                  Jour 17
+                </div>
+                <div class="program-days-item-header-data">
+                  17.09.2020                </div>
+                <div class="program-days-item-header-name">
+                  Tachkent – Paris&nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/OR_2020_02_N45_Talmon/girs-en-ouzbekistan-11-900-11.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><div>Petit déjeuner à l’hôtel.&nbsp;</div><div>Transfert à l’aéroport de Tachkent depuis votre hôtel.&nbsp;</div><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements de jours et heures d'ouverture des sites ou de modification des horaires des vols domestiques. Si tel était le cas, tout serait mis en œuvre pour limiter cela à des modifications dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de qualité équivalente. Votre programme définitif vous sera reconfirmé 2 semaines avant le départ.
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+      <div class="program-price-title title">
+        Détails et tarifs&nbsp; &nbsp; &nbsp; &nbsp; valables&nbsp; 7 jours</div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 2 personnes</span>
+          <span>Prix par personne dans le groupe de 2 personnes&nbsp;</span>
+        </div>
+        <div class="program-price-desc-item" contenteditable="true">
+          <span contenteditable="true">6974 €</span><span contenteditable="true">3487 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span><div>L'hébergement en chambre double/twin standard dans les hotels 3* (classification aux normes du pays) y compris une nuit sous la yourte et quatre nuits chez l’habitant avec petits déjeuners&nbsp;</div></span><span>Un guide-accompagnateur pendant tout le circuit</span><span>Les frais d’entrée (musées et sites) selon le programme.</span><span>Le billet d’avion pour le vol domestique Tachkent – Ourghentch en classe économique&nbsp;</span><span>Le billet train ouzbek Tachkent – Kokand en classe économique&nbsp;</span><span>Le billet de TGV ouzbek Samarkand – Tachkent en classe économique&nbsp;</span><span>La pension complète (l'eay minérale et le&nbsp; thé à chaque repas&nbsp; en quantité illimité) du petit -déjeuner le jour 2&nbsp; au petit-déjeuner&nbsp; le jour 17,</span><span>Le transport et les transferts selon le programme en véhicule climatisé avec un chauffeur y compris l’essence, les taxes routières, etc&nbsp; (sauf des déplacements non prévus dans le programme)</span></div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Les frais consulaires pour le visa</span>
+          <span>Les vols internationaux</span>
+          <span>Les assurances</span>
+          <span>Les repas</span>
+          <span>Tous frais et dépenses d'ordre personnel</span>
+        <span><p class="MsoListParagraph" style="margin-top:0cm;margin-right:0cm;margin-bottom:
+3.0pt;margin-left:18.15pt;mso-add-space:auto;text-align:justify;text-indent:
+-17.85pt;line-height:160%;mso-list:l0 level1 lfo1;tab-stops:list 14.65pt"><span lang="FR">Les droits de photo ou vidéo dans certains
+musées/sites</span><span lang="FR-CH"><o:p></o:p></span></p></span></div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 30% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 60 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 60 jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p>Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où intervient l’annulation :</p>
+        <ul>
+          <li><div>plus de 60 jours avant le départ, une retenue de 10% sera opérée (mais minimum 70 euros par personne).</div><div>entre 59 et 21 jours avant le départ, une retenue de 30% sera opérée.</div><div>entre 19 et 15 jours avant le départ, une retenue de 50% sera opérée.</div><div>dans les 14 jours précédents le départ, une retenue de 100% sera opérée.</div></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+</body></html>

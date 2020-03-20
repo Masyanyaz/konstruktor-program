@@ -1,0 +1,45 @@
+{
+  "name": "wp",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production --color --progress",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "keywords": [],
+  "author": "Masyanyaz",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "vue-loader": "^15.9.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "express": "^4.17.1",
+    "node-html-to-image": "^1.1.0",
+    "vue": "^2.6.11"
+  }
+}

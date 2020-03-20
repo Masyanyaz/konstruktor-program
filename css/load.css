@@ -1,0 +1,52 @@
+/*******************************************
+****************** CONTENT ***************
+*******************************************/
+#content{
+//	width:800px;
+	margin:0 auto;
+}
+
+/*******************************************
+******************* LESSON ***************
+*******************************************/
+#drop-zone{
+//	width:500px;
+//	line-height:300px;
+//	margin:30px auto;
+	position:relative;
+	text-align:center;
+	background-color:#ecf0f1;
+}
+
+#drop-zone .text{
+	color:#666;
+	font-family:Verdana, Geneva, sans-serif;
+	vertical-align:middle;
+}
+
+#drop-zone.success{
+	background-color:#2ecc71;
+}
+
+#drop-zone.error{
+	background-color:#e74c3c;
+}
+
+#file{
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.01;
+}
+
+#showUpFile{
+//	width:500px;
+	margin:0 auto;
+}
+
+#showUpFile img{
+//	max-width:500px;
+}

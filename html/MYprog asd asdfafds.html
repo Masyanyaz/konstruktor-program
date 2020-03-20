@@ -1,0 +1,272 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body>
+<header style="position: fixed; z-index: 999999; display: flex; justify-content: space-between; width: 1050px;
+  border-bottom: 2px solid; height: 50px; background-color: rgba(0,0,0, .2);" class="py-2 px-5 needHidden hidden">
+  <div>
+    <button class="addDay btn-success">Добавить день</button>
+    <button class="savePdf btn-success">Созранить как pdf</button>
+    <button class="saveAsHtml btn-success">Сохранить файл</button>
+    <button class="saveAsOtherHtml btn-success">Сохранить как другой файл</button>
+  </div>
+  <div class="message" style="display: block;"><p style="color: #1e7e34">Файл сохранен</p></div>
+  <div id="fountainTextG" style="display: none;">
+    <div id="fountainTextG_1" class="fountainTextG">З</div>
+    <div id="fountainTextG_2" class="fountainTextG">а</div>
+    <div id="fountainTextG_3" class="fountainTextG">г</div>
+    <div id="fountainTextG_4" class="fountainTextG">р</div>
+    <div id="fountainTextG_5" class="fountainTextG">у</div>
+    <div id="fountainTextG_6" class="fountainTextG">з</div>
+    <div id="fountainTextG_7" class="fountainTextG">к</div>
+    <div id="fountainTextG_8" class="fountainTextG">а</div>
+  </div>
+</header>
+<div class="editable">
+  <div class="programm-header height">
+    <div class="programm-header-left">
+      <span>russieautrement</span>
+      <a href="#">www.russieautrement.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span>Adresse:</span>
+        <span>Tél.:</span>
+        <span>E-mail:</span>
+      </div>
+      <div class="www">
+        <span>67-69, quai de la Moika, Bureau 1, Saint-Pétersbourg</span>
+        <span>+33 (0) 1 84 88 33 57</span>
+        <a href="mailto:contact@russieautrement.com" class="email">contact@russieautrement.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">
+      Pays du Nord
+    </div>
+    <div class="programm-data-text">
+      <p>
+        Programme sur mesure spécialement étudié en faveur de <span>ROSSIN Noëlle</span>
+      </p>
+      <span>Votre demande:</span>
+      <div class="programm-data-list">
+        <div class="eee">
+          <span>Nombre de personnes:</span>
+          <span>Date de sejour:</span>
+          <span>Durée du séjour:</span>
+        </div>
+        <div class="www">
+          <span>4 adultes</span>
+          <span contenteditable="true">Du 10 ds fasdf&nbsp; 20 novembre 2019</span>
+          <span>11 jours et 10 nuits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  <div class="day-block height" id="1" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="1">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="1">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number" contenteditable="true">
+                    jour 4</div>
+                  <div class="day-town-and-date">asd fa sdfas fd</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  </div>
+                  <div class="day-text">
+                      <p>Текст дня</p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="2" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="2">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="2">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number" contenteditable="true">
+                    jour 4</div>
+                  <div class="day-town-and-date">&nbsp;asdf asfd af</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/newProgram1573025681459/Screenshot_2019-10-25_11-38-29.png) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Текст дня</p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="3" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="3">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="3">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 
+                  </div>
+                  <div class="day-town-and-date">
+                    <span>Дата</span> - <span>Название дня</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/newProgram1573025681459/shutterstock_119877775.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Текст дня</p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="4" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="4">Add day after this</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="4">Delete day</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 
+                  </div>
+                  <div class="day-town-and-date">
+                    <span>Дата</span> - <span>Название дня</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  </div>
+                  <div class="day-text">
+                      <p>Текст дня</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <div class="fin height">
+    <p class="center-red">Fin de nos services</p>
+    <p>a sdfa sdfafds <br></p>
+  </div>
+
+  <div class="programm-tarifs height">
+    <div class="programm-tarifs-head">
+      Détails et tarifs
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span>Prix total pour 4 personnes :</span>
+        <span>Prix par personne dans le groupe de 4 personnes :</span>
+      </div>
+      <div class="ttt">
+        <span>4 980 €</span>
+        <span>1 245 €</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left">
+      <span>Ces prix comprennent : </span>
+      <ul class="galochka">
+        <li>Le support visa (les vouchers et lettre d'invitation)</li>
+        <li>2 chambres doubles dans un hôtel à Mourmansk
+          avec les petits déjeuners inclus
+        </li>
+        <li>Le transport terrestre et tous les transferts en
+          véhicule privatif selon le programme
+        </li>
+        <li>Les services d'un guide francophone particulier
+          diplômé pour toutes les excursions mentionnées
+        </li>
+        <li>Les droits d'entrée dans les musées et les sites
+          selon le programme
+        </li>
+        <li>Les billets de train selon le programme</li>
+        <li>Le vol interne</li>
+      </ul>
+    </div>
+    <div class="programm-include-right">
+      <span>Ces prix ne comprennent pas : </span>
+      <ul class="krestik">
+        <li>Les visa</li>
+        <li>Les vols internationaux</li>
+        <li>Les assurances</li>
+        <li>Les repas non mentionnés dans le programme</li>
+        <li>Tous frais et dépenses d'ordre personnel</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="programm-remarques height">
+    <h3>Remarques</h3>
+    <span>Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.</span>
+    <div class="red-block">
+      Voyagez en toute sécurité en souscrivant à une assurance voyage !
+    </div>
+    <div class="programm-remarques-content">
+      <img src="https://russieautrement.com/upload/medialibrary/a9f/a9fa57c2dff604db53b12f64ced4c4c0.jpg">
+      <div class="programm-remarques-text">
+        <p>Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous
+          proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+          tranquille et en toute sécurité :
+        </p>
+        <ul class="zvezdochka">
+          <li>Cap Assistance 24/24. Un problème pendant votre séjour ? Faîtes-nous
+            confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr
+            d’obtenir une aide efficace avec cette assurance mise à votre disposition.
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+          <li>Cap Annulation. L'assurance Cap Annulation, dite assurance annulation
+            toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour
+            retenus par l'organisateur du voyage (agence, transporteur, loueur) pour "toutes
+            causes justifiées".
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block">
+      MODALITÉS DE RÉSERVATION, D'ANNULATION ET DE PAIEMENT
+    </div>
+    <p class="zvezda">Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien
+      sécurisé. Le prépaiement n'est pas remboursable en cas d'annulation.
+    </p>
+
+    <p class="zvezda">Le solde du voyage doit être réglé :</p>
+    <ul class="polii">
+      <li>par carte bancaire au plus tard 75 jours avant votre arrivée</li>
+      <li>par virement bancaire au plus tard 75 jours avant votre arrivée (les frais sont à votre charge)</li>
+    </ul>
+    <p class="zvezda">Toute annulation doit faire l’objet d’un mail adressé à notre agence Russie Autrement. Le montant
+      des frais d’annulation varie en fonction du moment où intervient l’annulation :
+    </p>
+    <p></p>
+    <ul class="polii">
+      <li>à plus de 7 jours du départ : 20% du prix du voyage</li>
+      <li>entre 72 et 61 jours du départ : 25% du prix du voyage</li>
+      <li>entre 60 et 51 jours du départ : 50% du prix du voyage</li>
+      <li>entre 50 et 33 jours du départ : 75% du prix du voyage</li>
+      <li>à moins de 32 jours du départ et après la date de départ : 100% du prix du voyage</li>
+    </ul>
+  </div>
+</div>
+<div class="height"></div>
+
+
+</body></html>

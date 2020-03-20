@@ -1,0 +1,625 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+              <p style="line-height: 18px">
+                А что это у нас за новая кнопка "Элементы"?
+                <a href="/news">Мне интересно!</a>
+              </p>
+            </header>
+
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+                <div class="message"><p style="font-size: 12px;">Привет)</p></div>
+                <div id="fountainTextG" style="display: none;">
+                  <div id="fountainTextG_1" class="fountainTextG">З</div>
+                  <div id="fountainTextG_2" class="fountainTextG">а</div>
+                  <div id="fountainTextG_3" class="fountainTextG">г</div>
+                  <div id="fountainTextG_4" class="fountainTextG">р</div>
+                  <div id="fountainTextG_5" class="fountainTextG">у</div>
+                  <div id="fountainTextG_6" class="fountainTextG">з</div>
+                  <div id="fountainTextG_7" class="fountainTextG">к</div>
+                  <div id="fountainTextG_8" class="fountainTextG">а</div>
+                </div>
+              </div>
+              <div class="">
+                <button class="btn btn-success dropdown-toggle" title="ctrl + 4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Меню
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(-173px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <button class="addNewDay btn-success btn dropdown-item">Добавить день</button>
+                  <button class="btn-success btn dropdown-item">
+                    <label style="margin: 0;">
+                      Картинка на главную страницу
+                      <input type="file" class="setBgImageFirstPage" style="display: none;">
+                    </label>
+                  </button>
+                  <button class="saveAsHtml btn-success btn dropdown-item" title="ctrl + s">Сохранить файл</button>
+                  <button class="saveAsOtherHtml btn-success btn dropdown-item">Сохранить как</button>
+                  <button class="btn-success btn addKolontitul dropdown-item">Добавить колонтитулы</button>
+                  <button class="btn-success btn deleteKolontitul dropdown-item">Удалить Колонтитулы</button>
+                  <button class="btn-success btn saveAsPdf dropdown-item">Сохранить как pdf</button>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Текст
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <button class="setTextBold btn-success btn dropdown-item" title="ctrl + b">Жирный</button>
+                  <button class="setTextItalic btn-success btn dropdown-item" title="ctrl + i">Курсив</button>
+                  <button class="setTextUnderline btn-success btn dropdown-item" title="ctrl + u">Подчеркнутый</button>
+                  <button class="setTextLink btn-success btn dropdown-item">Сделать ссылку</button>
+                  <button class="fontSizeUp btn-success btn dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+                  <button class="fontSizeDown btn-success btn dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+                </div>
+              </div>
+              <div class="elements">
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Элементы
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="first-page">
+                    <label class="custom-control-label" for="first-page">Гавная</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="second-page">
+                    <label class="custom-control-label" for="second-page">Контакты</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="program-end">
+                    <label class="custom-control-label" for="program-end">Конец услуг</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="program-thanks">
+                    <label class="custom-control-label" for="program-thanks">Страховка</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="program-remarque">
+                    <label class="custom-control-label" for="program-remarque">Замечания</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="program-rule">
+                    <label class="custom-control-label" for="program-rule">Условия</label>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Другое
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(6px, 181px, 0px);">
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/')" title="Перейти на главную страницу">Главная</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/all')" title="Перейти ко всем программам">Все программы</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/news')" title="Перейти к новостям">Новости</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/profile')">Профиль</button>
+                  <button class="btn-success btn dropdown-item" onclick="window.open('/logout.php')">Выйти</button>
+                </div>
+              </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+                
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+<style>
+  .first-page {
+    padding: 200px 50px 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -90px;
+    margin-right: -90px;
+    position: relative;
+  }
+
+  .first-page-logo img {
+    width: 250px;
+  }
+
+  .first-page-title {
+    font-size: 50px;
+    line-height: 29px;
+    font-weight: bold;
+    font-family: Forward Ad Extra;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    text-align: center;
+    color: #194670;
+  }
+
+  .first-page-desc {
+    margin-top: 100px;
+    max-height: 350px;
+  }
+
+  .second-page {
+    margin-bottom: 50px;
+    padding-top: 100px;
+    position: relative;
+  }
+
+  .second-page .change-data-user {
+    display: none;
+  }
+
+  .manager-contacts {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c73728;
+  }
+
+  .manager-contacts-photo {
+    max-width: 150px;
+    margin-right: 20px;
+  }
+
+  .manager-contacts-photo img {
+    width: 100%;
+    min-width: 150px;
+  }
+
+  .manager-contacts-desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manager-contacts-desc-item {
+    display: flex;
+  }
+
+  .manager-contacts-desc-item-title {
+    margin-right: 10px;
+    font-weight: 700;
+  }
+
+  .manager-contacts-desc-name {
+    font-size: 30px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .manager-contacts-desc-company {
+    font-size: 18px;
+  }
+</style>
+<div class="editable">
+
+  <div class="content">
+
+    <div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/testnewprogramm/Olkhon_winter_04.jpg&quot;);">
+      <div class="first-page-title">
+        RUSSIE AUTREMENT
+      </div>
+
+      <div class="program-name height" style="margin-bottom: 100px;">
+        <div class="program-name-title">
+          Programme sur mesure spécialement étudié en faveur de
+        </div>
+        <div class="program-name-text">
+          Appéré Patricia
+        </div>
+      </div>
+      <div class="program-data height">
+        <div class="program-data-title">
+          Votre demande:
+        </div>
+        <div class="program-data-text">
+          <div class="program-data-text-city">
+            Moscou - Saint-Pétersbourg
+          </div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span>Nombre de personnes:</span>
+              <span>Date de sejour:</span>
+              <span>Durée du séjour:</span>
+            </div>
+            <div class="program-data-text-desc-item">
+              <span>2 adultes</span>
+              <span>septembre 2020</span>
+              <span>7 jours et 6 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <p>
+          Описание тура
+        </p>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+
+    <div class="second-page"><div class="manager-contacts height">
+    <div class="change-data-user">
+      <a href="/updateDataUser.php">Изменить</a>
+    </div>
+    <div class="manager-contacts-photo">
+      <img src="http://78.47.40.9/uploads//Listvyanka_summer_01.jpg" alt="">
+    </div>
+    <div class="manager-contacts-desc">
+      <div class="manager-contacts-desc-name">
+        name      </div>
+      <div class="manager-contacts-desc-company">
+        Russieautrement      </div>
+      <div class="manager-contacts-desc-items">
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Address:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            Moika          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Téléphone:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            +936318151          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            E-mail:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            Edddd@asdf.fk          </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Skype:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+                      </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Site web:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            <a href="https://SDASDDAS">SDASDDAS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+    <div class="program-days">
+
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 1
+          </div>
+          <div class="program-days-item-header-data">
+            01.01.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Название
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+          </div>
+          <div class="desc">
+            <p>Текст</p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        Le programme culturel proposé est susceptible de connaître de légères
+        <a href="odificati" target="_blank">modifications</a>
+        en
+        <a href="https://russieautrement.com/" target="_blank">fonction</a>
+        des changements de jours et heures d'ouverture des sites. Si tel était le
+        cas, tout serait mis en oeuvre pour limiter cela à des modifications dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de
+        qualité équivalente.
+      </div>
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+              </div>
+             </div>
+      
+
+      <div class="program-price-title title">
+        <div>
+          Détails et tarifs Отель на Марсе
+        </div>
+        <div><br></div>
+      </div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 2 personnes</span>
+          <span>Prix par personne dans le groupe de 2 personnes</span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span>112 404 €</span>
+          <span>111 202 €</span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span></span>
+          <span></span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span></span>
+          <span></span>
+          <span></span><span></span></div>
+      </div>
+    </div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+              </div>
+             </div>
+      
+
+      <div class="program-price-title title">
+        Détails et tarifs Отель на Земле<br></div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 2 personnes</span>
+          <span>Prix par personne dans le groupe de 2 personnes</span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span>2 404 €</span>
+          <span>1 202 €</span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span></span>
+          <span></span>
+          <span></span><span></span></div>
+        <div class="program-price-desc-item">
+          <span></span>
+          <span></span>
+          <span></span><span></span></div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span>Le support visa (les vouchers et lettre d'invitation)</span>
+          <span>2 nuits à l'hôtel avec le petit déjeuner à Moscou</span>
+          <span>3 nuits en chambre d'hôte avec le petit déjeuner à Saint-Pétersbourg</span>
+          <span>Le transport terrestre et tous les transferts en véhicule privatif selon le programme</span>
+          <span>Les services d'un guide francophone particulier diplômé pour toutes les excursions mentionnées</span>
+          <span>Les droits d'entrée dans les musées et les sites selon le programme</span>
+          <span>Les billets de train de nuit Moscou - Saint-Pétersbourg (compartiment de 1re classe, 2 couchettes)</span>
+        </div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Les frais consulaires pour le visa</span>
+          <span>Les vols internationaux</span>
+          <span>Les assurances</span>
+          <span>Les repas</span>
+          <span>Tous frais et dépenses d'ordre personnel</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn">
+            Obtenir l’assurance ›››
+          </div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn">
+            Obtenir l’assurance ›››
+          </div>
+        </div>
+      </div>
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 60 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 60 jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p>Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où intervient l’annulation :</p>
+        <ul>
+          <li>à plus de 60 jours du départ : 5% du prix du voyage</li>
+          <li>entre 59 et 30 jours du départ : 25% du prix du voyage</li>
+          <li>entre 29 et 21 jours du départ : 50% du prix du voyage</li>
+          <li>entre 20 et 7 jours du départ : 75% du prix du voyage</li>
+          <li>à moins de 6 jours du départ et après la date de départ : 100% du prix du voyage</li>
+        </ul>
+      </div>
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/inject.js"></script>
+
+</body></html>

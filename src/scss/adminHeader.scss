@@ -1,0 +1,21 @@
+.adminHeader {
+  position: fixed;
+  width: 100%;
+  border: 1px solid;
+  padding: 5px 15px;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 9;
+  display: flex;
+
+  label {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .dropdown-toggle::after {
+    vertical-align: 0;
+  }
+}

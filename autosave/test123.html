@@ -1,0 +1,829 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+  <style>
+    .content .program-name, .content .program-data {
+      color: #fff !important;
+    }
+  </style>
+</head>
+<body style=""><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+            <p style="line-height: 18px">
+              <a href="/news">Новости</a> В таблицу с ценами можно добавлять строку по центру
+            </p>
+          </header>
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+            <div class="message" style="display: block;"><p style="color: #1e7e34">Файл сохранен</p></div>
+            <div id="fountainTextG" style="display: none;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(14px, 38px, 0px);">
+              <button class="addNewDay dropdown-item">Добавить день</button>
+              <button class="dropdown-item">
+                  <label style="margin: 0;">
+                    Картинка на главную страницу
+                    <input type="file" class="setBgImageFirstPage" style="display: none;">
+                  </label>
+                </button>
+                <div style="display: flex; align-items: center;">
+                  <button class="setTextColorMainPage dropdown-item">Цвет текста на главной странице</button>
+                  <input type="color" name="textColor">
+                </div>
+              <button class="saveAsHtml dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml dropdown-item">Сохранить как</button>
+<!--<button class="btn-success addKolontitul dropdown-item">Добавить колонтитулы</button>-->
+<!--<button class="btn-success deleteKolontitul dropdown-item">Удалить колонтитулы</button>-->
+              <button class="saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Текст
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <button class="setTextBold dropdown-item" title="ctrl + b">Жирный</button>
+              <button class="setTextItalic dropdown-item" title="ctrl + i">Курсив</button>
+              <button class="setTextUnderline dropdown-item" title="ctrl + u">Подчеркнутый</button>
+              <div style="display: flex; align-items: center;">
+                <button class="setTextColor dropdown-item">Установить цвет</button>
+                <input type="color" name="textColor">
+              </div>
+              <button class="setTextLink dropdown-item">Сделать ссылку</button>
+              <button class="fontSizeUp dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+              <button class="fontSizeDown dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Скрыть ненужные блоки">
+              Элементы 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="first-page">
+                  <label class="custom-control-label" for="first-page">Главная</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="second-page">
+                  <label class="custom-control-label" for="second-page">Контакты</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a href="/" class="dropdown-item" title="Перейти на главную страницу" target="_blank">Главная</a>
+              <a href="/all" class="dropdown-item" title="Перейти ко всем программам" target="_blank">Все программы</a>
+              <a href="/news" class="dropdown-item" title="Перейти к новостям" target="_blank">Новости</a>
+              <a href="/register" class="dropdown-item" target="_blank">Регистрация</a>
+              <a href="/login" class="dropdown-item" target="_blank">Войти</a>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+
+
+
+
+<div class="editable">
+
+  <div class="content">
+    <div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/test123/World___Canada_Lake_in_Banff_National_Park__Alberta__Canada_065436_.jpg&quot;);">
+      <div class="first-page-title" data-text="
+        RUSSIE AUTREMENT
+      " contenteditable="true">RUSSIE AUTREMENT&nbsp; &nbsp; &nbsp; &nbsp;
+      </div>
+      <div class="program-name height">
+        <div class="program-name-title" data-text="
+          Programme sur mesure spécialement étudié en faveur de
+        " contenteditable="true"><br><br><br>Programme sur mesure spécialement étudié en faveur de
+        </div>
+        <div class="program-name-text" data-text="
+          Appéré Patricia
+        " contenteditable="true">Bernadette&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        </div>
+      </div>
+
+      <div class="program-data height">
+        <div class="program-data-title" data-text=""></div>
+        <div class="program-data-text">
+          <div class="program-data-text-city" data-text=""></div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span data-text="Nombre de personnes:">Nombre de personnes:</span>
+              <span data-text="Date de sejour:">Date de sejour:</span>
+              <span data-text="Durée du séjour:">Durée du séjour:</span>
+            </div>
+            <div class="program-data-text-desc-item">
+              <span data-text="2 adultes">2 adultes</span>
+              <span data-text="20.06 - 27.06.20">20.06 - 27.06.20</span>
+              <span data-text="7 jours et 6 nuits">8 jours et 7 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <div data-text=""></div>
+        <div data-text=""></div>
+        <div data-text=""></div>
+      </div>
+
+      
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="second-page"><div class="manager-contacts height">
+    <div class="change-data-user">
+      <a href="/updateDataUser.php">Изменить</a>
+    </div>
+    <div class="manager-contacts-photo">
+      <img src="" alt="">
+    </div>
+    <div class="manager-contacts-desc">
+      <div class="manager-contacts-desc-name">
+              </div>
+      <div class="manager-contacts-desc-company">
+              </div>
+      <div class="manager-contacts-desc-items">
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Adresse:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+                      </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Téléphone:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+                      </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            E-mail:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+                      </div>
+        </div>
+        <div class="manager-contacts-desc-item">
+          <div class="manager-contacts-desc-item-title">
+            Site web:
+          </div>
+          <div class="manager-contacts-desc-item-text">
+            <a href="https://"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <div class="program-days">
+
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 1
+          </div>
+          <div class="program-days-item-header-data">20.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Arrivée à St. Pétersbourg&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/bedeutende-orte-der-stadt-4.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/World___Canada_Lake_in_Banff_National_Park__Alberta__Canada_065436_.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>&nbsp;Arrivée à St. Pétersbourg<br><br>
+            </p><div>Transfert privé jusqu'au bateau de croisière.<br><br></div>
+            <div>Embarquement à bord et installation dans la cabine deluxe double au pont supérieur.&nbsp;<br><br></div>
+            <div>&nbsp;Dîner et nuit à bord.</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+              <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/cb2e10631e67b788cce6ae4ef7fb618c.jpg) no-repeat center /cover;" class="images-item 0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 2
+          </div>
+          <div class="program-days-item-header-data">21.06.2020
+          </div>
+          <div class="program-days-item-header-name">Première découverte de St. Pétersbourg&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/3-Voyage-liberte-Spb-5.jpg) no-repeat center /cover;" class="images-item 0"></div>
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/besuch-der-eremitage-und-des-generalstabs-1.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/World___Canada_Lake_in_Banff_National_Park__Alberta__Canada_065436_.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>
+            </p><div>Première découverte de la Venise du Nord lors d’<b class="decoration">un tour de ville</b> en bus dans le centre historique de Saint-Pétersbourg (la perspective
+              Nevski, l'avenue principale de la ville ; les quais de la Neva ; l'église du Saint-Sauveur-sur-le-Sang-Versé ; la cathédrale Notre-Dame-de-Kazan ; le Couvent Smolny ;
+              la cathédrale Saint Isaac ; le Palais de Tauride et le Palais d’Hiver).&nbsp;
+            </div>
+            <div>&nbsp;<span style="white-space:pre">	</span><br>Visite à pied de <b class="decoration">la forteresse Pierre et Paul</b>, le plus ancien bâtiment de la ville et de
+              la cathédrale Pierre-et-Paul avec la tombe de la famille des Romanov.
+            </div>
+            <div>&nbsp;<span style="white-space:pre">	</span><br>Visite du <b class="decoration">musée de l’Ermitage</b>, l'un des plus riches musées du monde, à l'égal du Louvre
+              à Paris.
+            </div>
+            <div>&nbsp;<span style="white-space:pre">	</span><br>Retour et appareillage pour <b class="decoration">Mandrogui</b>.</div>
+            <div>&nbsp;<span style="white-space:pre">	</span><br>Nuit à bord.&nbsp;</div>
+            <div>(Pdj+Dîn à bord, Déj en ville).</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 3
+          </div>
+          <div class="program-days-item-header-data">22.06.2020
+          </div>
+          <div class="program-days-item-header-name">Mandrogui&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/35fe2aa7c16f12261d42ef27053388c5.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/World___Canada_Lake_in_Banff_National_Park__Alberta__Canada_065436_.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>
+            </p><div>Arrivée à <b class="decoration">Mandrogui</b>, ancien village de pêcheurs vepses, situé sur la rive gauche de la rivière Svir qui relie le lac Ladoga au lac Onega.<br><br>
+            </div>
+            <div>Temps libre à Mandrogui pour profiter de la beauté de la nature et du charme de l’endroit.<br><br></div>
+            <div><b class="decoration">Déjeuner barbecue en plein air</b> (si la météo le permet).<br><br></div>
+            <div>Retour et appareillage pour Kiji.<br><br></div>
+            <div>Nuit à bord.</div>
+            <div>(Pdj + Dîn à bord)</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 4
+          </div>
+          <div class="program-days-item-header-data">23.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Kiji&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/Kizhi.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/kirillov.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>
+            </p><div>&nbsp;Escale à <b class="decoration">Kiji</b>, la « Perle de la Carélie ».&nbsp;<br><br></div>
+            <div>&nbsp;Découverte de Kiji avec le musée de l'architecture en bois et à ciel ouvert ; <b class="decoration">l’église de la Transfiguration</b>, classée au patrimoine
+              mondial de l’Unesco (visite de l’extérieur) ; l'église de l'Intercession de la Vierge ;&nbsp; visite d’une isba, maison russe traditionnelle construite en bois et
+              ornementée de nombreuses sculptures.<br><br></div>
+            <div>&nbsp;Retour à bord et navigation vers Goritsy.&nbsp;<br><br></div>
+            <div>&nbsp;Nuit à bord.&nbsp;</div>
+            <div>(Pdj+Déj+Dîn à bord)</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 5
+          </div>
+          <div class="program-days-item-header-data">24.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Goritsy&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/3291aa017a7667d68f7f6f71e838aa34.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/saint-petersbourg-et-carelie-en-hiver-2.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>
+            </p><div>&nbsp;Arrivée à <b class="decoration">Goritsy</b>.&nbsp;<br><br></div>
+            <div>&nbsp;Visite de Goritsy : le <b class="decoration">monastère de Kirillo-Belozersky</b>, l’un des plus anciens monastères de Russie, et son musée des
+              icônes.<br><br></div>
+            <div>&nbsp;Appareillage pour Ouglich.&nbsp;<br><br></div>
+            <div>&nbsp;Nuit à bord.&nbsp;</div>
+            <div>(Pdj+Déj+Dîn à bord).</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 6
+          </div>
+          <div class="program-days-item-header-data">25.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Ouglitch&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/Uglichskiy_kreml__rossiya__gorod_uglich__kreml_1.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          <div style="background: url(http://78.47.40.9/uploads/test123/saint-petersbourg-et-carelie-en-hiver-4.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+          <div class="desc">
+            <p>
+            </p><div>Arrivée à <b class="decoration">Ouglitch</b>, ancienne cité de l’Anneau d’Or, qui possède de superbes ensembles architecturaux.&nbsp;<br><br></div>
+            <div>Visite du centre-ville à pied : <b class="decoration">le Kremlin d’Ouglitch</b> et son église Saint-Dimitri-sur-le-Sang-Versé, la cathédrale de la
+              Transfiguration-du-Sauveur, bâtiment typique du style architectural de Iaroslavl au XVIIe siècle.&nbsp;<br><br></div>
+            <div>&nbsp;Retour à bord et suite de la croisière vers Moscou.<br><br></div>
+            <div>&nbsp;Nuit à bord.&nbsp;</div>
+            <div>(Pdj+Déj+Dîn à bord)</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 7
+          </div>
+          <div class="program-days-item-header-data">26.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Moscou&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/6da6da1c5e6edf27b1df61957709060b.jpg) no-repeat center /cover;" class="images-item 0"></div>
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/kreml-1.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          </div>
+          <div class="desc">
+            <p>
+            </p><div>Arrivée à <b class="decoration">Moscou</b>.<br><br></div>
+            <div>Découverte de la capitale russe où s’entremêlent les racines de l’époque tsariste, de la religion orthodoxe et du régime des Soviets : <b class="decoration">tour
+              de la ville</b> en bus pour découvrir les monuments les plus importants : l’avenue Tverskaïa, l'une des principales rues commerçantes de Moscou ; le couvent de
+              Novodievitchi (visite de l’extérieur) ;&nbsp; le bâtiment du KGB (extérieur) ; <b class="decoration">la Place Rouge</b>, symbole de la ville (temps libre) ; les
+              Grands Magasins GOUM et la cathédrale du Christ-Sauveur (visite de l’extérieur).
+            </div>
+            <div><br><b class="decoration">Visite du Kremlin</b>, véritable ville fortifiée au cœur de la ville et symbole éclatant du pouvoir (visite du territoire du Kremlin et
+              de l’une de ses cathédrales).
+            </div>
+            <div>
+              <div><br>Retour et nuit à bord.&nbsp;</div>
+              <div>(Pdj+Déj+Dîn à bord)</div>
+              <div><br></div>
+            </div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+        
+        <div class="program-days-item-header">
+          <div class="program-days-item-header-count">
+            Jour 8
+          </div>
+          <div class="program-days-item-header-data">27.06.2020
+          </div>
+          <div class="program-days-item-header-name">
+            Départ de Moscou&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+        <div class="program-days-item-text">
+          <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+          <div class="images">
+            <div style="background: url(http://78.47.40.9/uploads/SB_2020_02_N39_BERNADETTE_CROISIERE/Moscow-by-night.jpg) no-repeat center /cover;" class="images-item 0"></div>
+          </div>
+          <div class="desc">
+            <p>
+            </p><div>&nbsp;Petit déjeuner à bord.&nbsp;<br><br></div>
+            <div>&nbsp;Transfert jusqu'à l’aéroport.<br><br>Départ de Moscou.</div>
+            <div><br></div>
+            <p></p>
+            <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+            <div class="desc-images">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fin de nos services
+      </div>
+      <div class="program-end-text">
+        Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements de jours et heures d'ouverture des sites. Si tel était le
+        cas, tout serait mis en oeuvre pour limiter cela à des modifications dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de
+        qualité équivalente.
+      </div>
+
+      
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-center-row mr-1 btn btn-success dropdown-item">Строку по центру</button>
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+      
+
+      <div class="program-price-title title">
+        Détails et tarifs
+      </div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prix total pour 2 personnes</span>
+          <span>Prix par personne dans le groupe de 2 personnes</span>
+          <span></span></div>
+        <div class="program-price-desc-item">
+          <span>3 812 €</span>
+          <span>1 906 €</span>
+          <span></span></div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      
+
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">
+          Ces prix comprennent
+        </div>
+        <div class="program-contain-item-text">
+          <span>Le support visa (les vouchers et lettre d'invitation)</span>
+          <span>Hébérgement à bord, dans la catégorie de cabine deluxe au pont supérieur</span>
+          <span>Pension complète du dîner du 1er jour au petit déjeuner du 8e jour</span><span>2 bouteilles d'eau dans la cabine chaque jour<br></span><span contenteditable="true">1 bouteille de l'eau minerale + 1 verre de vin ou 1 verre de jus par personne par dîner</span>
+          <span>Le transport terrestre et tous les transferts en véhicule privatif selon le programme</span>
+          <span>Excursions et visites avec guide francophone, billets d’entrée, transports selon le programme</span>
+          <span contenteditable="true">Programme d’animations à bord&nbsp; (ateliers d’initiation, projections de films, soirées spéciales mentionnées dans le programme)<br></span>
+        </div>
+      </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">Ces prix ne comprennent pas
+        </div>
+        <div class="program-contain-item-text">
+          <span>Frais de visa</span>
+          <span>Vols</span>
+          <span>Assurances</span>
+          <span></span>
+          <span>Tous frais et dépenses d'ordre personnel</span><span contenteditable="true">Visites optionnelles pendant le temps libre et à bord du bateau&nbsp;<br></span>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item" contenteditable="true">
+        Remarques
+      </div>
+      <div class="program-remarque-item">
+        Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+      </div>
+
+      
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn"><a href="https://russieautrement.com/assurance-voyage/" target="_blank">
+            Obtenir l’assurance ›››
+          </a></div>
+        </div>
+      </div>
+
+      
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Modalités de réservation,
+        d'annulation et de paiement
+      </div>
+      <div class="program-rule-text">
+        <p>Le prépaiement de 20% doit être versé au moment de la réservation par carte bancaire par le lien sécurisé.</p>
+        <h3>Le solde du voyage doit être réglé:</h3>
+        <ul>
+          <li>par carte bancaire au plus tard 75 jours avant votre arrivée,</li>
+          <li>par virement bancaire au plus tard 75&nbsp;jours avant votre arrivée (les frais sont à votre charge),</li>
+        </ul>
+        <h3>Conditions d'annulation</h3>
+        <p contenteditable="true">Toute annulation doit faire l’objet d’un mail adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du moment où
+          intervient l’annulation :&nbsp;
+        </p>
+        <p><span style="text-indent: -18pt; font-size: 10pt; font-family: &quot;Courier New&quot;; color: rgb(75, 75, 75);" lang="FR-CA" contenteditable="true">&nbsp; &nbsp; &nbsp; o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><span style="text-indent: -18pt; color: rgb(75, 75, 75);" lang="FR-CA">plus de 73 jours avant le départ, une retenue de 20%
+sera opérée.</span></p>
+
+        <p class="MsoNormal" style="margin-left: 53.4pt; text-indent: -18pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">
+          <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:11.5pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="mso-bidi-font-size:11.5pt;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">entre 72 et 61 jours avant le départ, une retenue de
+25% sera opérée.<o:p></o:p></span></p>
+
+        <p class="MsoNormal" style="margin-left: 53.4pt; text-indent: -18pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">
+          <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:11.5pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="mso-bidi-font-size:11.5pt;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">entre 60 et 51 jours avant le départ, une retenue de
+50% sera opérée.<o:p></o:p></span></p>
+
+        <p class="MsoNormal" style="margin-left: 53.4pt; text-indent: -18pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">
+          <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:11.5pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="mso-bidi-font-size:11.5pt;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA" contenteditable="true">entre 50 et 33 jours avant le départ, une retenue de
+75% sera opérée.<o:p></o:p></span></p>
+
+        <p class="MsoNormal" style="margin-left: 53.4pt; text-indent: -18pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;">
+          <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:11.5pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span style="mso-bidi-font-size:11.5pt;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:FR-CA;
+mso-fareast-language:RU" lang="FR-CA">dans les 32 jours précédents le départ, une retenue de
+100% sera opérée.<o:p></o:p></span></p>
+      </div>
+
+      
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Bienvenue en Russie!
+      </div>
+      <div class="program-footer-text">
+        L'équipe RussieAutrement
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body></html>

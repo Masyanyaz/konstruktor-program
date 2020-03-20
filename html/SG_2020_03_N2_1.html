@@ -1,0 +1,718 @@
+<!doctype html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://78.47.40.9/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+            <p style="line-height: 18px">
+              <a href="/news">Новости</a> В таблицу с ценами можно добавлять строку по центру
+            </p>
+          </header>
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+            <div class="message"><p style="font-size: 12px;">Привет)</p></div>
+            <div id="fountainTextG" style="display: none;">
+              <div id="fountainTextG_1" class="fountainTextG">З</div>
+              <div id="fountainTextG_2" class="fountainTextG">а</div>
+              <div id="fountainTextG_3" class="fountainTextG">г</div>
+              <div id="fountainTextG_4" class="fountainTextG">р</div>
+              <div id="fountainTextG_5" class="fountainTextG">у</div>
+              <div id="fountainTextG_6" class="fountainTextG">з</div>
+              <div id="fountainTextG_7" class="fountainTextG">к</div>
+              <div id="fountainTextG_8" class="fountainTextG">а</div>
+            </div>
+          </div>
+              <div class="">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(-231px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <button class="addNewDay dropdown-item">Добавить день</button>
+              <button class="dropdown-item">
+                  <label style="margin: 0;">
+                    Картинка на главную страницу
+                    <input type="file" class="setBgImageFirstPage" style="display: none;">
+                  </label>
+                </button>
+                <div style="display: flex; align-items: center;">
+                  <button class="setTextColorMainPage dropdown-item">Цвет текста на главной странице</button>
+                  <input type="color" name="textColor">
+                </div>
+              <button class="saveAsHtml dropdown-item" title="ctrl + s">Сохранить файл</button>
+              <button class="saveAsOtherHtml dropdown-item">Сохранить как</button>
+<!--<button class="btn-success addKolontitul dropdown-item">Добавить колонтитулы</button>-->
+<!--<button class="btn-success deleteKolontitul dropdown-item">Удалить колонтитулы</button>-->
+              <button class="saveAsPdf dropdown-item">Сохранить как pdf</button>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Текст
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <button class="setTextBold dropdown-item" title="ctrl + b">Жирный</button>
+              <button class="setTextItalic dropdown-item" title="ctrl + i">Курсив</button>
+              <button class="setTextUnderline dropdown-item" title="ctrl + u">Подчеркнутый</button>
+              <div style="display: flex; align-items: center;">
+                <button class="setTextColor dropdown-item">Установить цвет</button>
+                <input type="color" name="textColor">
+              </div>
+              <button class="setTextLink dropdown-item">Сделать ссылку</button>
+              <button class="fontSizeUp dropdown-item" title="ctrl + ]">Увеличить шрифт</button>
+              <button class="fontSizeDown dropdown-item" title="ctrl + [">Уменьшить шрифт</button>
+            </div>
+          </div>
+              <div class="elements">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Скрыть ненужные блоки">
+              Элементы 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: .5rem 10px;">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="first-page">
+                  <label class="custom-control-label" for="first-page">Главная</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="second-page">
+                  <label class="custom-control-label" for="second-page">Контакты</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-end">
+                <label class="custom-control-label" for="program-end">Конец услуг</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-thanks" checked="">
+                <label class="custom-control-label" for="program-thanks">Страховка</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-remarque">
+                <label class="custom-control-label" for="program-remarque">Замечания</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="program-rule">
+                <label class="custom-control-label" for="program-rule">Условия</label>
+              </div>
+            </div>
+          </div>
+              <div>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Другое
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a href="/" class="dropdown-item" title="Перейти на главную страницу" target="_blank">Главная</a>
+              <a href="/all" class="dropdown-item" title="Перейти ко всем программам" target="_blank">Все программы</a>
+              <a href="/news" class="dropdown-item" title="Перейти к новостям" target="_blank">Новости</a>
+              <a href="/profile" class="dropdown-item" target="_blank">Профиль</a>
+              <a href="/logout.php" class="dropdown-item" target="_blank">Выйти</a>
+            </div>
+          </div>
+              <div style="margin-top: 15px;font-size: 12px;">
+            
+          </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<div class="editable">
+
+  <div class="content">
+    <div class="first-page" style="background-image: url(&quot;http://78.47.40.9/uploads/SG_2020_02_SPbMojana/EDw8oNtUwAEbcb-.jpg&quot;);">
+      <div class="first-page-title">
+        RUSSIA DIVERSAMENTE&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-name height">
+        <div class="program-name-title">
+          <span style="color: rgb(174, 0, 0);" class="dec-color"><span style="font-size: 30px" class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Programma su misura personalizzato per</span></span></span>&nbsp;</div><div class="program-name-title"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Giuseppe Mojana</span></b>&nbsp;</div>
+        <div class="program-name-text" contenteditable="true"><br></div>
+      </div>
+
+      <div class="program-data height">
+        <div class="program-data-title">
+          <span style="color: rgb(255, 255, 255);" class="dec-color">Vostra richiesta:</span>
+        </div>
+        <div class="program-data-text">
+          <div class="program-data-text-city">
+            <b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">San Pietroburgo</span></b></div>
+          <div class="program-data-text-desc">
+            <div class="program-data-text-desc-item">
+              <span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span></span><span><span style="color: rgb(202, 0, 0);" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Numero di persone:</span></b></span></span>
+              <span><span style="color: #c60000" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Data di viaggio:</span></b></span></span>
+              <span><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">Durata di viaggio:</span></b></span>
+            </div>
+            <div class="program-data-text-desc-item">
+              <span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color"><br></span></b></span><span><b class="decoration" style="color: rgb(230, 74, 0);"><span style="color: rgb(255, 255, 255);" class="dec-color">15 adulti + 1 gratis</span></b><br></span>
+              <span><span style="color: #e64a00" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">11 - 14 giugno 2020</span></b></span></span>
+              <span><span style="color: #e64a00" class="dec-color"><b class="decoration"><span style="color: rgb(255, 255, 255);" class="dec-color">4 giorni e 3 notti</span></b></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-page-desc">
+        <div>
+          Описание тура
+        </div>
+        <div>
+          Описание тура
+        </div>
+        <div>
+          Описание тура
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="second-page"><div class="manager-contacts height">
+          <div class="change-data-user">
+        <a href="/updateDataUser.php">Изменить</a>
+      </div>
+      <div class="manager-contacts-photo">
+        <img src="http://78.47.40.9/uploads//SqSb8mnzl2Q-1-.jpg" alt="">
+      </div>
+      <div class="manager-contacts-desc">
+        <div class="manager-contacts-desc-name">
+          Svetlana Glebova        </div>
+        <div class="manager-contacts-desc-company">
+          Russia Diversamente        </div>
+        <div class="manager-contacts-desc-items">
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">Indirizzo:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo            </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              Telefono:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              +78125654670             </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              E-mail:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              svetlana.glebova@russiadiversamente.com            </div>
+          </div>
+          <div class="manager-contacts-desc-item">
+            <div class="manager-contacts-desc-item-title">
+              Site web:
+            </div>
+            <div class="manager-contacts-desc-item-text">
+              <a href="https://"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div></div>
+    <div class="program-days">
+
+    <div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 1
+                </div>
+                <div class="program-days-item-header-data">11.06.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Arrivo a San Pietroburgo&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/saint-isaac-place-660-4.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:RU">Benvenuti in Russia!<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:RU"><br></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size:
+12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;letter-spacing:-.1pt;mso-ansi-language:EN-US;
+mso-fareast-language:RU">Nella sala degli arrivi dell’aeroporto vi aspetta la
+vostra guida personale<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size:
+12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;letter-spacing:-.1pt;mso-ansi-language:EN-US;
+mso-fareast-language:RU">Transfer in hotel&nbsp;<b>Astoria 5*&nbsp;</b>che si
+trova nel pieno centro storico&nbsp;sulla piazza di Sant'Isacco e&nbsp;a pochi
+passi dalle più&nbsp;grandi attrazioni turistiche di San Pietroburgo, la
+prospettiva Nevskij e l’Ermitage.&nbsp;Check in alle 14:00<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size:
+12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;letter-spacing:-.1pt;mso-ansi-language:EN-US;
+mso-fareast-language:RU">Le vostre elegantissime stanze hanno una bellissima
+vista sul cortile. Le cene serviranno al ristorante "Astoria".&nbsp;</span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 12pt; letter-spacing: -0.1pt;">Palestra, piscina e sauna sono a vostra disposizione
+24 ore su 24</span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="letter-spacing: -0.133333px;">Cena inclusa</span></p><p></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 2
+                </div>
+                <div class="program-days-item-header-data">12.06.2020
+                </div>
+                <div class="program-days-item-header-name"><b><span lang="EN-US" style="font-size:11.0pt;
+line-height:107%;font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:#4B4B4B;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><span style="color: rgb(0, 0, 0); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 500;">San Pietroburgo</span>&nbsp;</span></b></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/besuch-der-peter-paul-festung-2.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/1-Vouyage-org-Spb-7-jours.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal; line-height: normal;"></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Dopo la colazione l’incontro
+con la vostra guida personale alla reception dell'hotel e <b>la prima visita guidata</b> che vi permetterà di ammirare <b>la prospettiva Nevskij, il Palazzo
+d’Inverno, la Chiesa del Salvatore sul Sangue versato</b> e non solo in poche
+ore.</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">Giro città prevede
+anche la visita della </span><b style="font-size: 12pt; letter-spacing: -0.01em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">Cattedrale dei
+Santi Pietro e Paolo</b><span style="font-size: 12pt; letter-spacing: -0.01em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">, situata sul territorio della Fortezza di Pietro e
+Paolo, il primo edificio di San Pietroburgo.&nbsp;</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 12pt; letter-spacing: -0.01em;">In pulman, 4 - 5 ore</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">Pranzo libero</span></p><p></p><p></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Pomeriggio visita
+guidata del <b>museo dell’Ermitage</b>, uno
+dei musei più grandi del mondo che custodisce circa 3 milioni di opere d’arte,
+che si trova a 10 minuti a piedi dal vostro alloggio<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">A piedi, durata 3-4
+ore<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Cena inclusa<o:p></o:p></span></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">Giorno 3
+                </div>
+                <div class="program-days-item-header-data">13.06.2020
+                </div>
+                <div class="program-days-item-header-name"><span style="font-weight: bolder;"><span lang="EN-US" style="font-size: 11pt; line-height: 15.6933px; font-family: Calibri, sans-serif; color: rgb(75, 75, 75);"><span style="color: rgb(0, 0, 0); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 500;">Peterhof</span></span></span></div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/1-Voyage-liberte-Spb-5.jpg) no-repeat center /cover;" class="images-item 0"></div><div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/bootsfahrt-mit-dem-audiofuhrer-4.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">La vostra guida
+personale vi aspetta alla reception dell’hotel dopo colazione e vi accompagna
+ai <b>giardini di Peterhof</b>, un immenso
+parco di rara bellezza con 150 fontane. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Partenza col pulman
+dal vostro alloggio<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">La durata è 4 - 5 ore<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Pranzo libero</span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; letter-spacing: -0.01em;">Pomeriggio fate da
+soli </span><b style="font-size: 12pt; letter-spacing: -0.01em;">un giro in battello</b><span style="font-size: 12pt; letter-spacing: -0.01em;"> sui canali
+nel centro storico ammirando la particolarità e le bellezza di San Pietroburgo
+dall’acqua. I bigletti e il sistema audio-guide wireless individuale è già
+incluso nel prezzo.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">La durata è circa 1 ora<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US">Cena inclusa<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div><div class="program-days-item height"><div class="needHidden day-menu-btns hidden">
+              <button class="hideDay mr-1 btn btn-outline-dark" title="Свернуть день">∧</button> 
+              <button class="dayMoveDown mr-1 btn btn btn-secondary" title="Передвинуть день ниже">↓</button>
+              <button class="dayMoveUp mr-1 btn btn btn-secondary" title="Передвинуть день выше">↑</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+<!--                <button class="addPhotoInText photoDiv mr-1 btn btn-success dropdown-item">Добавить фото</button>-->
+                <button class="addDayBefore btn btn-success dropdown-item">Добавить день до</button>
+                <button class="addDayAfter btn btn-success dropdown-item">Добавить день после</button>
+                <button class="deleteDay btn btn-danger dropdown-item">Удалить день</button>
+              </div>
+             </div>
+              
+              <div class="program-days-item-header">
+                <div class="program-days-item-header-count">giorno 4
+                </div>
+                <div class="program-days-item-header-data">14.06.2020
+                </div>
+                <div class="program-days-item-header-name">
+                  Partenza&nbsp;</div>
+              </div>
+              <div class="program-days-item-text">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                <div class="images">
+                <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_SPbMojana/2-Nuits-Blanches-de-7-jours-.jpg.jpg) no-repeat center /cover;" class="images-item 0"></div></div>
+                <div class="desc">
+                  <p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Check out dall’hotel entro le 12.00. A seconda dell’ora
+della partenza per l’aeroporto i bagagli possono essere lasciati alla
+reception.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Transfer all’aeroporto in compagnia della vostra guida.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;"><br></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Buon viaggio! Alla prossima!<o:p></o:p></span></p><p></p>
+                  <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="desc-images">
+                  </div>
+                </div>
+              </div>
+            </div></div>
+    <div class="program-end height">
+      <div class="program-end-title title">
+        Fine del programma</div>
+      <div class="program-end-text"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal;">Il programma potrebbe essere leggermente modificato in base ai giorni di chiusura dei siti e dei musei. In tal caso si farebbe tutto il possibile per offrirvi servizi di sostituzione di qualità&nbsp;</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; letter-spacing: normal;">equivalente.</span></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-price height"><div class="needHidden price-btn hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="add-center-row mr-1 btn btn-success dropdown-item">Строку по центру</button>
+                <button class="add-price-row mr-1 btn btn-success dropdown-item">Строка</button>
+                <button class="add-price-col btn btn-success dropdown-item">Столбец</button>
+                <button class="add-new-table btn btn-success dropdown-item">Еще таблицу</button>
+                <button class="btn btn-success dropdown-item" onclick="if($('.program-price').length > 1) $(this).closest('.program-price').remove()">Удалить таблицу</button>
+              </div>
+             </div>
+      <div class="program-price-title title">
+        Dettagli e tariffe&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-price-desc">
+        <div class="program-price-desc-item">
+          <span>Prezzo totale per 15 persone</span>
+          <span>Prezzo per una persona nel gruppo di 15 persone + 1 gratis</span><span>L'offerta e' valida durante 7 giorni</span>
+        </div>
+        <div class="program-price-desc-item">
+          <span>20 595 €</span>
+          <span>&nbsp; &nbsp;1373 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-contain height"><div class="needHidden contain-menu-btns hidden">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Действие
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="contain-add-check 1 btn btn-danger dropdown-item">Добавить галочки</button>
+                <button class="contain-add-check 2 btn btn-danger dropdown-item">Добавить крестики</button>
+                <button class="contain-add-text btn btn-danger dropdown-item">Добавить текст</button>
+              </div>
+            </div>
+      <div class="program-contain-item">
+        <div class="program-contain-item-title">Il prezzo include</div>
+        <div class="program-contain-item-text">
+          <span><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size: 12pt; text-align: justify; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">3 notti nell'hotel Astoria 5* (o similare della stessa categoria) </span><span style="font-size: 12pt; text-align: justify; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">a San Pietroburgo stanze standard con i letti matrimoniali</span><br></p></span><span><ul class="galochka" style="list-style: none; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><li style="margin-bottom: 5px;">
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-US" style="font-size: 12pt;">Colazione e cena incluse</span></p></li></ul></span>
+          <span></span>
+          <span><ul class="galochka" style="list-style: none; color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;"><li style="margin-bottom: 5px;" contenteditable="true">Tutti i transfer inclusi nel programma in pulman privato (passare alla lista delle visite)</li></ul></span>
+          <span>Guida parlante italiano durante escursioni e le visite secondo il programma</span>
+          <span>Ingressi ai musei e ai siti previsti nel programma</span><span>Biglietti per il battello</span>
+          </div></div><div class="program-contain-item"><div class="program-contain-item-title">Il prezzo non include</div>
+        <div class="program-contain-item-text">
+          <span>Visto</span>
+          <span>Voli</span>
+          <span>Assicurazione</span>
+          <span>Pasti</span>
+          <span>Spese personali</span>
+        </div>
+      </div>
+    </div>
+    <div class="program-remarque height">
+      <div class="program-remarque-item">Note</div>
+      <div class="program-remarque-item">
+        Le stanze dell'hotel sono disponibili dalle 14h00. Le stanze devono essere liberate il giorno della partenza prima delle 12h00.
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-thanks height hidden">
+      <div class="program-thanks-title title">
+        Voyagez en toute sécurité en souscrivant
+        à une assurance voyage !
+      </div>
+      <div class="program-thanks-text">
+        Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+        tranquille et en toute sécurité:
+      </div>
+      <div class="belay">
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Assistance 24/24
+          </div>
+          <div class="belay-item-text">
+            Un problème pendant votre séjour ? Faîtes-nous confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr d’obtenir une aide efficace avec cette
+            assurance mise à votre disposition.
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+        <div class="belay-item">
+          <div class="belay-item-title">
+            Cap Annulation
+          </div>
+          <div class="belay-item-text">
+            L'assurance Cap Annulation, dite assurance annulation toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour retenus par l'organisateur du
+            voyage (agence, transporteur, loueur) pour "toutes causes justifiées".
+          </div>
+          <div class="belay-item-btn">
+            <a href="https://russieautrement.com/assurance-voyage/" target="_blank">Obtenir l’assurance ›››</a>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-rule height">
+      <div class="program-rule-title title">
+        Termini di prenotazione,&nbsp; &nbsp; &nbsp; cancellazione e pagamento&nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div class="program-rule-text">
+        <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; text-align: justify;">Il versamento dell'acconto di 50 % deve essere effettutato al momento della prenotazione del viaggio attraverso la piattaforma di pagamento sicuro con carta di credito o con un bonifico bancario.</span></p>
+        <h3><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; text-align: justify;">Il saldo deve essere pagato entro 91 gg prima d’arrivo tramite bonifico bancario o carta di credito di cui le commissioni bancarie sono a carico dei viaggiatori</span></h3><h3>Condizioni dell'annulamento</h3>
+        <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; text-align: justify;">Per annullare il viaggio il viaggiatore deve inviare email alla nostra agenzia. Le norme di cancellazione dipendono dalla data quando la cancellazione è stata effettuata :</span></p>
+        <ul>
+          <li>sino a 91 giorni prima della partenza: 10% della quota di partecipazione</li>
+          <li>da 90 a 45 giorni prima della partenza: 50% della quota di partecipazione</li>
+          <li>da 44 a 31 giorni prima della partenza: 75% della quota di partecipazione;</li>
+          <li>tra i 30 ed i 7 giorni prima della partenza: 95% della quota di partecipazione</li>
+          <li>tra 6 a 0 giorni prima della partenza o dopo la stessa: 100% della quota di partecipazione</li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="close-block needHidden hidden">
+      <button class="btn close" type="button" aria-label="Close">
+        <span aria-hidden="true" class="close-btn">×</span>
+      </button>
+    </div></div>
+    <div class="program-footer height">
+      <div class="program-footer-title">
+        Benvenuti in Russia!
+      </div>
+      <div class="program-footer-text">
+        La squadra RussiaDiversamente</div>
+    </div>
+  </div>
+</div>
+
+</body></html>

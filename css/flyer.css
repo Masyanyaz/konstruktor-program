@@ -1,0 +1,175 @@
+.flyer-block {
+  border: 1px solid;
+  max-width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  min-height: 320px;
+  max-height: 330px;
+  margin: 60px auto;
+  font-family: Century Gothic;
+}
+
+.flyer-data {
+  min-width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.flyer-data div {
+  padding: 5px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  font-size: 12px;
+  height: 25px;
+}
+
+.flyer-data span {
+  font-weight: bold;
+}
+
+.flyer-data-name {
+  border-left: 1px solid;
+  flex-grow: 3;
+  max-width: calc(100% / 6 * 3);
+}
+
+.flyer-data-number {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  flex-grow: 1;
+  max-width: calc(100% / 6);
+}
+
+.flyer-data-dates {
+  border-right: 1px solid;
+  flex-grow: 2;
+  max-width: calc(100% / 6 * 2);
+}
+
+.flyer-desc-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flyer-desc-name {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff, -1px -1px #fff;
+}
+
+.flyer-desc-name span {
+  font-size: 12px;
+}
+
+.flyer-item {
+  display: flex;
+}
+
+.flyer-desc {
+  max-width: calc(100% / 15 * 8.5);
+  width: 100%;
+  display: flex;
+  height: 273px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0 0;
+  border: 1px solid;
+  background-image: url(http://78.47.40.9/static/1.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flyer-desc-contacts {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.flyer-desc-contact {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+.flyer-center {
+  max-width: calc(100% / 15 * 1.5);
+  width: 100%;
+  height: 283px;
+  position: relative;
+}
+
+.flyer-center span {
+  transform: rotate(-90deg) translateY(-112px) translateX(-50%) translateX(25px);
+  font-size: 22px;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #c73728;
+  height: 50px;
+  width: 294px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.flyer-discount {
+  max-width: calc(100% / 15 * 5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flyer-discount-remark {
+  font-size: 11px;
+  line-height: 12px;
+  margin-top: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flyer-discount-size {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.size {
+  font-size: 105px;
+  letter-spacing: -12px;
+  line-height: 0;
+}
+
+.percent {
+  font-size: 50px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+.flyer-discount-text {
+  letter-spacing: 0;
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transform: rotate(-15deg) translate(25px, -5px);
+}
+
+.flyer-discount-title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flyer-discount-title span {
+  display: block;
+  font-size: 18px;
+}

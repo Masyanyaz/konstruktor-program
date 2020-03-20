@@ -1,0 +1,491 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+              <p style="line-height: 18px">
+                <a href="/news">Появился новый функционал</a>
+              </p>
+            </header>
+
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+                <div class="message"><p style="color: #1e7e34">Файл сохранен</p></div>
+                <div id="fountainTextG" style="display: none;">
+                  <div id="fountainTextG_1" class="fountainTextG">З</div>
+                  <div id="fountainTextG_2" class="fountainTextG">а</div>
+                  <div id="fountainTextG_3" class="fountainTextG">г</div>
+                  <div id="fountainTextG_4" class="fountainTextG">р</div>
+                  <div id="fountainTextG_5" class="fountainTextG">у</div>
+                  <div id="fountainTextG_6" class="fountainTextG">з</div>
+                  <div id="fountainTextG_7" class="fountainTextG">к</div>
+                  <div id="fountainTextG_8" class="fountainTextG">а</div>
+                </div>
+              </div>
+              <button class="addNewDay btn-success btn">Добавить день</button>
+              <button class="saveAsHtml btn-success btn">Сохранить файл</button>
+              <button class="saveAsOtherHtml btn-success btn">Сохранить как</button>
+              <button class="btn-success btn addKolontitul">Добавить колонтитулы</button>
+              <button class="btn-success btn deleteKolontitul">Удалить Колонтитулы</button>
+              <button class="btn-success btn saveAsPdf">Сохранить как pdf</button>
+<!--              <button class="goToNewDesign btn">Тестовая кнопка</button>-->
+              <div style="margin-top: 15px;font-size: 12px;">
+                
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            
+<div class="editable">
+  <div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span>+<span lang="EN-US" style="font-size:11.0pt;line-height:
+107%;font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA" contenteditable="true">78125654670&nbsp;</span></span>
+        <p class="MsoNormal"><a href="mailto:svetlana.glebova@russiadiversamente.com"><span lang="EN-US">svetlana.glebova@russiadiversamente.com</span></a><span lang="EN-US"><o:p></o:p></span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">Mosca - Pechino</div>
+    <div class="programm-data-text">
+      <p>
+        Programma personalizzato per Elena Brocchieri</p>
+      <span style="margin-left: 59px;">Vostra richiesta:</span>
+      <div class="programm-data-list">
+        <div class="eee">
+          <span contenteditable="">Numero di persone:</span>
+          <span contenteditable="">Data di viaggio:</span>
+          <span contenteditable="">Durata di viaggio:</span>
+        </div>
+        <div class="www">
+          <span>4 adulti</span>
+          <span>Dal 18 luglio al 02 agosto 2020</span>
+          <span>16 giorni e 15 notti</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  
+            
+            <div class="day-block height" id="1" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 1
+                  </div>
+                  <div class="day-town-and-date">
+                    <span>18 luglio 2020</span> - <span>Arrivo a Mosca</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/4a209f29198438c4881399a158802706.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><div><br></div><div><br></div><div><br></div><div><br></div>Benvenuti in Russia!<div contenteditable="true">Transfer<span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">&nbsp;</span><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">dall’aeroporto</span><span style="font-size: 1rem;">&nbsp;al hotel 3*. Check in alle 14:00</span><span style="font-size: 1rem; color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start;">&nbsp;</span></div><div contenteditable="true">Tempo libero</div></div>
+                </div>
+              </div><div class="day-block height" id="2" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">giorno 2</div>
+                  <div class="day-town-and-date">19 luglio 2020 - Mosca&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/1-sejour-7jours-Moscou.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><br></p><p><br></p><p><span style="font-size: 1rem;">Tempo libero&nbsp;</span><span style="font-size: 1rem; color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start;">per la scoperta personale di Mosca.&nbsp;</span><br></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start;">Sfruttate al massimo questo tempo ammirando il</span><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; font-size: 1rem;">&nbsp;Cremlino di Mosca,&nbsp;</span><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; font-size: 1rem; text-align: start;">la cattedrale di San Basilio il Benedetto, la celebre Piazza Rossa con il mausoleo di Lenin, la galleria commerciale GUM, la piazza del Maneggio e il giardino di Alessandro, il teatro Bolshoi e l’albergo Metropol, uno dei gioielli di Mosca dell’epoca Art Nouveau</span></p>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="3" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">GIORNO 3</div>
+                  <div class="day-town-and-date">20 luglio 2020 - Mosca&nbsp;&nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/transsiberien-moscou-pekin-libre-900-9.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="font-size: 1rem;"><br></span></p><p><span style="font-size: 1rem;"><br></span></p><p><span style="font-size: 1rem;">Tempo libero</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+115%"><span style="font-size: 1rem;">Transfer alla stazione la sera tardi. Potrete rimanere nel albergo fino all'arrivo del transfer</span><br></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+115%"><span lang="EN-US">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+115%" contenteditable="true">Partenza da Mosca per Irkutsk alle 23:45<o:p></o:p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="4" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">Giorno 4-6</div>
+                  <div class="day-town-and-date">
+                    <span>21- 23 luglio 2020</span> -&nbsp;<span style="color: rgb(75, 75, 75); font-family: lato; font-size: 15px;">Transiberiana</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/18.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start;"><br></span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;"><br></span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">Questi giorni saranno dedicati al viaggio sulla famosa ferrovia - la Transiberiana.&nbsp;</span></p><div><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">Il treno percorrerà diverse centinaia di chilometri, attraversando il paesaggio nordico e silenzioso della Siberia</span><br></div><p></p>
+                  <br></div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="5" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    giorno 7</div>
+                  <div class="day-town-and-date">
+                    <span contenteditable="true">24 luglio 2020</span> - Irkutsk&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/irkutsk-7.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Benvenuti a Irkutsk!&nbsp;<span style="font-size: 1rem;">(alle&nbsp; 07:43)</span></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Transfer al hotel 3*. Check in immediato. Potete sistemarvi subito nelle camere</p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Tempo libero</p></div>
+                </div>
+              </div><div class="day-block height" id="6" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">giorno 8</div>
+                  <div class="day-town-and-date">25 luglio 2020 - Irkutsk</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/irkutsk-2.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><span style="font-size: 1rem;"><br></span></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><span style="font-size: 1rem;">Tempo libero che vi&nbsp;</span><span style="font-size: 1rem; text-align: justify;">permetterà</span><span style="font-size: 1rem;">&nbsp;</span><span style="font-size: 1rem; text-align: justify;">girare il centro città a piedi. Ammirate la capitale della Siberia, fondata circa 350 anni fa dai cosacchi. Fate una visita al </span><span style="font-size: 1rem;">museo dei Decabristi, dedicato agli esiliati politici della prima metà del XIX secolo, che hanno trascorso i lunghi anni lontano dalla parte europea del paese.</span><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p></div>
+                </div>
+              </div><div class="day-block height" id="8" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">giorno 9</div>
+                  <div class="day-town-and-date"><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; font-weight: 400;"><span style="color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-weight: 700;">26 luglio 2020 - Irkutsk</span></span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/irkutsk-4.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><br></p><p contenteditable="true"><br></p><p><br></p><p>Tempo libero</p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="7" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">GIORNO 10</div>
+                  <div class="day-town-and-date" contenteditable="true">27 luglio 2020 - Partenza per Ulan Bator</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/18.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">Partenza per Ulan Bator alle 8:16</span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">Mattina presto transfer alla stazione</span></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"></p><div>Il treno passa accanto al lago Bajkal. E ora inizia il viaggio sull’altra mitica ferrovia - la Trasmongolica. Il treno arriva a Nauchki, una città al confine tra la Russia e la Mongolia. Dopo le formalità necessarie potrete scendere dal treno. Possibilità di fare la doccia alla stazione. Poco dopo, a Sukh Bator, il secondo controllo - dalla parte mongola. La notte il treno attraversa la steppa di Mongolia.<br></div><p></p><p><br><br><br></p>
+            <div class="text-pictures">
+            </div></div>
+                </div>
+              </div><div class="day-block height" id="9" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    giorno 11</div>
+                  <div class="day-town-and-date">28 luglio 2020 - Ulan Bator</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/transsiberien-moscou-pekin-libre-900-4.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><br></p><p contenteditable="true"><br></p><p><span style="font-size: 1rem;">Arrivo a Ulan Bator alle 06:50</span><br></p><p></p><div>Transfer al hotel 2*. Check in alle 14:00. Potete lasciare il bagaglio alla reception</div><div contenteditable="true"><br></div><div>Tempo libero</div><p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="10" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number" contenteditable="true">
+                    giorno 12</div>
+                  <div class="day-town-and-date">29 luglio 2020 - Ulan Bator</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/transsiberien-moscou-pekin-guide-900-23.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><br></p><p contenteditable="true"><br></p><p contenteditable="true"><br></p><p contenteditable="true">Tempo libero</p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="11" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number"><div class="day-number"></div><div>Giorno 13</div></div>
+                  <div class="day-town-and-date">
+                    <span>30 luglio 2020</span> - <span>Partenza per Pechino</span>
+                  </div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/23-transsib-min.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;"><br></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Transfer mattutino alla stazione</p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Treno per Pechino alle 07:30</p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="12" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 14</div>
+                  <div class="day-town-and-date">
+                    <span>31 luglio 2020</span> - Pechino&nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/transsiberien-moscou-pekin-guide-660-3.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;"><br></span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;"><br></span></p><p><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; text-align: start; font-size: 1rem;">Arrivo a Pechino alle 14:35</span></p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Transfer al hotel 2*</p><p style="margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding: 0px; vertical-align: baseline; font-family: Lato, sans-serif; line-height: 23px; color: rgb(75, 75, 75); text-align: start;">Tempo libero</p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="13" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 15</div>
+                  <div class="day-town-and-date">01 agosto 2020 - Pechino</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/trans-siberian-moscow-beijing-self-guided-600-3.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><br></p><p><br></p><p><br></p><p>Tempo libero</p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="14" style="position: relative;"><div style="position: absolute; right: 0; display: flex;" class="needHidden day-menu-btns hidden">
+              <button class="addPhotoInText photoDiv mr-1 btn btn-success">Добавить фото</button>
+              <button class="addDayBefore mr-1 btn btn-success">Добавить день до</button>
+              <button class="addDayAfter mr-1 btn btn-success">Добавить день после</button>
+              <button class="deleteDay btn btn-danger">Удалить день</button>
+            </div>
+                
+                <div class="day-header">
+                  <div class="day-number">
+                    Giorno 16</div>
+                  <div class="day-town-and-date">02 agosto 2020 - Pechino</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/SG_2020_02_N7MoscaPechino/transsiberien-moscou-pekin-libre-900-7.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><br></p><p contenteditable="true"><br></p><p contenteditable="true"><br></p><p contenteditable="true">Tempo libero</p><p contenteditable="true">Transfer all'aeroporto</p><p><br></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+  <div class="fin height">
+    <p class="center-red">Fine del programma</p>
+    </div><div class="programm-tarifs height"><button style="position: absolute; right: 0;" class="addColPrice needHidden mr-5 btn btn-success hidden">Столбик</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+    <div class="programm-tarifs-head" contenteditable="">
+      DETTAGLI E TARIFFE
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span contenteditable="true">Prezzo per persona in gruppo di 4 personi:</span><span contenteditable="true">Prezzo totale per il gruppo di 4 personi:</span>
+      </div>
+      <div class="ttt">
+        <span contenteditable="true">1730€<br></span><span contenteditable="true">6920€<br></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-tarifs-text-after height">
+    text
+  </div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left"><button style="position: absolute; right: 20px;" class="needHidden btn addIncList hidden">Добавить пункты</button>
+      <span>PREZZO INCLUDE: </span>
+      <ul class="galochka">
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Documenti per ottenere i visti (russo, mongolo e cinese)</span><br></li>
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Alloggio negli hotel 2* o 3*</span><br></li>
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Biglietti di treno 2 classe (scompartimenti con 4 letti)</span><br></li>
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Tutte le trasferte del programma in macchina privata</span><br></li>
+      </ul>
+    </div>
+    <div class="programm-include-right">
+      <span>PREZZO ESCLUDE: </span>
+      <ul class="krestik">
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Visti</span></li><li>Biglietti aerei</li><li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif; font-size: 1rem;">Pasti</span><br></li>
+        <li><span style="color: rgb(75, 75, 75); font-family: Lato, sans-serif;">Spese personali</span><br></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block">
+      TERMINI DI PRENOTAZIONE, CANCELLAZIONE E PAGAMENTO
+    </div>
+    <div>
+      <p class="zvezda">Il versamento dell'acconto di 20 % deve essere effettutato al momento della prenotazione del viaggio attraverso la piattaforma di pagamento sicuro con
+        carta
+        di credito o con un bonifico bancario.
+      </p>
+
+      <p class="zvezda">Il saldo deve essere pagato entro 90gg prima d’arrivo tramite bonifico bancario o carta di credito di cui le commissioni bancarie sono a carico dei
+        viaggiatori
+      </p>
+
+      <p class="zvezda">Per annullare il viaggio il viaggiatore deve inviare email alla nostra agenzia. Le norme di cancellazione dipendono dalla data quando la cancellazione è
+        stata effettuata :
+      </p>
+      <ul class="polii">
+        <li>sino a 60 giorni prima della partenza: 10 della quota di partecipazione;</li>
+        <li>da 59 a 30 giorni prima della partenza: 25% della quota di partecipazione;</li>
+        <li>da 29 a 21 giorni prima della partenza: 50% della quota di partecipazione;</li>
+        <li>tra i 20 ed i 7 giorni prima della partenza: 75% della quota di partecipazione;</li>
+        <li>da 6 a 0 giorni prima della partenza o dopo la stessa: 100% della quota di partecipazione.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="zvezda"></p>
+
+      <p class="zvezda"></p>
+
+      <p class="zvezda"></p>
+      <ul class="polii"></ul>
+    </div>
+  </div>
+</div>
+<div class="height"></div>
+
+</body></html>

@@ -1,0 +1,292 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body>
+<header style="position: fixed; z-index: 999999; display: flex; justify-content: space-between; width: 1050px;
+  border-bottom: 2px solid; height: 50px; background-color: rgba(0,0,0, .2);" class="py-2 px-5 needHidden hidden">
+  <div>
+    <button class="addDay btn-success">Добавить день</button>
+    <button class="savePdf btn-success">Созранить как pdf</button>
+    <button class="saveAsHtml btn-success">Сохранить файл</button>
+    <button class="saveAsOtherHtml btn-success">Сохранить как другой файл</button>
+  </div>
+  <div class="message" style="display: none;"><p style="color: #1e7e34">Ура ура, пдф готов <a href="/pdf/TizianaTassinari2pax.pdf">Вот ссылка</a></p></div>
+  <div id="fountainTextG" style="display: block;">
+    <div id="fountainTextG_1" class="fountainTextG">З</div>
+    <div id="fountainTextG_2" class="fountainTextG">а</div>
+    <div id="fountainTextG_3" class="fountainTextG">г</div>
+    <div id="fountainTextG_4" class="fountainTextG">р</div>
+    <div id="fountainTextG_5" class="fountainTextG">у</div>
+    <div id="fountainTextG_6" class="fountainTextG">з</div>
+    <div id="fountainTextG_7" class="fountainTextG">к</div>
+    <div id="fountainTextG_8" class="fountainTextG">а</div>
+  </div>
+</header>
+<div class="editable">
+  <div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span contenteditable="">+7 969 791 62 60</span>
+        <a href="mailto:contact@russieautrement.com" class="email" contenteditable="">arina.ivanova@russiadiversamente.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">La capitale della Russia</div>
+    <div class="programm-data-text">
+      <p>
+        Programma personalizzato per Sonia e amici</p>
+      <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Vostra richiesta:</span>
+      <div class="programm-data-list">
+        <div class="eee">
+          <span contenteditable="">Numero di persone:</span>
+          <span contenteditable="">Data di viaggio:</span>
+          <span contenteditable="">Durata di viaggio:</span>
+        </div>
+        <div class="www">
+          <span>5&nbsp;</span>
+          <span>da 9 a 13 aprile 2020</span>
+          <span>5gg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  <div class="day-block height" id="1" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="1">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="1">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">1 giorno</div>
+                  <div class="day-town-and-date">9 aprile 2020: Mosca – Arrivo</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/TizianaTassinari2pax/064ce92145dbfc6a607cec54ecfc4060.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Trasferimento in macchina privata dall'aeroporto verso vostro albergo.</p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="2" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="2">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="2">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">2 GIORNO</div>
+                  <div class="day-town-and-date" contenteditable="true">10 aprile 2020: Mosca – Giro città con visita di Cremlino e Cattedrale di San Basilio</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/TizianaTassinari2pax/msk2.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><div class="style_block__2RF7p" data-block="true" data-editor="dg7ig" data-offset-key="aifhp-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="aifhp-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="aifhp-0-0" style="box-sizing: inherit;">In 5 ore esplorate l'area centrale: Piazza Rossa, Parco Zaryadye, GUM, Giardino Alexander e all'interno: Il Cremlino di Mosca è un insieme architettonico ed artistico unico. È famosa per l'antica piazza della cattedrale e per i suoi templi: la cattedrale dell'Annunciazione, la cattedrale dell'Assunzione, dove furono incoronati zar e imperatori russi, la cattedrale dell'Arcangelo, la tomba dei granduchi, la chiesa della Depressione, le stanze patriarcali, la torre campanaria di Ivan il Grande. Il cannone dello Zar e lo Zar Bell, che sono diventati quasi i simboli di Mosca, sono noti al mondo intero al Cremlino e nella piazza del Senato si può vedere l'edificio dell'Arsenale, un monumento dell'architettura dei tempi di Pietro il Grande e del Senato.</span></div></div><div class="style_block__2RF7p" data-block="true" data-editor="dg7ig" data-offset-key="42b9r-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="42b9r-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="42b9r-0-0" style="box-sizing: inherit; font-weight: bold;">Visita individuale guidata in italiano a piedi di 5 ore.</span></div></div><div contenteditable="true"><p></p>
+                  </div></div>
+                </div>
+              </div><div class="deleteHeader" style="height: 134.938px; position: relative;"><button class="btn-success heightBtn minus needHidden hidden">-</button>
+    <button class="btn-success heightBtn plus needHidden hidden">+</button></div><div style="position: absolute;right: 50%; margin-top: -50px;" class="deleteHeader">1 / 3</div><div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span contenteditable="">+7 969 791 62 60</span>
+        <a href="mailto:contact@russieautrement.com" class="email" contenteditable="">arina.ivanova@russiadiversamente.com</a>
+      </div>
+    </div>
+  </div><div class="day-block height" id="3" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="3">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="3">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">3 GIORNO</div>
+                  <div class="day-town-and-date"><span>11 aprile 2020: Mosca – </span>&nbsp;Visita della metropolitana e passeggiata lungo la via Arbat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/TizianaTassinari2pax/11-1-.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p></p><div class="style_block__2RF7p" data-block="true" data-editor="593gi" data-offset-key="3ms1u-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="3ms1u-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="3ms1u-0-0" style="box-sizing: inherit;">La metropolitana di Mosca è un vero capolavoro nascosto sotto terra. Famosa per i suoi mosaici, statue e marmi, bronzi dorati e stucchi. Ogni giorno più di 8 milioni di passeggeri prendono la metropolitana di Mosca.
+La prima linea è stata inaugurata nel 1935, oggi la metro di Mosca conta 12 linee e 188 fermate, una vera ragnatela! Durante questa visita la vostra guida vi racconterà la storia della costruzione della metro e vi darà qualche consiglio pratico. Vedrete che la metro di Mosca merita il titolo della metropolitana più bella del mondo.</span></div></div><div class="style_block__2RF7p" data-block="true" data-editor="593gi" data-offset-key="c0qg4-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="c0qg4-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="c0qg4-0-0" style="box-sizing: inherit;">La visita della capitale della Russia prosegue sulla celebre via Starij Arbat o “Vecchia Arbat”. In lingua tartara la parola “arbat” significa “borgo”. A Mosca esiste la via Vecchia Arbat e Nuova Arbat che si trovano nello stesso quartiere, ma sono completamente diverse. La Vecchia Arbat è una via pedonale la più turistica della capitale e vi troverete diversi bar, ristoranti, negozi ecc. Durante la visita vedrete il gigantesco palazzo del Ministero degli Affari esteri - un esempio significativo dell’architettura dell’epoca di Stalin.</span></div></div><div class="style_block__2RF7p" data-block="true" data-editor="593gi" data-offset-key="a379e-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="a379e-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="a379e-0-0" style="box-sizing: inherit; font-weight: bold;">Visita individuale guidata in italiano a piedi e in metro di 4 ore.</span></div></div><p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="4" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="4">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="4">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">4 GIORNO<div class="day-number"></div><div class="day-number"></div></div>
+                  <div class="day-town-and-date">&nbsp;<span style="font-size: 1rem;">11 aprile 2020: Mosca -&nbsp;Visita a Tsaritsyno&nbsp;</span><span style="font-size: 1rem;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/TizianaTassinari2pax/zarizino.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <div class="style_block__2RF7p" data-block="true" data-editor="dqu1g" data-offset-key="d5flf-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="d5flf-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="d5flf-0-0" style="box-sizing: inherit;">La tenuta apparteneva inizialmente alla zarina Irina, sorella dello zar Boris Godunov. L’imperatrice Caterina II di Russia, affascinata dalla bellezza del giardino, ha acquistato la tenuta nel 1775 e ha fatto costruire un nuovo palazzo. Non soddisfatta dal primo architetto, l’imperatrice ha scelto un altro artista, ma quest’ultimo non ha avuto tempo di finire la costruzione del palazzo prima della morte di Caterina. L’erede dell’imperatrice, suo figlio Paolo I, non ha voluto completare i lavori e per circa 200 anni il palazzo è rimasto abbandonato per essere ricostruito sul progetto iniziale sono negli anni 1980. Si tratta del palazzo neo-gotico più grande in Europa. Dal 1865, quando è stata costruita la ferrovia tra Mosca e Tsaritsyno, gli abitanti della capitale hanno scoperto la belezza di questo luogo. Dostoevskij, Cajkovskij e Cechov affitavano a Tsaritsyno le loro case di campagna.</span></div></div><div class="style_block__2RF7p" data-block="true" data-editor="dqu1g" data-offset-key="m5gi-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="m5gi-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="m5gi-0-0" style="box-sizing: inherit;">Oggi a Tsaritsyno è aperto il museo della Storia dell’Architettura, un museo dell’arte applicata e un bel giardino. Alcuni padiglioni si usano per le mostre temporanee e concerti di musicisti russi.</span></div></div><div class="style_block__2RF7p" data-block="true" data-editor="dqu1g" data-offset-key="a05kc-0-0" style="box-sizing: inherit; padding-bottom: 12px; color: rgb(52, 58, 64); font-family: Averta, sans-serif; text-align: start; white-space: pre-wrap;"><div data-offset-key="a05kc-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" style="box-sizing: inherit;"><span data-offset-key="a05kc-0-0" style="box-sizing: inherit; font-weight: bold;">Visita individuale guidata in italiano a piedi e in metro di 5 ore</span></div></div>
+                  </div>
+                </div>
+              </div><div class="deleteHeader" style="height: 16px; position: relative;"><button class="btn-success heightBtn minus needHidden hidden">-</button>
+    <button class="btn-success heightBtn plus needHidden hidden">+</button></div><div style="position: absolute;right: 50%; margin-top: -50px;" class="deleteHeader">2 / 3</div><div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span contenteditable="">+7 969 791 62 60</span>
+        <a href="mailto:contact@russieautrement.com" class="email" contenteditable="">arina.ivanova@russiadiversamente.com</a>
+      </div>
+    </div>
+  </div><div class="day-block height" id="5" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="5">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="5">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">5 giorno</div>
+                  <div class="day-town-and-date">12 aprile 2020: Mosca - Partenza&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/TizianaTassinari2pax/shutterstock_197120210.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Transfer privato dall'albergo verso l'aeroporto.</p><p>Arrivederci Russia!<br></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+            </div>
+  <div class="fin height">
+    <p class="center-red"></p>
+    <p>Nota Bene : Il programma culturale proposto può subire delle modifiche minori a seconda delle variazioni dei giorni e degli orari di funzionamento dei siti o delle modifiche agli orari dei treni. In tal caso, si farebbe di tutto per limitare questo ai cambiamenti nell'ordine delle visite, o eventualmente offrire servizi sostitutivi di qualità equivalente.</p><p></p>
+  </div>
+
+  <div class="programm-tarifs height">
+    <button style="position: absolute; right: 0;" class="addColPrice needHidden mr-5 btn btn-success hidden">Добавить столбик с ценами</button>
+    <div class="programm-tarifs-head">
+      DETTAGLI E TARIFFE
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span contenteditable="">Prezzo per persona:</span>
+        <span>Prezzo totale:</span>
+      </div>
+      <div class="ttt">
+        <span>277 €</span>
+        <span>1385 €</span>
+      </div>
+    <div class="ttt">
+              <span>&nbsp;249 €*</span>
+              <span>1245 €*</span>
+            </div></div>
+  <span style="
+    display: flex;
+    justify-content: center;
+">Potete avere uno sconto di 10 % facendo pagamento con bonifico bancario del 100% dell’ammontare entro fine del mese.</span></div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left">
+      <span>PREZZO INCLUDE:</span><ul class="galochka"><li>Tutti i transfer inclusi nel programma in macchina privata</li><li>Servizi della guida privata in italiano</li><li>Biglietti per tutti i musei in base al programma</li>
+      </ul>
+    </div>
+    <div class="programm-include-right">
+      <span>PREZZO ESCLUDE:</span><ul class="krestik"><li>Pasti&nbsp;</li>
+        <li>Assicurazione</li>
+        <li>Visto</li>
+        <li contenteditable="true">Voli</li><li contenteditable="true">Alloggio</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="programm-remarques height">
+    <h3></h3>
+    <span><br></span>
+  </div><div class="deleteHeader" style="height: 255.953125px; position: relative;"><button class="btn-success heightBtn minus needHidden hidden">-</button>
+    <button class="btn-success heightBtn plus needHidden hidden">+</button></div><div style="position: absolute;right: 50%; margin-top: -50px;" class="deleteHeader">3 / 3</div><div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">RUSSIA</span>
+      <span style="margin-top: -10px;" contenteditable="">DIVERSAMENTE</span>
+      <a href="#" contenteditable="">www.russiadiversamente.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Indirizzo:</span>
+        <span contenteditable="">Cell.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">Ufficio 1, lungofiume di Moika 67-69, San Pietroburgo</span>
+        <span contenteditable="">+7 969 791 62 60</span>
+        <a href="mailto:contact@russieautrement.com" class="email" contenteditable="">arina.ivanova@russiadiversamente.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block">
+      TERMINI DI PRENOTAZIONE, CANCELLAZIONE E PAGAMENTO
+    </div>
+    <div style="min-height: 50px;"><p class="zvezda" style="color: rgb(0, 0, 0); font-family: calibri; font-size: medium;">Il versamento dell'acconto di 20 % deve essere effettutato al momento della prenotazione del viaggio attraverso
+la piattaforma di pagamento sicuro con carta di credito o con un bonifico bancario.</p><p class="zvezda" style="color: rgb(0, 0, 0); font-family: calibri; font-size: medium;">Il saldo deve essere pagato entro 60gg prima d’arrivo tramite bonifico bancario o carta di credito di cui le
+commissioni bancarie sono a carico dei viaggiatori</p><p class="zvezda" style="color: rgb(0, 0, 0); font-family: calibri; font-size: medium;">Per annullare il viaggio il viaggiatore deve inviare email alla nostra agenzia. Le norme di cancellazione dipendono
+dalla data quando la cancellazione è stata effettuata : </p><p style="color: rgb(0, 0, 0); font-family: calibri; font-size: medium;"></p><ul class="polii" style="color: rgb(0, 0, 0); font-family: calibri; font-size: medium;"><li>sino a 60 giorni prima della partenza: 5% della quota di partecipazione;</li><li>da 59 a 30 giorni prima della partenza: 25% della quota di partecipazione;</li><li>da 29 a 21 giorni prima della partenza: 50% della quota di partecipazione;</li><li>tra i 20 ed i 7 giorni prima della partenza: 75% della quota di partecipazione;</li><li>da 6 a 0 giorni prima della partenza o dopo la stessa: 100% della quota di partecipazione.</li></ul>
+
+    </div>
+  </div>
+</div>
+<div class="height"></div>
+
+
+<div style="position: absolute;right: 50%; margin-top: -50px; top: 5717px" class="deleteHeader">4 / 3</div></body></html>

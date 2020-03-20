@@ -1,0 +1,40 @@
+.structure {
+  font-size: 18px;
+
+  *:first-letter {
+    text-transform: uppercase;
+  }
+
+  .dir {
+
+    & > span {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    ul {
+      margin-left: 15px;
+      height: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      &.open-dir {
+        height: auto;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .file a {
+    color: #000;
+  }
+}

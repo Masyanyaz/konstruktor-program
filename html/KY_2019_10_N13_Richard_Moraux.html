@@ -1,0 +1,760 @@
+<!doctype html><html lang="ru"><head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://78.47.40.9/css/style.css">
+  <script src="http://78.47.40.9/js/jquery-3.4.1.min.js"></script>
+  <script src="http://78.47.40.9/js/bootstrap.min.js"></script>
+  <script src="http://78.47.40.9/js/main.js"></script>
+  <link rel="stylesheet" href="http://78.47.40.9/css/bootstrap.min.css">
+
+</head>
+<body><header class="needHidden hidden" style="border: 1px solid; padding: 5px 15px;">
+              <p style="line-height: 18px">
+                Загляните скорее <a href="/news">тут вас ждет хорошая новость</a>. Всем добра)
+              </p>
+            </header>
+
+            <div class="adminPanel needHidden hidden">
+              <div class="adminPanel-result">
+                <div class="message"><p style="font-size: 12px;">С новым годом!</p></div>
+                <div id="fountainTextG" style="display: none;">
+                  <div id="fountainTextG_1" class="fountainTextG">З</div>
+                  <div id="fountainTextG_2" class="fountainTextG">а</div>
+                  <div id="fountainTextG_3" class="fountainTextG">г</div>
+                  <div id="fountainTextG_4" class="fountainTextG">р</div>
+                  <div id="fountainTextG_5" class="fountainTextG">у</div>
+                  <div id="fountainTextG_6" class="fountainTextG">з</div>
+                  <div id="fountainTextG_7" class="fountainTextG">к</div>
+                  <div id="fountainTextG_8" class="fountainTextG">а</div>
+                </div>
+              </div>
+              <button class="addNewDay btn-success btn">Добавить день</button>
+              <button class="saveAsHtml btn-success btn">Сохранить файл</button>
+              <button class="saveAsOtherHtml btn-success btn">Сохранить как</button>
+              <button class="btn-success btn addKolontitul">Добавить колонтитулы</button>
+              <button class="btn-success btn deleteKolontitul">Удалить Колонтитулы</button>
+              <button class="btn-success btn saveAsPdf">Сохранить как pdf</button>
+              <div style="margin-top: 15px;font-size: 12px;">
+                
+              </div>
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+<div class="editable">
+  <div class="programm-header height deleteHeader">
+    <div class="programm-header-left">
+      <span contenteditable="">russieautrement</span>
+      <a href="#" contenteditable="">www.russieautrement.com</a>
+    </div>
+    <div class="programm-header-center">
+      <img src="https://russieautrement.com/upload/medialibrary/e91/e91fe7bca2ffba6365f4f681a3ef4ccf.png">
+    </div>
+    <div class="programm-header-right">
+      <div class="qqq">
+        <span contenteditable="">Adresse:</span>
+        <span contenteditable="">Tél.:</span>
+        <span contenteditable="">E-mail:</span>
+      </div>
+      <div class="www">
+        <span contenteditable="">67-69, quai de la Moika, Bureau 1, Saint-Pétersbourg</span>
+        <span contenteditable="">+33 (0) 1 84 88 33 57</span>
+        <a href="mailto:contact@russieautrement.com" class="email" contenteditable="">contact@russieautrement.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-data height">
+    <div class="programm-data-name">Le voyage Transsibérien-Transmongolien de Moscou à Pékin</div>
+    <div class="programm-data-text">
+      <p contenteditable="true">
+        Programme sur mesure spécialement étudié en faveur de&nbsp;Richard MORAUX</p>
+      <span>Votre demande:</span>
+      <div class="programm-data-list" contenteditable="true">
+        <div class="eee">
+          <span contenteditable="">Nombre de personnes:</span>
+          <span contenteditable="">Date de sejour:</span>
+          <span contenteditable="">Durée du séjour:</span>
+        </div>
+        <div class="www">
+          <span>2 adultes</span>
+          <span>Du 01 au 21 juin 2020</span>
+          <span>21 jours et 20 nuits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+
+  <div class="day-block height" id="1" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="1">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="1">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(33, 37, 41); font-size: 1rem;">01 juin</span><span style="color: rgb(33, 37, 41); font-size: 1rem;"> - </span><span style="color: rgb(33, 37, 41); font-size: 1rem;">Moscou</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/4a209f29198438c4881399a158802706.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="MsoNoSpacing" style="margin-top:0cm;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;mso-list:none;tab-stops:35.4pt"><span lang="FR-CH">Arrivée
+à Moscou. Transfert de l'aéroport au centre-ville.&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNoSpacing" style="margin-top:0cm;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;mso-list:none;tab-stops:35.4pt"><span lang="FR-CH">Installation&nbsp;<b style="font-size: 1rem;"><span style="font-family: &quot;Segoe UI&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">à
+l'hôtel Bagration 3*&nbsp;</span></b>(ou similaire), 1 chambre double standard.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt"><b><u><span lang="FR-CH" style="color:red" contenteditable="true">Installation garantie à partir de
+14h00.<o:p></o:p></span></u></b></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt"><span lang="EN-US">Journ</span><span lang="FR">ée libre.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:6.0pt"></p><p class="MsoNormal" style="margin-bottom:6.0pt"><span lang="FR"><br></span></p>
+                      <p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="16" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="16">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="16">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 2&nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(33, 37, 41); font-size: 1rem;">02 juin</span><span style="color: rgb(33, 37, 41); font-size: 1rem;"> - </span><span style="color: rgb(33, 37, 41); font-size: 1rem;">moscou</span><span style="color: rgb(33, 37, 41); font-size: 1rem;"></span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/5-900-moscou.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal"></p><p class="a"><span lang="FR"><b>Petit-déjeuner à l’hôtel.&nbsp;</b><o:p></o:p></span></p><p></p><p class="MsoNormal" style="margin-bottom: 6pt;"><b><span lang="FR" style="color:#262626;
+mso-themecolor:text1;mso-themetint:217;mso-ansi-language:FR">Tour de ville </span></b><span lang="FR" style="color:#262626;mso-themecolor:text1;mso-themetint:217;mso-ansi-language:
+FR">guidé en français qui comprend généralement&nbsp;: la rue Tverskaïa (l’une
+des principales rues de la ville où se trouvent l’hôtel de ville et le monument
+au fondateur de Moscou, Yury Dolgoruky), un passage partiel le long des anneaux
+des Jardins et Boulevards (où l’on peut voir quelques-uns des gratte-ciel de
+Staline et l’architecture classique de Moscou), la Douma d’État sur Okhotny
+Ryad, le Théâtre Bolchoï, la place Lubyanskaya (bâtiment du KGB de l’URSS), le
+parc pittoresque Zaryadie, , la cathédrale du Christ-Sauveur,&nbsp; un arrêt près de <b>la place rouge,</b> du couvent Novodievitchi et près de la colline des
+moineaux.&nbsp;</span></p><div><font color="#262626">Vous visiterez aussi à l’intérieur le territoire du Kremlin avec l’une de ces cathédrales (de la Dormition, de l’Archange, de l’Annonciation).&nbsp;&nbsp;</font></div><div><font color="#262626"><b>Excursion véhiculée de 6h.</b></font></div><p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="21" style="position: relative;">
+                <div style="position: absolute; right: 10px; display: flex;" class="needHidden day-menu-btns hidden">
+                  <button class="addPhotoInText photoDiv mr-1 btn btn-success" id="21">Добавить фото</button>
+                  <button class="addDayAfter mr-1 btn btn-success" id="21">Добавить день после этого дня</button>
+                  <button class="deleteDay btn btn-danger" id="21">Удалить день</button>
+                </div>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 3
+                  </div>
+                  <div class="day-town-and-date">03 JUIN - MOSCOU</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/4-900-moscou.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><b>Petit-déjéuner à l'hôtel.</b></p><p>Journée libre.</p>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="14" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="14">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="14">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 4</div>
+                  <div class="day-town-and-date">04 JUIN - MOSCOU</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/2-sejour-libre-7jours-Moscou-min.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="a"><span style="font-weight: bolder;">Petit-déjéuner à l'hôtel.</span><br></p>
+
+<p class="MsoNormal"><b><u><span lang="FR-CH" style="color:red" contenteditable="true">La chambre est disponible jusqu’à
+12h00.<o:p></o:p></span></u></b></p>
+
+<p class="MsoNormal"><span lang="FR" contenteditable="true">Transfert à la gare.&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="FR">Train en direction de <b>Ekaterinbourg</b> (départ à 22h50, heure locale),</span></p><div><b style="font-size: 1rem;"><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"></span></b><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 1rem;"><b>1ème classe (compartiment à 2 places)</b>, sans
+accompagnement</span><p class="MsoNormal"><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><div><br></div></div><p></p><p class="MsoNormal"><span lang="FR"><br></span></p><p class="MsoNormal"><span lang="FR"><br></span></p></div>
+                </div>
+              </div><div class="day-block height" id="21" style="position: relative;">
+                <div style="position: absolute; right: 10px; display: flex;" class="needHidden day-menu-btns hidden">
+                  <button class="addPhotoInText photoDiv mr-1 btn btn-success" id="21">Добавить фото</button>
+                  <button class="addDayAfter mr-1 btn btn-success" id="21">Добавить день после этого дня</button>
+                  <button class="deleteDay btn btn-danger" id="21">Удалить день</button>
+                </div>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 5
+                  </div>
+                  <div class="day-town-and-date">
+                    <span contenteditable="true">05 JUIN</span> - TRANSSIBERIEN</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/circuit-transsiberien-de-moscou-a-vladivostok-guide-6.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Journée libre dans le train.</p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+            <div class="day-block height" id="10" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="10">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="10">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 6&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(33, 37, 41); font-size: 1rem;" contenteditable="true">&nbsp;06 JUIN - EKATERINBOURG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/circuit-transsiberien-de-moscou-a-vladivostok-guide-5.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p></p><p class="MsoNormal"><span lang="FR">Arrivée à </span><span class="a0"><span lang="FR-CH">Ekaterinbourg</span></span><span lang="FR"> à 03h40 (heure locale).</span></p>
+
+<p class="MsoNormal"><span style="font-size: 1rem;">Transfert à l’hôtel.</span></p>
+
+<p class="MsoNoSpacing" style="margin-top:0cm;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;mso-list:none;tab-stops:35.4pt"><span lang="FR">Installation </span><span lang="FR-CH"><a href="http://www.arbat-house.com/en"><span style="color:black;mso-themecolor:
+text1">à<b> l’hôtel</b></span></a></span><span class="MsoHyperlink"><span lang="FR-CH" style="color:black;mso-themecolor:text1">&nbsp;<b>Marins Park&nbsp;</b></span></span><span class="MsoHyperlink"><b><span lang="FR" style="color:black;mso-themecolor:text1;mso-ansi-language:FR">3*</span></b></span><span lang="FR"> </span><span lang="FR-CH">(ou similaire), 1 chambre double standard.<o:p></o:p></span></p><p class="MsoNoSpacing" style="margin-top:0cm;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;mso-list:none;tab-stops:35.4pt"><br></p><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="FR"><b>Visite de la ville avec un guide francophone local.</b>&nbsp;<br></span><span class="a0" style="font-size: 1rem;"><span lang="FR-CH">Excursion véhiculée&nbsp;</span></span><span class="a0" style="font-size: 1rem;"><span lang="FR-CH">de&nbsp;</span></span><span class="a0" style="font-size: 1rem;"><span lang="FR">3&nbsp;</span><span lang="FR-CH">heures</span></span><span style="font-size: 1rem; font-weight: bolder;"><span lang="FR-CH">.</span></span></p><p></p><p>
+
+</p><p class="MsoNormal"><br></p><p></p>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="19" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="19">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="19">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 7</div>
+                  <div class="day-town-and-date">07 JUIN - EKATERINBOURG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/StoecklinDaniel4personnes/ganina-yama.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><b>Petit-déjeuner à l'hôtel.</b></p><p class="MsoNormal"><span lang="FR-CA" style="color:#262626;mso-themecolor:text1;mso-themetint:217;mso-ansi-language:
+FR-CA">Visite guidée en français de la</span><span lang="FR-CA" style="color:
+#262626;mso-themecolor:text1;mso-themetint:217;mso-ansi-language:FR"> </span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:text1;mso-themetint:
+217">frontière Europe - Asie</span></span><span lang="FR" style="color:#262626;
+mso-themecolor:text1;mso-themetint:217;mso-ansi-language:FR" contenteditable="true"> qui vous
+permettra de poser un pied sur l’un et l’autre des continents à la fois.
+Champagne et diplôme pour marquer l’événement&nbsp;! Vous continuez la
+découverte de la région d’Oural par un lieu nommé «&nbsp;</span><span class="a0"><span lang="FR-CH" style="color:#262626;mso-themecolor:text1;mso-themetint:217">Ganina
+Yama</span></span><span lang="FR" style="color:#262626;mso-themecolor:text1;
+mso-themetint:217;mso-ansi-language:FR">&nbsp;». Les corps de la famille
+impériale y furent jetés dans une fausse en 1918. Aujourd’hui s’élève un très
+beau monastère en bois construit au milieu de la forêt en leur mémoire.&nbsp;</span><span style="color: rgb(38, 38, 38); font-size: 1rem;"><b>Excursion véhiculée de 4h</b>.</span></p><p class="MsoNormal"><br></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            <div class="day-block height" id="8" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="8">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="8">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 8</div>
+                  <div class="day-town-and-date" contenteditable="true">08 JUIN - EKATERINBOURG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/22-transsib-min.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p contenteditable="true"><span style="font-weight: bolder;">Petit-déjeuner à l'hôtel.</span><br></p><p><span style="font-weight: bolder;"><u><span lang="FR-CH" style="color: red;" contenteditable="true">La chambre est disponible jusqu’à 12h00.</span></u></span><span style="font-weight: bolder;"><br></span></p><p><br></p><p contenteditable="true">Transfert de l'hôtel à la gare.</p><p><span lang="FR">Train en direction d’<b>Irkoutsk</b></span><span lang="FR">&nbsp;(départ à 03h40, heure locale),</span><span style="font-weight: bolder;"><br></span></p><p><span style="font-weight: bolder;">1ème classe (compartiment à 2 places)</span>, sans accompagnement.<br></p>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="6" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="6">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="6">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 9</div>
+                  <div class="day-town-and-date">09 JUIN - Transsibérien</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/3-900-transsib.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">Journée libre dans le train.</div>
+                </div>
+              </div>
+            <div class="day-block height" id="4" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="4">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="4">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 10</div>
+                  <div class="day-town-and-date">10 JUIN - IRKOUTSK-LISTVYANKA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/irkutsk-7.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p>Arrivée à Irkoutsk à 07:43.</p><div><div>Après le petit déjeuner chez l’habitant, votre guide vient vous chercher pour partir à la découverte du célèbre lac Baïkal ! Vous prenez la route tous ensemble vers le village de Listvianka, situé au bord de ce lac majestueux. En route, vous faites un arrêt dans musée ethnographique en plein air de Taltsy pour y voir les différents types des constructions traditionnelles en bois de la région. Vous visitez le musée de Baïkal. Plus tard, atteints les rivages du lac Baïkal, à Listvianka, vous prenez un déjeuner des plats locaux, découvrez le village et vous promenez au bord du lac.</div><div><br></div><div>Installation à <b>l’hôtel Mayak 4* </b>(ou similaire) en chambre double standard.</div></div><div contenteditable="true"><br></div>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="2" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="2">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="2">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 11</div>
+                  <div class="day-town-and-date">
+                    <span>11 JUIN</span> - LISTVYANKA</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/Listvyanka_summer_01.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="a"><span lang="FR" contenteditable="true"><b>Petit-déjeuner à l'hôtel.</b></span></p><p class="MsoNormal"><span lang="FR">Vous passerez cette journée en liberté au bord du lac Baikal. Profitez bien
+ce cette pause dans votre voyage pour respirer de l’air frais de la plus garede
+réserve d’eau douce, le plus profond et le plus ancien lac du monde.&nbsp;<o:p></o:p></span></p></div>
+                </div>
+              </div><div class="day-block height" id="21" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="21">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="21">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 12</div>
+                  <div class="day-town-and-date">12 JUIN - LISTVYANKA-IRKOUTSK</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/Listvyanka_summer_03.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="a"><b>Petit-déjeuner à l’hôtel.</b>&nbsp;</p><p><span style="font-weight: bolder;"><u><span lang="FR-CH" style="color: red;">La chambre est disponible jusqu’à 12h00.</span></u></span></p><p>Transfert de Listvyanka à Irkoutsk.</p><div>Installation à&nbsp;<span style="font-weight: bolder;">l’hôtel Europa 3*&nbsp;</span>(ou similaire) en chambre double standard.<br></div><div contenteditable="true"><br></div>
+                  </div>
+                </div>
+              </div>
+            
+            
+            <div class="day-block height" id="3" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="3">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="3">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 13</div>
+                  <div class="day-town-and-date">13 JUIN - CIRCUM-BAIKAL</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/circuit-transsiberien-de-moscou-a-vladivostok-guide-11-12.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="a"><span lang="FR"><b>Petit-déjeuner à l’hôtel.</b></span></p><p class="a">Aujourd'hui vous prenez le Circum-Baïkal. Que de belle route près de Baïkal ! Votre guide vient vous chercher chez vous tôt le matin pour passer avec vous toute la journée sur le chemin de fer Circum-Baïkal.</p><p class="a">Pendant cette journée le train vous présente les exploits de ses constructeurs et la splendeur du lac. Il s'arrête près des tunnels et ponts les plus remarquables et dans les rares villages où habitent juste quelques habitants...</p><p class="a">Un tour guidé sur le chemin de fer Circum-Baïkal, toute la journée (Billets de train en <b>1ème classe</b> sont inclus, les sièges placés comme dans le bus).</p><div><br></div><p></p></div>
+                </div>
+              </div>
+            <div class="day-block height" id="5" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="5">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="5">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 14</div>
+                  <div class="day-town-and-date" contenteditable="true">14 JUIN - IRKOUTSK&nbsp;</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/Stoecklin.Daniel1575378565334/irkutsk-4.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="a"><span lang="FR" style="color:windowtext;
+mso-ansi-language:FR"><b>Petit-déjeuner à l’hôtel.</b></span></p><p class="a"><font color="#000000">Journée libre à Irkoutsk.</font></p></div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="7" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="7">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="7">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 15</div>
+                  <div class="day-town-and-date">15 JUIN- IRKOUTSK-OULAN BATOR</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-libre-900-12.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="a"><span lang="FR" style="color:windowtext;
+mso-ansi-language:FR"><b>Petit-déjeuner à l’hôtel.&nbsp;</b><o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><u><span lang="FR-CH" style="color:red">La chambre est disponible jusqu’à
+12h00.</span></u></b></p>
+
+<p class="MsoNormal" contenteditable="true"><span lang="FR">Transfert à la gare. <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="FR">Train en direction de Oulan Bator (départ à 08h16, heure locale),<o:p></o:p></span></p><div><span lang="FR"><span style="font-weight: bolder;">1ème classe (compartiment à 2 places)</span>, sans accompagnement<br></span></div><p></p></div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="11" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="11">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="11">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 16&nbsp; &nbsp; &nbsp;<span style="color: rgb(33, 37, 41); font-size: 1rem;">&nbsp;16 JUIN- </span><span style="color: rgb(33, 37, 41); font-size: 1rem;">OULAN bATOR -&nbsp;</span><span style="color: rgb(33, 37, 41); font-size: 1rem;"></span><span style="color: rgb(33, 37, 41); font-size: 1rem;">Parc national de Terelj</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-libre-900-8.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal"><span lang="FR">Arrivée à Oulan Bator</span><span class="a0"><span lang="FR-CH">&nbsp;</span></span><span lang="FR">à 06h50 (heure locale).<o:p></o:p></span></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Accueil par votre chauffeur et guide à votre sortie du train. Rapide passage en ville pour faire du change avant de nous diriger vers l'Ouest d'Oulan Bator.</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Route pour le parc national de Gorkhi-Terelj, un véritable écrin de nature aux portes de la capitale : formations rocheuses ciselées par l’érosion, montagnes arborées de pins, plaines jonchées de fleurs sauvages et d’edelweiss, rivières et lacs.</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Arrêt au rocher de la tortue, d'où nous partons en balade jusqu'au monastère d'Aryaval.</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Ceux qui le souhaitent pourront partir pour une randonnée à cheval le long de la rivière Tuul pour s'enfoncer dans le parc. Du haut de nos montures, nous découvrirons un paysage tout en contraste entre rivières, steppes et forêts.</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Séjour chez une famille d’éleveurs ayant établi son campement sur les berges de la rivière Tuul. Vous découvrirez de sublimes paysages, et partagerez les activités quotidiennes de votre famille d'accueil. il vous sera proposé de nombreuses activités comme la traite des animaux ou la confection de produits laitiers traditionnels.&nbsp;</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Vous assisterez également à la préparation d'un barbecue Mongol dont vous vous délecterez en compagnie de vos hôtes.</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;"><br></span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">•<span style="white-space:pre">	</span>Déjeuner: Préparé par l'équipe</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">•<span style="white-space:pre">	</span>Dîner: préparé par la famille</span></font></p><p style="margin: 0cm 0cm 0.0001pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">•<span style="white-space:pre">	</span>Hébergement: Yourte d'hôte chez l'habitant</span></font></p><div><br></div>
+                  </div>
+                </div>
+              </div><div class="day-block height" id="19" style="position: relative;">
+                <div style="position: absolute; right: 10px; display: flex;" class="needHidden day-menu-btns hidden">
+                  <button class="addPhotoInText photoDiv mr-1 btn btn-success" id="19">Добавить фото</button>
+                  <button class="addDayAfter mr-1 btn btn-success" id="19">Добавить день после этого дня</button>
+                  <button class="deleteDay btn btn-danger" id="19">Удалить день</button>
+                </div>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 17</div>
+                  <div class="day-town-and-date">17 JUIN -&nbsp;<span style="font-size: 1rem; text-transform: uppercase; white-space: nowrap;">PARC NATIONAL DE TERELJ -&nbsp;</span><span style="text-transform: uppercase; white-space: nowrap;">OULAN BATOR -</span></div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-guide-660-2.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Arrivée à la statue équestre de Gengis Khan. Haute de 40 mètres, c’est la statue la plus haute au monde d’un homme à cheval. À l’intérieur de la statue se trouve un musée que nous visiterons.</span></font></div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Retour à Oulan-Bator. Derniers troupeaux de chevaux sauvages traversant la route devant nos yeux ébahis, dernières yourtes fumant au loin, la steppe nous accompagnera jusqu'au dernier moment, à l'entrée de la ville. Arrivée au centre-ville et installation à hôtel Nine 3*.</span></font></div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Visite du monastère de Gandantegchinlen. Les moines se réunissent au monastère pour prier en matinée, et pourront répondre à vos questions au Centre Bouddhiste de Mongolie.</span></font></div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">Reste de la journée libre. Accompagnés de notre guide, vous parcourrez les magasins de la ville afin de faire vos derniers achats.</span></font></div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">•<span style="white-space:pre">	</span>Petit déjeuner: Préparé par l'équipe</span></font></div><div><font color="#393130" face="Calibri, sans-serif"><span style="font-size: 14.6667px;">•<span style="white-space:pre">	</span>Déjeuner: Restaurant local</span></font></div><div><br></div>
+
+</div>
+                  </div>
+                </div>
+              </div>
+            <div class="day-block height" id="18" style="position: relative;">
+                <div style="position: absolute; right: 10px; display: flex;" class="needHidden day-menu-btns hidden">
+                  <button class="addPhotoInText photoDiv mr-1 btn btn-success" id="18">Добавить фото</button>
+                  <button class="addDayAfter mr-1 btn btn-success" id="18">Добавить день после этого дня</button>
+                  <button class="deleteDay btn btn-danger" id="18">Удалить день</button>
+                </div>
+                <div class="day-header">
+                  <div class="day-number" contenteditable="">
+                    jour 18
+                  </div>
+                  <div class="day-town-and-date">18 JUIN - OULAN BATOR - PEKIN</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-guide-900-213.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="a"><span lang="FR"><b>Petit déjeuner à l’hôtel.</b><o:p></o:p></span></p><p class="MsoNormal"><span lang="FR">Transfert à la gare.<o:p></o:p></span></p><p>
+
+
+
+</p><p class="MsoNormal"><span lang="FR">Train en direction de Pékin (départ&nbsp;à 07h30, heure locale),<o:p></o:p></span></p><p class="MsoNormal"><span lang="FR"><span style="font-weight: bolder;">1ème classe (compartiment à 2 places)</span>, sans accompagnement.<br></span></p><p class="MsoNormal"><span lang="FR"><br></span></p><p class="MsoNormal"><span lang="FR"><br></span></p><p class="MsoNormal"><span lang="FR"><br></span></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            <div class="day-block height" id="15" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="15">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="15">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 19</div>
+                  <div class="day-town-and-date">19 JUIN - PEKIN</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-guide-900-2.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text"><p class="MsoNormal"><span lang="FR">Arrivée à <font color="#000000"><b>Pekin</b></font></span><span lang="FR">&nbsp;à 14h35 (heure locale).</span></p><div><span lang="FR"></span></div>
+
+<p class="MsoNormal"><font color="#000000">Transfert de la gare à l'hôtel.</font></p><div contenteditable="true"><span lang="FR"><span style="font-weight: bolder;"><u><span lang="FR-CH" style="color: red;">Installation garantie à partir de 14h00.</span></u></span><br></span></div><div contenteditable="true"><span lang="FR"><span style="font-weight: bolder;"><u><span lang="FR-CH" style="color: red;"><br></span></u></span></span></div><p class="MsoNormal">Installation à l'hôtel DAYS INN FORBIDDEN CITY ***(ou similaire), chambre double standart.</p></div>
+                </div>
+              </div><div class="day-block height" id="20" style="position: relative;">
+                <div style="position: absolute; right: 10px; display: flex;" class="needHidden day-menu-btns hidden">
+                  <button class="addPhotoInText photoDiv mr-1 btn btn-success" id="20">Добавить фото</button>
+                  <button class="addDayAfter mr-1 btn btn-success" id="20">Добавить день после этого дня</button>
+                  <button class="deleteDay btn btn-danger" id="20">Удалить день</button>
+                </div>
+                <div class="day-header">
+                  <div class="day-number" contenteditable="">
+                    jour 20
+                  </div>
+                  <div class="day-town-and-date">20 JUIN- PEKIN</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/transsiberien-moscou-pekin-libre-900-2.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p><b>Petit déjeuner à l’hôtel</b>, puis route vers la Grande Muraille de passe Mutianyu. Prévoir des bonnes chaussures pour la journée.&nbsp;&nbsp;</p><p>Après-midi consacrée à la Cité Interdite, ce lieu mondialement connu fut le lieu où de nombreux empereurs se succédèrent. Particularité de la visite, visite d’une salle insolite, isolé de la foule, la salle du Militaire Vaillant, où vous pourrez contempler l’architecture de ce monument.&nbsp;</p><div><br></div>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="day-block height" id="17" style="position: relative;">
+                <button style="position: absolute; right: 120px;" class="addDayAfter needHidden mr-5 btn btn-success hidden" id="17">Добавить день после этого дня</button>
+                <button style="position: absolute; right: 20px;" class="deleteDay needHidden btn btn-danger hidden" id="17">Удалить день</button>
+                <div class="day-header">
+                  <div class="day-number">
+                    jour 21</div>
+                  <div class="day-town-and-date">21 JUIN - PEKIN</div>
+                </div>
+                <div class="day-body">
+                <input type="file" multiple="" accept="image/*" class="loadFile needHidden hidden" style="position: absolute;">
+                  <div class="day-pictures">
+                  <div style="background: url(http://78.47.40.9/uploads/KY_2019_10_N13_Richard_Moraux/trans-siberian-moscow-beijing-self-guided-600-3.jpg) no-repeat center /cover;" class="bgImg 0"></div></div>
+                  <div class="day-text">
+                      <p class="MsoNormal"><b><span lang="FR" style="color:black;mso-themecolor:text1;mso-ansi-language:FR">Petit déjeuner à
+l’hôtel.<o:p></o:p></span></b></p><p class="MsoNormal"><span style="font-weight: bolder;"><u><span lang="FR-CH" style="color: red;">La chambre est disponible jusqu’à 12h00.</span></u></span><b><span lang="FR" style="color:black;mso-themecolor:text1;mso-ansi-language:FR"><br></span></b></p><p class="MsoNormal" style="margin-bottom:6.0pt"></p><p class="MsoNormal"><span lang="FR">Transfert à
+l’aéroport selon vos heures de départ.<o:p></o:p></span></p><p></p>
+                  </div>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+            </div>
+  <div class="fin height">
+    <p class="center-red" contenteditable="">Fin de nos services</p>
+    <p contenteditable="">Le programme culturel proposé est susceptible de connaître de légères modifications en fonction des changements
+      de jours et heures d'ouverture des sites. Si tel était le cas, tout serait mis en oeuvre pour limiter cela à des
+      modifications
+      dans l'ordre des visites, ou, éventuellement, vous proposer des prestations de remplacement de qualité
+      équivalente.
+    </p>
+  </div>
+
+  <div class="programm-tarifs height"><button style="position: absolute; right: 0;" class="addColPrice needHidden mr-5 btn btn-success hidden">Столбик</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+                                        <button style="position: absolute; right: 100px;" class="addStrPrice needHidden mr-5 btn btn-success hidden">Строка</button>
+    
+    <div class="programm-tarifs-head" contenteditable="">
+      Détails et tarifs
+    </div>
+    <div class="programm-tarifs-body">
+      <div class="rrr">
+        <span>Prix total pour 2 personnes :</span>
+        <span>Prix par personne dans le groupe de 2 personnes :</span>
+      </div>
+      <div class="ttt">
+        <span>9672 €</span>
+        <span>4836 €</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-include height">
+    <div class="programm-include-left"><button style="position: absolute; right: 20px;" class="needHidden btn hidden addIncList">Добавить пункты</button>
+      <span contenteditable="">Ces prix comprennent :<br></span>
+      <ul class="galochka">
+        <li>Le support visa (les vouchers et lettre d'invitation)</li><li>Chambre double dans un hôtel avec les petits déjeuners inclus&nbsp;</li>
+        <li contenteditable="true">Le transport terrestre et tous les transferts en
+          véhicule privatif selon le programme
+        </li>
+        <li>Les services d'un guide francophone particulier
+          diplômé pour toutes les excursions mentionnées
+        </li>
+        <li>Les droits d'entrée dans les musées et les sites
+          selon le programme
+        </li>
+        <li>Les billets de train selon le programme</li></ul>
+    </div>
+    <div class="programm-include-right">
+      <span contenteditable="">Ces prix ne comprennent pas :<br></span>
+      <ul class="krestik">
+        <li>Les visa</li>
+        <li>Les vols internationaux</li>
+        <li>Les assurances</li>
+        <li>Les repas non mentionnés dans le programme</li>
+        <li>Tous frais et dépenses d'ordre personnel</li></ul>
+    </div>
+
+  </div>
+
+  <div class="programm-remarques height">
+    <h3 contenteditable="">Remarques</h3>
+    <span contenteditable="">Les chambres dans les hôtels sont disponibles à 14h00. Le jour de votre départ il faut libérer votre chambre avant 12h00.
+    <br> </span>
+    <div class="red-block" contenteditable="">
+      Voyagez en toute sécurité en souscrivant à une assurance voyage !
+    </div>
+    <div class="programm-remarques-content">
+      <img src="https://russieautrement.com/upload/medialibrary/a9f/a9fa57c2dff604db53b12f64ced4c4c0.jpg">
+      <div class="programm-remarques-text">
+        <p contenteditable="">Grâce à notre partenaire officiel Chapka Assurances, nous sommes heureux de vous
+          proposer en exclusivité des contrats d'assurance afin que vous puissiez partir l’esprit
+          tranquille et en toute sécurité :
+        </p>
+        <ul class="zvezdochka" contenteditable="">
+          <li>Cap Assistance 24/24. Un problème pendant votre séjour ? Faîtes-nous
+            confiance et partez l’esprit tranquille avec le Cap Assistance 24h/24. Soyez sûr
+            d’obtenir une aide efficace avec cette assurance mise à votre disposition.
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+          <li>Cap Annulation. L'assurance Cap Annulation, dite assurance annulation
+            toutes causes , vous remboursera les frais d'annulation de votre vol et/ou séjour
+            retenus par l'organisateur du voyage (agence, transporteur, loueur) pour "toutes
+            causes justifiées".
+          </li>
+          <a href="#">Obtenir l’assurance ››››››</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="programm-change height">
+    <div class="red-block" contenteditable="">
+      MODALITÉS DE RÉSERVATION, D'ANNULATION ET DE PAIEMENT
+    </div>
+    <div style="min-height: 50px;"><p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:17.85pt;text-indent:-17.85pt;mso-list:l0 level1 lfo1"><span lang="FR" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:windowtext;mso-ansi-language:FR"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp; &nbsp;&nbsp;</span></span><!--[endif]--><span lang="FR">Le prépaiement de 20% doit être versé au
+moment de la réservation par carte bancaire par le lien sécurisé.<o:p></o:p></span></p>
+
+<p class="MsoNoSpacing" style="margin-left: 18pt; text-indent: -18pt;"><span lang="FR">Le solde du voyage doit être réglé&nbsp;:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">par carte bancaire au plus tard 90 jours
+avant votre arrivée<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">par virement bancaire au plus tard 90
+jours avant votre arrivée (les frais sont à votre charge),<o:p></o:p></span></p>
+
+<p class="MsoNoSpacing" style="margin-left:18.0pt;mso-list:none;tab-stops:35.4pt"><span lang="FR">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:
+l0 level1 lfo1;tab-stops:35.4pt"><span lang="FR" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:windowtext;mso-ansi-language:FR"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;</span></span><!--[endif]--><span lang="FR">Conditions d'annulation:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="FR">Toute annulation doit faire l’objet d’un mail
+adressé à l’agence locale. Le montant des frais d’annulation varie en fonction du
+moment où intervient l’annulation :<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">à plus de 60 jours du départ&nbsp;: 10%
+du prix du voyage<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">entre 59 et 30 jours du départ&nbsp;:
+25% du prix du voyage<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">entre 29 et 21 jours du départ&nbsp;:
+50% du prix du voyage<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">entre 20 et 7 jours du départ&nbsp;: 75%
+du prix du voyage<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:53.85pt;margin-bottom:.0001pt;text-indent:-17.85pt;mso-list:l0 level2 lfo1"><!--[if !supportLists]--><span lang="FR" style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;;
+mso-ansi-language:FR">o<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;
+</span></span><!--[endif]--><span lang="FR" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">à moins de 6 jours du départ et après la
+date de départ&nbsp;: 100% du prix du voyage<o:p></o:p></span></p>
+
+    </div>
+  </div>
+</div>
+<div class="height"></div>
+
+
+</body></html>

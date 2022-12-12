@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-html-to-image": "^1.1.0",
     "vue": "^2.6.11"
   }
